@@ -69,6 +69,8 @@ The **Schrodinger Equation** is a nonlinear partial differential equation descri
 
 $$i\hbar\frac{\partial\psi}{\partial t}  = -\frac{\hbar^2}{2m} \left(\frac{\partial^2\psi}{\partial x^2} + \frac{\partial^2\psi}{\partial y^2}\right) + V\psi.$$
 
+The constant $$\hbar$$ is called Planck's constant.
+
 ### Advection equation
 
 If we scatter some dye into a fluid, the velocity of the fluid will spread the dye around over time.
