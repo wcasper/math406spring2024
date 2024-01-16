@@ -19,7 +19,7 @@ In particular it satisfies the two-dimensional heat equation
 
 $$T_t = -k (T_{xx} + T_{yy})$$
 
-The constant $k$ appearing in this equation is called the *thermal conductivity* and is a property of the material whose temperature we are studying.
+The constant $$k$$ appearing in this equation is called the *thermal conductivity* and is a property of the material whose temperature we are studying.
 This sort of equation arises in many more contexts then heat, such as Brownian motion in probability theory.
 
 ## The Wave Equation
@@ -53,6 +53,11 @@ $$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 4G \rho.$$
 
 The constant $$G$$ is called the *universal gravitational constant*.
 
+In the case that $$\rho=0$$, Poisson's equation is also called **Laplace's Equation**
+
+$$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 0.$$
+
+Eigenfunctions of Laplace's equation are called **harmonic functions**.
 
 # Other kinds of PDEs
 
