@@ -3,7 +3,7 @@ layout: page
 title: Introducing Parial Differential Equations
 ---
 
-### Basic Examples of PDEs
+# Basic Examples of PDEs
 
 A **partial differential equation** (PDE) is a differential equation which defines a relationship between a function and its **partial derivatives**.
 While we will be interested in general with establishing a general theory of these equations, the historical foundations of PDEs makes us especially interested in three main examples whose origins come from the physics of heat transfer, wave motion, and electrodynamics.
@@ -54,7 +54,7 @@ $$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 4G \rho.$$
 The constant $$G$$ is called the *universal gravitational constant*.
 
 
-### Other kinds of PDEs
+# Other kinds of PDEs
 
 All of the previous examples of PDEs are examples of second-order linear partial differential equations.
 However, they are nowhere near a comprehensive representation of the world of PDEs as a whole.
