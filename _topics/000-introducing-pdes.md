@@ -46,7 +46,7 @@ Now, it turns out that the *gravitational force* $$F$$ that we experience is the
 
 $$\vec F = -m\nabla\varphi = \langle -m\varphi_x,-m\varphi_y,-m\varphi_z\rangle$$
 
-defined by the gradient of a certain function $$\psi(x,y,z)$$ called the *gravitation potential*, times our own mass $$m$$.
+defined by the gradient of a certain function $$\varphi(x,y,z)$$ called the *gravitation potential*, times our own mass $$m$$.
 The gravitational potential satisfies the three-dimensional Poisson equation
 
 $$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 4G \rho.$$
