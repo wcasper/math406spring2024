@@ -117,5 +117,5 @@ u_x^2 + v_y^2 + w_z^2 + 2v_xu_y + 2w_xu_z + 2w_yv_z   & = \frac{1}{-\rho}(p_{xx}
 \end{align*}$$
 
 Here $$\rho$$ is the density of the fluid and $$\nu$$ is the coefficient of kinematic viscosity.
-
+The extra function $$\varphi$$ represents external forces imposed by various fields (gravity, electricity, etc).
 
