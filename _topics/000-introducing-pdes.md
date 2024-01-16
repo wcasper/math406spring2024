@@ -111,7 +111,7 @@ $$\begin{align*}
 u_t + uu_x + vu_y + wu_z - \nu (u_{xx}+u_{yy}+u_{zz}) &= -\frac{1}{\rho}p_x + \varphi_x\\
 v_t + uv_x + vv_y + wv_z - \nu (v_{xx}+v_{yy}+v_{zz}) &= -\frac{1}{\rho}p_y + \varphi_y\\
 w_t + uw_x + vw_y + ww_z - \nu (w_{xx}+w_{yy}+w_{zz}) &= -\frac{1}{\rho}p_z + \varphi_z\\
-p_{xx} + p_{yy} + p_{zz} &= \rho (u_x^2 + v_y^2 + w_z^2 + 2v_xu_y + 2w_xu_z + 2w_yv_z)
+u_x^2 + v_y^2 + w_z^2 + 2v_xu_y + 2w_xu_z + 2w_yv_z   & = \frac{1}{-\rho}(p_{xx} + p_{yy} + p_{zz})
 \end{align*}$$
 
 Here $$\rho$$ is the density of the fluid and $$\nu$$ is the coefficient of kinematic viscosity.
