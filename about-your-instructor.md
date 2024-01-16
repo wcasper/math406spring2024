@@ -24,8 +24,13 @@ My research focuses on applications of algebra and algebraic geometry to various
 * Exploring exact equations and recurrence relations for matrix-valued Chebyshev-type polynomials
 * Solving Battleship puzzle problems using discrete tomography and quantum computing
 
-### My Publications (as of 2022)
+### My Publications (as of 2023)
 
+* 
+
+* [A Burchnall-Chaundy-Krichever Theory for Fractional Differential Operators](https://arxiv.org/abs/2108.12010) <br/> Submitted.
+* [Matrix valued discrete-continuous functions with the prolate spheroidal property](https://arxiv.org/pdf/2302.05750.pdf) accepted in Commun. in Math Phys
+* [Battleship, Tomography, and Quantum Annealing](https://www.cambridge.org/core/journals/european-journal-of-applied-mathematics/article/battleship-tomography-and-quantum-annealing/90D6461BEDB5D0295D7EE70D2586389B) Eur. J. Applied Math (2023)
 * [The matrix Bochner problem](https://arxiv.org/abs/1803.04405) <br/> American J. Mathematics (2022)
 * [Reflective prolate-spheroidal operators and the adelic Grassmannian](https://arxiv.org/abs/2003.11616) <br/> Communications in Pure and Applied Mathematics (2022)
 * [Algebras of commuting differential operators for integral kernels of Airy type](https://arxiv.org/abs/2112.11639) <br/> Operator Theory: Advances and Applications (2022)
