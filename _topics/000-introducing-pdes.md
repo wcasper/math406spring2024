@@ -12,9 +12,9 @@ Notationally, there are many different ways of expressing partial derivatives an
 
 A good part of this course will revolve around methods to solve these equations, or at least represent their solutions as infinite series, along with numerical methods of approximating solutions.
 
-## The Heat Equation
+## The Heat Equation / Diffusion Equation
 
-The **heat equation** describes how the temperature of the surface of a material $$T(x,y,t)$$ in three dimensional space at position $$(x,y)$$ and time $$t$$ changes.  Intuitively, heat spreads out from very hot spots and migrates toward very cold spots, so in particular the value of $$T$$ will change over time.  Exactly how this change happens is described by **Fourier's Law**, which says that the change will be proporional to the negative temperature gradient.
+The **heat equation** or **diffusion equation** describes how the temperature of the surface of a material $$T(x,y,t)$$ in three dimensional space at position $$(x,y)$$ and time $$t$$ changes.  Intuitively, heat spreads out from very hot spots and migrates toward very cold spots, so in particular the value of $$T$$ will change over time.  Exactly how this change happens can be described by **Fourier's Law**, which says that the change will be proporional to the negative temperature gradient.
 In particular it satisfies the two-dimensional heat equation
 
 $$T_t = -k (T_{xx} + T_{yy})$$
