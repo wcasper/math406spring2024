@@ -32,12 +32,6 @@ $$T_t = kT_{xx}.$$
 Here $$k$$ is a constant, which we call the coefficient of thermal conductivity, and which is a property of the material itself.
 This equation is called the **one-dimensional heat equation**.
 
-In the situation we have described, the solution to the heat equation we are looking for might be something like
-
-$$T(x,t) = T_0 + \frac{T_1-T_0}{L}x + \sum_{k=0}^\infty c_ne^{-kn^2\pi^2t/L^2}\sin(n\pi x/L),$$
-
-for some sequnce of values $$c_0,c_1,\dots$$ determined by the initial temperure state of the rod.
-
 ## Diffusion
 
 A similar situation occurs when we think about **diffusion processes**.
@@ -52,17 +46,17 @@ $$\rho_t = D\rho_{xx},$$
 where here $$D$$ is the **diffusion coefficient**, a constant whose value has to
 do with the temperture and other properties of the fluid.
 
-For the situation we just described, the initial concentration of the dye might be reasonably approximated by a Gaussian function centered at the origin
-
-$$\rho(x,y,0) = \frac{1}{c}e^{-\frac{1}{4Dc}((x^2+y^2)},$$
-
-where $$c$$ is a constant which adjusts how concentrated the dye is initially.
-
-Our solution of the dispersion equation might then be something like
-
-$$\rho(x,y,t) = \frac{1}{t+c}e^{-\frac{1}{4D(t+c)}((x^2+y^2)}.$$
+An example of such an experiment can be found on the Youtube channel Nix Makes, and the relevant clip is embedded below.
 
 {% include youtube.html id="LN0UeifPCzw?start=242&end=284;" %}
+
+The video maker used the grayscale intensity as a measure of the density of the dye at each level and the animation they produced as a result is also featured below.
+
+<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<source src="vid/diffusion.mp4" type="video/mp4">
+</video>
+
+We could hope that by solving the diffusion equation with a similar initial condition, we should be able to get a similar result.
 
 
 # Higher Dimensional Heat Equations
