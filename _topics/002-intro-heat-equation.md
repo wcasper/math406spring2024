@@ -32,6 +32,41 @@ $$T_t = kT_{xx}.$$
 Here $$k$$ is a constant, which we call the coefficient of thermal conductivity, and which is a property of the material itself.
 This equation is called the **one-dimensional heat equation**.
 
+In the situation we have described, the solution to the heat equation we are looking for might be something like
+
+$$T(x,t) = T_0 + \frac{T_1-T_0}{L}x + \sum_{k=0}^\infty c_ne^{-kn^2\pi^2t/L^2}\sin(n\pi x/L),$$
+
+for some sequnce of values $$c_0,c_1,\dots$$ determined by the initial temperure state of the rod.
+
+## Diffusion
+
+A similar situation occurs when we think about **diffusion processes**.
+Imagine putting a bit of dye uniformly on the surface of a long tube.
+Microscopic motions of the individual water particles will cause the dye to slowly spread downwards.
+The warmer the water is, the faster this expansion will take place.
+
+If $$\rho(x,t)$$ represents the density of the dye at depth $$x$$ and time $$t$$ then $$\rho$$ satisfies the diffusion equation
+
+$$\rho_t = D\rho_{xx},$$
+
+where here $$D$$ is the **diffusion coefficient**, a constant whose value has to
+do with the temperture and other properties of the fluid.
+
+For the situation we just described, the initial concentration of the dye might be reasonably approximated by a Gaussian function centered at the origin
+
+$$\rho(x,y,0) = \frac{1}{c}e^{-\frac{1}{4Dc}((x^2+y^2)},$$
+
+where $$c$$ is a constant which adjusts how concentrated the dye is initially.
+
+Our solution of the dispersion equation might then be something like
+
+$$\rho(x,y,t) = \frac{1}{t+c}e^{-\frac{1}{4D(t+c)}((x^2+y^2)}.$$
+
+{% include youtube.html id="JLMbpiywVxQ" %}
+
+
+# Higher Dimensional Heat Equations
+
 For temperature variation on a flat surface, we can instead use the **two-dimensional heat equation**
 
 $$T_t = k(T_{xx}+T_{yy}).$$
@@ -40,18 +75,7 @@ Likewise, for temperature variation in three dimensional space, we use the **thr
 
 $$T_t = k(T_{xx}+T_{yy}+T_{zz}).$$
 
-## Diffusion
+In general, we could imagine ourselves trying to solve the **$$n$$-dimensional heat equation**
 
-A similar situation occurs when we think about **diffusion processes**.
-Imagine putting a drop of dye in a small puddle of water.
-Microscopic motions of the individual water particles will spread the dye out in a slowly expanding circle.
-The warmer the water is, the faster this circle will expand.
-
-If $$\rho(x,y,t)$$ represents the density of the dye, then $$\rho(x,y,t)$$ satisfies the diffusion equation
-
-$$\rho_t = D(\rho_{xx} + \rho_{yy}),$$
-
-where here $D$ is the **diffusion coefficient**, a constant whose value has to
-do with the temperture and other properties of the fluid.
-
+$$u_t = \alpha \sum_{k=1}^n \frac{\partial^2 u}{\partial x_k^2}$$
 
