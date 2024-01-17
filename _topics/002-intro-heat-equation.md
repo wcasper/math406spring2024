@@ -16,7 +16,7 @@ More accurately, the temperature measures the **average kinetic energy** of the 
 
 For example, consider a metal fire poker whose point we have just stuck into a fire.
 
-<p align="center"><img src="fig/fire-poker.webp"/></p>
+<p align="center"><img widtth=450 src="fig/fire-poker.webp"/></p>
 
 The tip will be very hot, but the length of the poker will initially be cool.
 Put another way, the atoms at the tip will be vibrating very quickly, but the other atoms won't initially be affected.
@@ -47,7 +47,7 @@ Imagine putting a drop of dye in a small puddle of water.
 Microscopic motions of the individual water particles will spread the dye out in a slowly expanding circle.
 The warmer the water is, the faster this circle will expand.
 
-If $$\rho(x,y,t)$$ represents the density of the dye, then $\rho(x,y,t)$$ satisfies the diffusion equation
+If $$\rho(x,y,t)$$ represents the density of the dye, then $$\rho(x,y,t)$$ satisfies the diffusion equation
 
 $$\rho_t = D(\rho_{xx} + \rho_{yy}),$$
 
