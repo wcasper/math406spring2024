@@ -62,7 +62,7 @@ Our solution of the dispersion equation might then be something like
 
 $$\rho(x,y,t) = \frac{1}{t+c}e^{-\frac{1}{4D(t+c)}((x^2+y^2)}.$$
 
-{% include youtube.html id="LN0UeifPCzw?start=240&end=280;" %}
+{% include youtube.html id="LN0UeifPCzw?start=242&end=284;" %}
 
 
 # Higher Dimensional Heat Equations
