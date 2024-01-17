@@ -64,6 +64,11 @@ This animation was created using python, and code for its collaboration can be f
 <source src="vid/numdiffusion.mp4" type="video/mp4">
 </video>
 
+There are some very nice qualitative similarities between the numerical simulation and the physical experiment.
+However, there are definitely some important differences!
+
+**Question:** What kinds of differences do we see between the experimental data and the numerical solution of the heat equation?  For each difference, what kind of explanation might we have for these differences?
+
 # Higher Dimensional Heat Equations
 
 For temperature variation on a flat surface, we can instead use the **two-dimensional heat equation**
