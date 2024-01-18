@@ -58,7 +58,8 @@ The video maker used the grayscale intensity as a measure of the density of the 
 
 We could hope that by solving the diffusion equation with a similar initial condition, we should be able to get a similar result.
 Below is a video of an animation produced by *numerically* solving the diffusion equation with an approximate initial density profile pictured in the video above.
-This animation was created using python, and code for its collaboration can be found and experimented with here: [Google collab of a numerical simulation of the diffusion experiment](https://colab.research.google.com/drive/1S0-x1hxH3b36S3TZ0i8g2w7Krzf0W6TI?usp=sharing)
+This animation was created using python, and code for its collaboration can be found and experimented with here.
+* [Google collab of a numerical simulation of the diffusion experiment](https://colab.research.google.com/drive/1S0-x1hxH3b36S3TZ0i8g2w7Krzf0W6TI?usp=sharing)
 
 <video controls="" width="800" height="500" muted="" loop="" autoplay="">
 <source src="vid/numdiffusion.mp4" type="video/mp4">
@@ -67,7 +68,9 @@ This animation was created using python, and code for its collaboration can be f
 There are some very nice qualitative similarities between the numerical simulation and the physical experiment.
 However, there are definitely some important differences!
 
-**Question:** What kinds of differences do we see between the experimental data and the numerical solution of the heat equation?  For each difference, what kind of explanation might we have for these differences?
+**Questions:**
+1. What kinds of differences do we see between the experimental data and the numerical solution of the heat equation?
+2. For each difference, what kind of explanation might we have for these differences?
 
 # Higher Dimensional Heat Equations
 
