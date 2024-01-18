@@ -22,7 +22,7 @@ $$T_t = -k (T_{xx} + T_{yy})$$
 The constant $$k$$ appearing in this equation is called the *thermal conductivity* and is a property of the material whose temperature we are studying.
 This sort of equation arises in many more contexts then heat, such as Brownian motion in probability theory.
 
-<p align="center"><img width=300 src="fig/hotironbar.jpeg"/></p>
+<p align="center"><img width=300 src="fig/steel-slab.jpg"/></p>
 
 ## The Wave Equation
 
