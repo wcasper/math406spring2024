@@ -63,7 +63,7 @@ $$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 0.$$
 
 Eigenfunctions of Laplace's equation are called **harmonic functions**.
 
-<p align="center"><img width=300 src="fig/electricfield.jpeg"/></p>
+<p align="center"><img width=300 src="fig/electricfield.jpg"/></p>
 
 # Other kinds of PDEs
 
