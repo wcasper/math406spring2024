@@ -22,7 +22,7 @@ $$T_t = -k (T_{xx} + T_{yy})$$
 The constant $$k$$ appearing in this equation is called the *thermal conductivity* and is a property of the material whose temperature we are studying.
 This sort of equation arises in many more contexts then heat, such as Brownian motion in probability theory.
 
-<p align="center"><img width=300 src="fig/steel-slab.jpg"/></p>
+<p align="center"><img width=400 src="fig/steel-slab.jpg"/></p>
 
 ## The Wave Equation
 
@@ -34,7 +34,7 @@ $$\frac{\partial^2 h}{\partial t^2} = c^2\left(\frac{\partial^2 h}{\partial x^2}
 
 where here $$c$$ is the *propagation speed*, describing how fast peaks (or troughs) move.
 
-<p align="center"><img width=300 src="fig/dropletwave.jpeg"/></p>
+<p align="center"><img width=400 src="fig/dropletwave.jpeg"/></p>
 
 ## Poisson's Equation
 
@@ -63,7 +63,7 @@ $$\varphi_{xx} + \varphi_{yy} + \varphi_{zz} = 0.$$
 
 Eigenfunctions of Laplace's equation are called **harmonic functions**.
 
-<p align="center"><img width=300 src="fig/electricfield.jpg"/></p>
+<p align="center"><img width=400 src="fig/electricfield.jpg"/></p>
 
 # Other kinds of PDEs
 
@@ -130,6 +130,6 @@ u_x^2 + v_y^2 + w_z^2 + 2v_xu_y + 2w_xu_z + 2w_yv_z   & = \frac{1}{-\rho}(p_{xx}
 Here $$\rho$$ is the density of the fluid and $$\nu$$ is the coefficient of kinematic viscosity.
 The extra function $$\varphi$$ represents external forces imposed by various fields (gravity, electricity, etc).
 
-<p align="center"><img width=300 src="fig/fluidflow.jpeg"/></p>
+<p align="center"><img width=400 src="fig/fluidflow.jpeg"/></p>
 
 
