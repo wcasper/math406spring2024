@@ -47,6 +47,8 @@ $$x = x_0 + at,\ \ y = y_0 + bt,\ \ t\in\mathbb{R}$$
 for any $$(x_0,y_0)\in\mathbb R^2$$.
 These lines are called **characteristic lines**.
 
+<p align="center"><img width=400 src="fig/charlines.png"/></p>
+
 In particular, this means that the value of a solution $$u(x,y)$$ everywhere will be determined by the values of $$u(x,y)$$ on the $$x$$-axis.
 In particular, if we assume $$u(x,0) = f(x)$$ for each $$x\in\mathbb{R}$$, then to 
 figure out the value of $$u(x_0,y_0)$$, we just trace along a characteristic line to the point $$(x_0-ay_0/b,0) = f(x_0-ay_0/b)$$ on the $$x$$-axis.  Thus for all $$x,y$$
@@ -83,6 +85,8 @@ $$\frac{d^2x}{dt^2} + x = 0,$$
 which has the particular solution $$x = A\cos(t)$$.  This also gives $$y = -\frac{dx}{dt} = A\sin(t)$$.
 Thus the curves that $$u(x,y)$$ is constant on are circles centered around the origin.
 We call these curves **characteristic curves**.
+
+<p align="center"><img width=400 src="fig/charcurves1.png"/></p>
 
 Once again, this says that the general solution of the differential equation will be determined by its values on the $$x$$-axis.  Specifically, if $$u(x,0) = f(x)$$ for all $$x$$, then to determine the value at an arbitrary point $$(x_0,y_0)$$ we travel around the circle of radius $$\sqrt{x_0^2+y_0^2}$$ until we get to the point $$(\sqrt{x_0^2+y_0^2},0)$.
 In other words
@@ -137,13 +141,15 @@ This is an example of a *nonlinear homogeneous ODE* and is solved by performing 
 
 $$\frac{dz}{dx} = \frac{1}{x},$$
 
-whose general solution is $$z = \ln(x)+C$$.  Thus our level curves are given by the equation
+whose general solution is $$z = \ln\lvert x\rvert +C$$.  Thus our level curves are given by the equation
 
-$$\frac{y}{x} -\ln(x) = C$$
+$$\frac{y}{x} -\ln\lvert x\rvert = C$$
+
+<p align="center"><img width=400 src="fig/charcurves2.png"/></p>
 
 Thus solutions of our family of PDEs are given by
 
-$$u(x,y) = f(y/x-\ln(x)).$$
+$$u(x,y) = f(y/x-\ln\lvert x\rvert ).$$
 
 
 ## Physical intuition
@@ -169,6 +175,9 @@ Moreover, if we are travelling at a velocity of $$U$$ for a time $$t=T$$, the di
 At time $$T$$, the distribution of the dye is $$\rho(x,) = f(x-T/U)$$, which is the same function as before just shifted to the *right*  by the distance $$T/U$$.
 The density is the same, its just been moved down an appropriate distance.
 For this reason, the advection equation is also sometimes called the **transport equation**.
+
+<p align="center"><img width=400 src="fig/advection1.png"/></p>
+
 
 
 
