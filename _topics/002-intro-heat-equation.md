@@ -16,7 +16,7 @@ More accurately, the temperature measures the **average kinetic energy** of the 
 
 For example, consider a metal fire poker whose point we have just stuck into a fire.
 
-<p align="center"><img widtth=300 src="fig/fire-poker.webp"/></p>
+<p align="center"><img width=300 src="fig/fire-poker.webp"/></p>
 
 The tip will be very hot, but the length of the poker will initially be cool.
 Put another way, the atoms at the tip will be vibrating very quickly, but the other atoms won't initially be affected.
