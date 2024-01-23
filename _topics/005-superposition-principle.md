@@ -19,7 +19,7 @@ The key to finding other solutions of the heat equation and solving boundary val
 
 **Theorem (Superposition Principle):**  If $$u$$ and $$v$$ are solutions of a linear PDE, then any linear combination of $$u$$ and $$v$$ is also a solution.
 
-More generally, if we have a sequence of infinitely many solutions \{T_n(x,t)\}$$ then a series
+More generally, if we have a sequence of infinitely many solutions $$\{T_n(x,t)\}$$ then a series
 
 $$T(x,t) = \sum A_n T_n(x,t)$$
 
