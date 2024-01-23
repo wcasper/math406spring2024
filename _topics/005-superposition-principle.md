@@ -103,7 +103,7 @@ B_n
   & = \frac{2}{L}\int_0^L \sin\left(\frac{n\pi}{L}x\right)f(x)dx\\
   & = \frac{4}{L}\int_0^{L/2} x\sin\left(\frac{n\pi}{L}x\right)dx\\
   & = \frac{4}{L}\left[-x\frac{L}{n\pi}\cos\left(\frac{n\pi}{L}x\right) + \frac{L^2}{n^2\pi^2}\sin\left(\frac{n\pi}{L}x\right)\right\rvert_0^{L/2}\\
-  & = \frac{-2L}{n\pi}\cos\left(\frac{n\pi}{2}\right)
+  & = \frac{-2L}{n\pi}\cos(n\pi/2) + \frac{2}{n^2\pi^2}\sin(n\pi/2)
 \end{align}$$
 
 
