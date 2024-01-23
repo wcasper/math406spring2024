@@ -120,9 +120,9 @@ A contour plot of the solution in the space-time plane is given below, along wit
 This animation was created using python, and code for its collaboration can be found and experimented with here.
 * [Google collab of a numerical simulation of diffusion of a triangle](https://colab.research.google.com/drive/18tDYTKYZlfRaiIWIrohTyb-aAshx2C4w?usp=sharing)
 
-<p align="center"><img width=500 src="fig/fire-poker.webp"/></p>
+<p align="center"><img width=500 src="fig/005-contour.png"/></p>
 
-<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
 <source src="vid/numdiffusion.mp4" type="video/mp4">
 </video>
 
