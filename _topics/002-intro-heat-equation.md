@@ -52,7 +52,7 @@ An example of such an experiment can be found on the Youtube channel Nix Makes, 
 
 The video maker used the grayscale intensity as a measure of the density of the dye at each level and the animation they produced as a result is also featured below.
 
-<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
 <source src="vid/diffusion.mp4" type="video/mp4">
 </video>
 
@@ -61,7 +61,7 @@ Below is a video of an animation produced by *numerically* solving the diffusion
 This animation was created using python, and code for its collaboration can be found and experimented with here.
 * [Google collab of a numerical simulation of the diffusion experiment](https://colab.research.google.com/drive/1S0-x1hxH3b36S3TZ0i8g2w7Krzf0W6TI?usp=sharing)
 
-<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
 <source src="vid/numdiffusion.mp4" type="video/mp4">
 </video>
 
