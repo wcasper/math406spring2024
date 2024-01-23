@@ -17,6 +17,8 @@ in three dimensions (and so on), where $$a,b,c$$ and $$f$$ are some functions wh
 The function on the right-hand side is sometimes referred to as the **forcing function**.
 In the special case that $$f(x,y,z)$$ is identically zero, this equation is called **homogeneous**.  Otherwise, it is called **inhomogeneouos**.
 
+:warning:  Many different kinds of things are called homogeneous in mathematics, especially in PDEs where we have homogeneous equations, homogeneous boundary conditions, homogeneous spaces, ... Be careful to understand what *kind* of homogeneous we are talking about in any situation.
+
 This kind of differential equation arises naturally, when we consider the process of **advection**, where a material is moved around a medium (like a fluid or gas) due to the local motion of the medium itself.
 Imagine for example, we have a cup of coffee that we add a bit of sugar to, before stirring it up.
 If $$U(x,y,z,t)$$, $$V(x,y,z,t)$$, and $$W(x,y,z,t)$$ are the velocity of the coffee at time $$t$$, then the density of the sugar $$\rho(x,y,z,t)$$ is modeled by the **advection equation**
