@@ -30,7 +30,7 @@ The following PDE is a first-order homogeneous linear PDE
 
 $$u_{t} = 3u_{x} + x^3.$$
 
-**Question 3:**
+**Question 4:**
 
 Multiple choice.
 Curves on which solutions of a first order linear ODE are constant are called
@@ -39,7 +39,7 @@ Curves on which solutions of a first order linear ODE are constant are called
 * (C) homogeneous curves
 * (D) characteristic curve
 
-**Question 4:**
+**Question 5:**
 
 True or false.
 
@@ -47,7 +47,7 @@ The curve $$y = x^2$$ is a level curve of the PDE
 
 $$\phi_y - x\phi_x = 0.$$
 
-**Question 5:**
+**Question 6:**
 
 True or false.
 Solutions $$\rho(x,t)$$ to the constant advection equation for
