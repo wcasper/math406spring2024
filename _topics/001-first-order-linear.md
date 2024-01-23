@@ -111,13 +111,13 @@ If $$x = x(t)$$ and $$y = y(t)$$ is a parametrization of a level curve, then thi
 $$x(t)$$ and $$y(t)$$ satisfy the system of ODEs
 
 $$\begin{align*}
-\frac{dx}{dt} &= u(x,y)\\
-\frac{dy}{dt} &= v(x,y)
+\frac{dx}{dt} &= a(x,y)\\
+\frac{dy}{dt} &= b(x,y)
 \end{align*}$$
 
 or equivalently the single ODE
 
-$$\frac{dy}{dx} = \frac{v}{u}.$$
+$$\frac{dy}{dx} = \frac{b}{a}.$$
 
 If the general solution of this ODE is
 
