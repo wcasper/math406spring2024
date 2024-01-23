@@ -91,20 +91,10 @@ $$\lambda = \frac{n^2\pi^2k}{L^2},\quad n\in\mathbb{Z}.$$
 
 Thus we see that the only nontrivial separable solutions are constant multiples of
 
-$$T_n(x,t) = \cos\left(\frac{n\pi}{L}x\right)e^{-\frac{n^2\pi^2k}{L^2}t},\quad n = 1,2,3,\dots$$
+$$T_n(x,t) = \cos\left(\frac{n\pi}{L}x\right)e^{-\frac{n^2\pi^2k}{L^2}t},\quad n = 0,1,2,3,\dots$$
 
-### The superposition principle
-The above solutions to the heat equation are not all solutions of the heat equation.
-Instead, they should be thought of as the *building blocks* of all solutions of the heat equation.
-The key to finding other solutions of the heat equation and solving boundary value problems is the **superposition principle**.
+:warning: Note that in the Neumann case, there is a value for $$n=0$$.
 
-**Theorem (Superposition Principle):**  If $$u$$ and $$v$$ are solutions of a linear PDE, then any linear combination of $$u$$ and $$v$$ is also a solution.
-
-More generally, if we have a sequence of infinitely many solutions $$\{T_n(x,t)\}_{n=0}^\infty$$ then a series
-
-$$T(x,t) = \sum_{n=0}^\infty A_n T_n(x,t)$$
-
-is also a solution where the sum converges.
-
+These aren't all the solutions of the heat equation with Dirichlet or Neumann boundary conditions.  To find more, we rely on an important property of linear PDE's, called the **superposition principle**.
 
 
