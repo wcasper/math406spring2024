@@ -44,7 +44,7 @@ In the vaccuum around us we observe several large, misshapen bodies.
 What kinds of attraction (of an appropriate, gravitational nature) do we experience toward these bodies?
 
 We can describe how much mass is at what location in space using a function $$\rho(x,y,z)$$, called the *mass density*.
-It works so that if we integrate $$\varphi$$ over a particular region of space, it returns the total mass inside that volume.
+It works so that if we integrate $$\rho$$ over a particular region of space, it returns the total mass inside that volume.
 
 Now, it turns out that the *gravitational force* $$F$$ that we experience is the vector
 
