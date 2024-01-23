@@ -8,6 +8,7 @@ permalink: /quizzes/lecture1
 **Question 1:**
 
 True or false.
+
 The function $$u(x,t) = x^2e^{2t}$$ is a solution of the partial differential equation
 
 $$u_t = x^2u_{xx}.$$
@@ -39,6 +40,14 @@ Curves on which solutions of a first order linear ODE are constant are called
 * (D) characteristic curve
 
 **Question 4:**
+
+True or false.
+
+The curve $$y = x^2$$ is a level curve of the PDE
+
+$$\phi_y - x\phi_x = 0.$$
+
+**Question 5:**
 
 True or false.
 Solutions $$\rho(x,t)$$ to the constant advection equation for
