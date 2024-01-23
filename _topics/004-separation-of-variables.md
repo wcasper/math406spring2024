@@ -66,7 +66,7 @@ $$A = 0\quad\text{and}\quad B\sin\left(\sqrt{\frac{\lambda}{k}}L\right)e^{-\lamb
 
 If $$B = 0$$, then $$T$$ itself is identically zero, which is a pretty uninteresting solution.
 To get nontrivial solutions, we must have $$\sin\left(\sqrt{\frac{\lambda}{k}}L\right) = 0$$, which imposes the constraint
-$$\sqrt{\frac{\lambda}{k}}L = n\pi$$ for some integer $$n\in\matahbb{Z}$$.
+$$\sqrt{\frac{\lambda}{k}}L = n\pi$$ for some integer $$n\in\mathbb{Z}$$.
 Thus
 
 $$\lambda = \frac{n^2\pi^2k}{L^2},\quad n\in\mathbb{Z}.$$
