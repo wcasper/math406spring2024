@@ -83,7 +83,7 @@ $$f(x) = \sum_{n=0}^\infty A_n\cos\left(\frac{n\pi}{L}x\right)e^{-\frac{n^2\pi^2
 
 Let's solve the boundary value problem
 
-$$T(0,t) = 0,\quad T(L,t) = 0,\quad T(x,0) = f(x).$$
+$$u_t = ku_{xx},\quad T(0,t) = 0,\quad T(L,t) = 0,\quad T(x,0) = f(x).$$
 
 for the function
 
@@ -95,7 +95,12 @@ L-x & L/2 \leq x \leq L\\
 
 Since this is a Dirichlet boundary condition, we use the sine series expansion.
 
-We calculate
+The $$n$$'h coefficient is
+
+$$B_n = \frac{2}{L}\int_0^L \sin\left(\frac{n\pi}{L}x\right)f(x)dx$$
+
+By symmetry, this will be zero when $$n$$ is even.
+Therefore, we can assume $$n$$ is odd. In this case
 
 $$
 \begin{align}
@@ -103,10 +108,21 @@ B_n
   & = \frac{2}{L}\int_0^L \sin\left(\frac{n\pi}{L}x\right)f(x)dx\\
   & = \frac{4}{L}\int_0^{L/2} x\sin\left(\frac{n\pi}{L}x\right)dx\\
   & = \frac{4}{L}\left[-x\frac{L}{n\pi}\cos\left(\frac{n\pi}{L}x\right) + \frac{L^2}{n^2\pi^2}\sin\left(\frac{n\pi}{L}x\right)\right\rvert_0^{L/2}\\
-  & = \frac{-2L}{n\pi}\cos(n\pi/2) + \frac{4L}{n^2\pi^2}\sin(n\pi/2)
+  & = \frac{-2L}{n\pi}\cos(n\pi/2) + \frac{4L}{n^2\pi^2}\sin(n\pi/2)\\
+  & = \frac{4L}{n^2\pi^2}(-1)^{(n-1)/2}
 \end{align}$$
 
+Using these values for the $$B_n$$'s, our solution is
 
+$$T(x,t) = \sum_{m=1}^\infty \frac{4L}{(2m+1)^2\pi^2}(-1)^{m} \sin\left(\frac{(2m+1)\pi}{L}x\right)e^{-\frac{(2m+1)^2\pi^2k}{L^2}t}.$$
 
+A contour plot of the solution in the space-time plane is given below, along with a video showing the temperture with respect to position as time moves forward.
+This animation was created using python, and code for its collaboration can be found and experimented with here.
+* [Google collab of a numerical simulation of diffusion of a triangle](https://colab.research.google.com/drive/18tDYTKYZlfRaiIWIrohTyb-aAshx2C4w?usp=sharing)
 
+<p align="center"><img width=500 src="fig/fire-poker.webp"/></p>
+
+<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<source src="vid/numdiffusion.mp4" type="video/mp4">
+</video>
 
