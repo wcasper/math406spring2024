@@ -90,7 +90,7 @@ We call these curves **characteristic curves**.
 
 <p align="center"><img width=400 src="fig/charcurves1.png"/></p>
 
-Once again, this says that the general solution of the differential equation will be determined by its values on the $$x$$-axis.  Specifically, if $$u(x,0) = f(x)$$ for all $$x$$, then to determine the value at an arbitrary point $$(x_0,y_0)$$ we travel around the circle of radius $$\sqrt{x_0^2+y_0^2}$$ until we get to the point $$(\sqrt{x_0^2+y_0^2},0)$.
+Once again, this says that the general solution of the differential equation will be determined by its values on the $$x$$-axis.  Specifically, if $$u(x,0) = f(x)$$ for all $$x$$, then to determine the value at an arbitrary point $$(x_0,y_0)$$ we travel around the circle of radius $$\sqrt{x_0^2+y_0^2}$$ until we get to the point $$(\sqrt{x_0^2+y_0^2},0)$$.
 In other words
 
 $$u(x,y) = f(\sqrt{x^2+y^2}),$$
@@ -104,7 +104,7 @@ The exmples above suggest a general method for solving homogeneous, first order 
 
 To solve the PDE
 
-$$a(x,y)u_x + b(x,y)u_x = 0,$$
+$$a(x,y)u_x + b(x,y)u_y = 0,$$
 
 we want to find a family of **characteristic curves** with the property that $$u$$ restricted to each curve is constant.
 If $$x = x(t)$$ and $$y = y(t)$$ is a parametrization of a level curve, then this means
