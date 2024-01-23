@@ -123,6 +123,6 @@ This animation was created using python, and code for its collaboration can be f
 <p align="center"><img width=700 src="fig/005-contour.png"/></p>
 
 <video controls="" width="700" height="500" muted="" loop="" autoplay="">
-<source src="vid/numdiffusion.mp4" type="video/mp4">
+<source src="vid/005-triangle.mp4" type="video/mp4">
 </video>
 
