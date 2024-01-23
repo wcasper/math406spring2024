@@ -13,19 +13,19 @@ permalink: /extras/syllabus
 
 **Office hourse:** TBA.  Additional office hours are always available by request.
 
-**Course website:** we will use Canvas website (Spring 2023 MATH 407-1 18421), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math430spring2023">Github Pages site (link)</a> which you may find more convenient for pulling material.
+**Course website:** we will use Canvas website (Spring 2024 MATH 406-1 10067), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math406spring2024">Github Pages site (link)</a> which you may find more convenient for pulling material.
 
 ## Course meeting information
 * Section: 01
-* Course ID: 19501
-* Time: MW 10:00AM-11:50AM
-* Meeting Dates: 08/21/2023-12/15/2023
-* Location: MH 464
+* Course ID: 10067
+* Time: MW 1:00PM-2:50PM
+* Meeting Dates: 01/22/2024-05/15/2024
+* Location: MH 047
 
 ## Course catalog description
-Development of the theoretical foundations of calculus with an emphasis on mathematical rigor and formal proof. Algebraic and topological properties of the real numbers; limits of sequences and functions; continuity, differentiation and integration of functions of one variable; infinite series.
+First order linear and quasi-linear partial differential equations. Classification of second order linear partial differential equations. Fourier analysis, Sturm-Liouville theory, integral transforms and their application to boundary-value problems for the potential, wave, and diffusion equations.
 
-**Course prerequisites:** MATH 250B and MATH 280 with a "C" (2.0) or better.
+**Course prerequisites:** MATH 306 with a C (2.0) or better; or graduate standing.
 
 ## Course Material
 ### Required Textbooks
@@ -116,7 +116,7 @@ Midterms will be held during class time on the following dates:
 **Final Exam**
 The final exam will be cumulative and will account for 30\% of your grade.
 It will be held
-* Monday, December 11 from 11AM-12:50PM
+* Thursday, May 16th from 1PM-2:50 PM
 
 ## Important academic calendar dates
 **January:**
