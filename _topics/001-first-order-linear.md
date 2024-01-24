@@ -174,7 +174,7 @@ for some function $$f$$.  Now $$\rho(x,0) = f(x)$$, so the function $$f(x)$$ is 
 The fact that we are allowed to use an arbitrary function $$f$$ just means that we are able to model the behavior of the motion of the dye for all kinds of initial conditions!
 
 Moreover, if we are travelling at a velocity of $$U$$ for a time $$t=T$$, the distance we have traveled will be $$UT$$.
-At time $$T$$, the distribution of the dye is $$\rho(x,) = f(x-UT)$$, which is the same function as before just shifted to the *right*  by the distance $$UT$$.
+At time $$T$$, the distribution of the dye is $$\rho(x,T) = f(x-UT)$$, which is the same function as before just shifted to the *right*  by the distance $$UT$$.
 The density is the same, its just been moved down an appropriate distance.
 For this reason, the advection equation is also sometimes called the **transport equation**.
 
