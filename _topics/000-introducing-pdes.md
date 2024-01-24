@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introducing Parial Differential Equations
+title: Introducing Partial Differential Equations
 ---
 
 # Basic Examples of PDEs
@@ -85,7 +85,7 @@ The constant $$\hbar$$ is called Planck's constant.
 ### Advection equation
 
 If we scatter some dye into a fluid, the velocity of the fluid will spread the dye around over time.
-If the velocity of the fluid in the $$x$$ and $$y$$ directions at position $$(x,y)$$ and time $$t$$ are given by $$u(x,y,t)$$ and $$v(x,y,t)$$, respectively, then the density $$\rho(x,y,t)$$ of the fluid satisfies the two-dimensional **advection equation**
+If the velocity of the fluid in the $$x$$ and $$y$$ directions at position $$(x,y)$$ and time $$t$$ are given by $$u(x,y,t)$$ and $$v(x,y,t)$$, respectively, then the density $$\rho(x,y,t)$$ of the dye satisfies the two-dimensional **advection equation**
 
 $$\frac{\partial\rho}{\partial t} + u\frac{\partial\rho}{\partial x} + v\frac{\partial\rho}{\partial y} + (u_x+v_y)\rho = 0.$$
 
