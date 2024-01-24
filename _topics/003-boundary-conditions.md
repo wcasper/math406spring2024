@@ -34,7 +34,9 @@ If we observe the temperature profile at the starting time is $$T(x,0) = f(x)$$,
 
 $$T(0,t) = T_0(t),\quad T(L,t) = T_1(t),\quad T(x,0) = f(x).$$
 
-In the special case thata $$T_0 = T_1 = 0$$, this is called a **homogeneous Dirichlet boundry condition**.
+In the special case that $$T_0 = T_1 = 0$$, this is called a **homogeneous Dirichlet boundry condition**.
+
+$$T(0,t) = 0,\quad T(L,t) = 0,\quad T(x,0) = f(x).$$
 
 ### Neumann boundary conditions
 
