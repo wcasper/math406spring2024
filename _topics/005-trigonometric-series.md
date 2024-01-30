@@ -99,7 +99,8 @@ This is called a **sine series**.
 
 Typically, the even extension works best when the derivatives of $$f(x)$$ vanish at $$0$$ and $$L$$.
 The odd extension works best when the function $$f(x)$$ itself vanishes at $$0$$ and $$L$$.
-In particular, if $$f$$ doesn't vanish at $$0$$ and $$L$$, $$f(x)$$ will have jump discontinuities at the boundaries, leading to Gibbs phenomena.
+
+:warning: If $$f$$ doesn't vanish at $$0$$ and $$L$$, the odd extension of $$f(x)$$ will have jump discontinuities at the boundaries, leading to Gibbs phenomena in the associated sine series expansion.
 
 ### Sine series
 Suppose that $$f(x)$$ is a function on $$[0,L]$$ with $$f(0) = f(L) = 0$$.
