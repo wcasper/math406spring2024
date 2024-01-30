@@ -76,7 +76,7 @@ $$f(x+kL) = f(x)\quad\text{for all}\ k\in\mathbb{Z}.$$
 
 The corresponding Fourier coefficients would then follow the same formula as above.
 
-<p align="center"><img width=600 src="fig/005-curve-extension.png"/></p>
+<p align="center"><img width=400 src="fig/005-curve-extension.png"/></p>
 
 However, this turns out to be a **bad idea**, since it tends to introduce discontinuities at the boundaries of the interval $$x=0$$ and $$x=L$$.
 As a result the Fourier series begin to exhibit undesireable behavior, like [Gibbs phenomenon](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
@@ -94,7 +94,7 @@ $$f(x) = \left\lbrace\begin{array} f(x)& 0\leq x \leq L\\ f(-x) & -L\leq x \leq 
 
 $$f(x) = \left\lbrace\begin{array} f(x)& 0\leq x \leq L\\ -f(-x) & -L\leq x \leq 0\end{array}\right..$$
 
-<p align="center"><img width=600 src="fig/005-even-odd-extension.png"/></p>
+<p align="center"><img width=400 src="fig/005-even-odd-extension.png"/></p>
 
 In the even extension case, the function is extended to an even function, which forces $$B_n = 0$$ for all $$n$$.
 This means that the Fourier series of $$f(x)$$ will involve only cosines.
