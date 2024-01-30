@@ -27,13 +27,20 @@ $$A_n = \frac{2}{L} \int_0^L f(x)\cos\frac{2\pi nx}{L}dx\quad\text{and}\quad B_n
 
 :warning: Note the special formula for $$A_n$$ in the case $$n=0$$!
 
-Under sufficiently nice conditions, for example if $$f(x)$$ is continuous, the Fourier series converges pointwise to the function $$f(x)$$
+Under sufficiently nice conditions, for example if $$f(x)$$ is continuous on $$[0,L]$$, the Fourier series converges pointwise to the function $$f(x)$$
 
 **Theorem:** Suppose that $$f(x)$$ is $$L$$-periodic and continuous on $$\mathbb R$$.  Then
 
 $$f(x) = A_0 + \sum_{n=1}^\infty A_n\cos\frac{2\pi nx}{L} + B_n\sin\frac{2\pi nx}{L}.$$
 
 The rate of this convergence is controlled by the regularity of the function: the smoother $$f$$ is, the faster the series will converge.
+Other types of convergence of Fourier series are available, and oftentimes natural.  For example, if $$f(x)$$ is square-integrable on $$[0,L]$$, then the Fourier series converges in an $$L^2$$ sense.
+This provides a weaker condition than the previous condition and is compatible with Lebesgue integration.
+
+**Theorem:** Suppose that $$f(x)$$ is $$L$$-periodic on $$\mathbb R$$ and square integrable on $$[0,L]$$.  Then
+
+$$\lim_{N\rightarrow\infty}\int_0^L \left[\left( A_0 + \sum_{n=1}^N A_n\cos\frac{2\pi nx}{L} + B_n\sin\frac{2\pi nx}{L}\right) - f(x)\right]^2 dx = 0.$$
+
 The coefficient formulas come from is the orthogonality of trigonometric functions.
 
 **Theorem (Trigonometric Orthogonality):**
