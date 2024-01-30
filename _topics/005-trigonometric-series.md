@@ -29,7 +29,7 @@ $$A_n = \frac{2}{L} \int_0^L f(x)\cos\frac{2\pi nx}{L}dx\quad\text{and}\quad B_n
 
 Under sufficiently nice conditions, for example if $$f(x)$$ is continuous, the Fourier series converges pointwise to the function $$f(x)$$
 
-**Theorem:** Suppose that $$f(x)$$ is $$L$$-periodic and continuous on $$\mathbb[r]$$.  Then
+**Theorem:** Suppose that $$f(x)$$ is $$L$$-periodic and continuous on $$\mathbb R$$.  Then
 
 $$f(x) = A_0 + \sum_{n=1}^\infty A_n\cos\frac{2\pi nx}{L} + B_n\sin\frac{2\pi nx}{L}.$$
 
@@ -119,7 +119,6 @@ and more generally
 $$A_n = \frac{2}{L}\int_0^L \sin\left(\frac{n\pi}{L}x\right)f(x)dx,\quad n\geq 1$$
 
 :warning: Notice again the different formulas for $$B_0$$ vs. $$B_n$$!
-
 
 
 
