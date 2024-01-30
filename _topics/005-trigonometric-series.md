@@ -60,14 +60,20 @@ $$\begin{align}
   & = B_m\frac{L}{2}.
 \end{align}$$
 
-This results in the formula for $$B_m$$.  The formulas for $$B_m$$ are obtained similarly.
+This results in the formula for $$B_m$$.  The formulas for $$A_m$$ are obtained similarly.
 
 ## Sine and cosine series
 The utility of Fourier series in expressing functions as trigonometric series extends beyond the case of periodic functions and to functions defined on an interval.
 Specifically, given a function $$f$$ defined only on the interval $$[0,L]$$, we can still express $$f(x)$$ as a trigonometric series
-by extending $$f(x)$ periodically outside the interval.
+by extending $$f(x)$$ periodically outside the interval.
 The most naive way to do this is to simply set
+
+$$f(x) = \left\lbrace\begin{array} f(x)& 0\leq x \leq L\\ f(x-L) & L < x \leq 2L\\ f(x-2L) & 2L < x \leq 3L\\\dots\end{array}\right.,$$
+
+or stated more compactly
+
 $$f(x+kL) = f(x)\quad\text{for all}\ k\in\mathbb{Z}.$$
+
 The corresponding Fourier coefficients would then follow the same formula as above.
 However, this turns out to be a **bad idea**, since it tends to introduce discontinuities at the boundaries of the interval $$x=0$$ and $$x=L$$.
 As a result the Fourier series begin to exhibit undesireable behavior, like [Gibbs phenomenon](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
