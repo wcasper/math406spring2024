@@ -40,9 +40,9 @@ The coefficient formulas come from is the orthogonality of trigonometric functio
 Let $$m$$ and $$n$$ be integers with $$n>0$$.
 
 $$\begin{align}
-\int_0^L \cos\frac{2\pi mx}{L}\cos\frac{2\pi nx}{L}dx = \frac{L}{2}\delta_{mn},\\
-\int_0^L \sin\frac{2\pi mx}{L}\cos\frac{2\pi nx}{L}dx = 0,\\
-\int_0^L \sin\frac{2\pi mx}{L}\sin\frac{2\pi nx}{L}dx = \frac{L}{2}\delta_{mn}.
+\int_0^L \cos\frac{2\pi mx}{L}\cos\frac{2\pi nx}{L}dx &= \frac{L}{2}\delta_{mn},\\
+\int_0^L \sin\frac{2\pi mx}{L}\cos\frac{2\pi nx}{L}dx &= 0,\\
+\int_0^L \sin\frac{2\pi mx}{L}\sin\frac{2\pi nx}{L}dx &= \frac{L}{2}\delta_{mn}.
 \end{align}$$
 
 **Exercise:** Prove these orthogonality relations.
