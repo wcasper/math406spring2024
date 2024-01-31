@@ -74,5 +74,5 @@ $$\int_0^L T(x,t)^2dx = 0$$
 for all $$t\geq 0$$.  Since $$T(x,t)$$ is continuous, this implies that $$T(x,t) = 0$$ for all $$x$$ and for all $$t$$.
 :black_square_button:
 
-:warning: The assumption that the solution to the heat equation had some regularity (here continuity) was important.  This can cause complications for more complicated boundary value problems, but this is outside the purvue of the current course.
+:warning: The assumption that the solution to the heat equation had some regularity (here continuity) was important.  This can cause complications for more complicated boundary value problems, but this is outside the purview of the current course.
 
