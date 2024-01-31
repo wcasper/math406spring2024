@@ -46,6 +46,7 @@ E'(t)
   & = \int_0^L 2T T_tdx  = \int_0^L 2kT T_{xx} dx\\
   & = TT_x\rvert_0^L - \int_0^L 2kT_x^2dx  = 0 -2k\int_0^L T_x^2dx \leq 0.
 \end{align}$$
+
 :black_square_button:
 
 **Theorem:** Any continuous solution of the heat equation with a Dirichlet, Neumann, or mixed boundary condition (if it exists) is unique.
