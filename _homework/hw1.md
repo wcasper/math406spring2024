@@ -17,7 +17,7 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 **Remember:** Success in any math class is based on *practice*.  The assigned homework problems are the **bare minimum**.  You should strive to do as many problems as possible from the textbook.
 
-# Problem 
+# Problem 1
 
 Consider the first-order linear partial differential equation
 
@@ -26,7 +26,7 @@ $$yu_x - xu_y = 0$$
 * (a) Use the **method of characteristics** to find the general solution of this equation.
 * (b) Find a solution of the equation satisfying the property that $$u(x,0) = e^{-x^2}$$ for all $$x\in\mathbb{R}$$.
 
-# Problem
+# Problem 2
 
 Prove the following orthogonality relations for sine and cosine.
 
@@ -34,7 +34,7 @@ Prove the following orthogonality relations for sine and cosine.
 * (b) $$\int_0^T \sin(2\pi n t/T)\sin(2\pi n t/T) = (L/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
 * (c) $$\int_0^T \cos(2\pi n t/T)\cos(2\pi n t/T) = (L/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
 
-# Problem
+# Problem 3
 
 Consider the function
 
@@ -47,7 +47,7 @@ $$f(x) = \left\lbrace\begin{array}{cc}
 * (b) Plot the function $$f(x)$$ versus the partial sums $$A_0 + \sum_{n=1}^N A_n\cos(n\pi x/6)$$ of the cosine series expansion of $$f(x)$$ on $$[0,6]$$ for $$N = 25, 50, 75$$, and $$N = 100$$.
 * (c) What is happening in the plots of (b) at the special point $$x=3$$?
 
-# Problem 
+# Problem 4
 
 Find an explicit expression for the solution of the boundary value problem
 
