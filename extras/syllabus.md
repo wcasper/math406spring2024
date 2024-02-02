@@ -11,7 +11,7 @@ permalink: /extras/syllabus
 
 **Email:** wcasper@fullerton.edu
 
-**Office hourse:** TBA.  Additional office hours are always available by request.
+**Office hourse:** T,Th 12-1PM and Th 4-5PM.  Additional office hours are always available by request.
 
 **Course website:** we will use Canvas website (Spring 2024 MATH 406-1 10067), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math406spring2024">Github Pages site (link)</a> which you may find more convenient for pulling material.
 
@@ -110,8 +110,8 @@ If you have an accommodation from Disability Support Services (such as time-and-
 There will be two midterm exams, each lasting 1 hour and 50 minutes.
 Each midterm will be worth 20\% of your final grade.
 Midterms will be held during class time on the following dates:
-* Wednesday, February 22, 2023
-* Wednesday, March 28, 2023
+* Thursday, February 22, 2023
+* Thursday, March 28, 2023
 
 **Final Exam**
 The final exam will be cumulative and will account for 30\% of your grade.
