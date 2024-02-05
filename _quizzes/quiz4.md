@@ -39,7 +39,7 @@ then $$u(x,t) = w(x,t) + x$$
 
 is a solution of the nonhomogeneous BVP
 
-$$w_t = kw_{xx},\quad w(0,t) = 0,\ w(2,t) = 2,\ u(x,t) = x^4\sin(\pi x).$$
+$$u_t = ku_{xx},\quad u(0,t) = 0,\ u(2,t) = 2,\ u(x,t) = x^4\sin(\pi x).$$
 
 
 
