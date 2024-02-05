@@ -11,7 +11,7 @@ The PDE
 
 $$T_t = kT_{xx} + g(x,t)$$
 
-with $g(x,t)\neq 0$$ is called the **nonhomogeneous heat equation**.
+with $$g(x,t)\neq 0$$ is called the **nonhomogeneous heat equation**.
 
 
 **Questin 2:**  Multiple choice.
