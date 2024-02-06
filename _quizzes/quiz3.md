@@ -17,7 +17,7 @@ Any piecewise continuous function $$f(x)$$ on $$[0,L]$$ has both a sine series e
 
 Consider the boundary value problem
 
-$$u_t = u_{xx},\ u_x(0,t) = 0,\ u_x(1,t) = 0,\ u(x,0) = \cos(2\pi x) + \cos(5\pi x).$$
+$$u_t = u_{xx},\ u_x(0,t) = 0,\ u_x(1,t) = 0,\ u(x,0) = \cos(3\pi x) + \cos(5\pi x).$$
 
 Determine the value of $$u(0.5,0.1)$$ up to $$5$$ decimal places.
 
