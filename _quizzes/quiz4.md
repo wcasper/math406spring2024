@@ -33,7 +33,7 @@ Any BVP for the heat equation with nonhomogeneous boundary conditions can be tra
 
 If $$w(x,t)$$ is a solution of the homogeneous BVP
 
-$$w_t = kw_{xx},\quad w(0,t) = 0,\ w(2,t) = 0,\ u(x,0) = x^4\sin(\pi x),$$
+$$w_t = kw_{xx},\quad w(0,t) = 0,\ w(2,t) = 0,\ w(x,0) = x^4\sin(\pi x),$$
 
 then $$u(x,t) = w(x,t) + x$$
 
