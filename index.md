@@ -15,7 +15,7 @@ title: Math 406 Intro. to Partial Differential Equations
 
 **Course meetings:** Tuesday and Thursday 2:00PM-3:50PM
 
-**Office hours:** TBA
+**Office hours:** Tu, Th 12-1PM in MH 501 and Th 4-5PM in my office
 
 **Syllabus:** <a target="_parent" href="extras/syllabus.html">Course syllabus (link)</a>
 
