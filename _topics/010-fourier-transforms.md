@@ -12,7 +12,7 @@ $$\hat{f}(k) = \int_{\mathbb{R}} e^{-2\pi i kx}f(x)dx.$$
 
 Similarly, if $$g(k)$$ is an integrable function on $$\mathbb{R}$$, the **inverse Fourier transform** is defined to be
 
-$$\vee{f}(k) = \int_{\mathbb{R}} e^{2\pi i kx}f(x)dx.$$
+$$\widecheck{f}(k) = \int_{\mathbb{R}} e^{2\pi i kx}f(x)dx.$$
 
 
 ## Basic Properies of the Fourier Transform
@@ -23,11 +23,11 @@ $$\int_{\mathbb R} \lvert f(x)\rvert^2 dx = \int_{\mathbb R} \lvert \hat f(x)\rv
 
 **Inversion:** If $$f(x)$$ is both integrable and square integrable, then so is $$\wh f$$ and
 
-$$(\hat f)\vee = f\ \text{and}\ \widehat{(\vee{f})} = f.$$
+$$\wideecheck{\hat f} = f\ \text{and}\ \widehat{(\widecheck{f})} = f.$$
 
 In other words, the Fourier transform and inverse Fourier transform are inverse functions.
 
-In fact, one can show that $$(\hat\hat f)(x) = f(-x)$$, that $$\hat\hat\hat f = \vee f$$, and that $$\hat\hat\hat\hat f = f$$.
+In fact, one can show that $$(\widehat{\hat f})(x) = f(-x)$$, that $$\widehat{\widehat{\hat f}} = \widecheck{f}$$, and that $$\widehat{\widehat{\widehat{\hat f}}} = f$$.
 
 ## Convolution
 
