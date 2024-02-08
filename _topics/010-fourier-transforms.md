@@ -46,5 +46,5 @@ It exists under several circumstances, including when
 
 **Proposition:** If $$f * g$$ exists, then $$g * f$$ exists and $$f * g = g * f$$.
 
-**Theorem:** $$\widehat{f * g} = \widehat f \widehat g$$.
+**Theorem:** $$\widehat{f * g} = \hat f \hat g$$.
 
