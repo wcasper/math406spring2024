@@ -30,9 +30,9 @@ $$yu_x - xu_y = 0$$
 
 Prove the following orthogonality relations for sine and cosine.
 
-* (a) $$\int_0^T \sin(2\pi n t/T)\cos(2\pi n t/T) = 0$$ for all $$m,n\geq 0$$
-* (b) $$\int_0^T \sin(2\pi n t/T)\sin(2\pi n t/T) = (L/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
-* (c) $$\int_0^T \cos(2\pi n t/T)\cos(2\pi n t/T) = (L/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
+* (a) $$\int_0^T \sin(2\pi m t/T)\cos(2\pi n t/T) = 0$$ for all $$m,n\geq 0$$
+* (b) $$\int_0^T \sin(2\pi m t/T)\sin(2\pi n t/T) = (T/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
+* (c) $$\int_0^T \cos(2\pi m t/T)\cos(2\pi n t/T) = (T/2)\delta_{m,n}$$ for all $$m\geq 0,\ n > 0$$
 
 # Problem 3
 
