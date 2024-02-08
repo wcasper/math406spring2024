@@ -14,6 +14,10 @@ Similarly, if $$g(k)$$ is an integrable function on $$\mathbb{R}$$, the **invers
 
 $$\check{f}(k) = \int_{\mathbb{R}} e^{2\pi i kx}f(x)dx.$$
 
+Physically speaking, we can think about the Fourier transform and its inverse as describing the same quantity in two different ways.
+* in **physical space** we are saying what the value of the function is at any particular position
+* in **frequency space** we are saying if we expressed $$f(x)$$ as a sum of waves, what amplitude it would have for each frequency
+
 
 ## Basic Properies of the Fourier Transform
 
@@ -25,7 +29,7 @@ $$\int_{\mathbb R} \lvert f(x)\rvert^2 dx = \int_{\mathbb R} \lvert \hat f(x)\rv
 
 $$\check{\hat f} = f\ \text{and}\ \widehat{(\check{f})} = f.$$
 
-In other words, the Fourier transform and inverse Fourier transform are inverse functions.
+In other words, the Fourier transform and inverse Fourier transform are inverse transformations.
 
 In fact, one can show that $$(\widehat{\hat f})(x) = f(-x)$$, that $$\widehat{\widehat{\hat f}} = \check{f}$$, and that $$\widehat{\widehat{\widehat{\hat f}}} = f$$.
 
