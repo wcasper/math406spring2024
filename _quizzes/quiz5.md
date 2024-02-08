@@ -32,7 +32,7 @@ For this equation we should propose a solution of what form.
 
 The solution of the heat equation with nonhomogeneous boundary conditions
 
-$$u_t = ku_{xx},\ \ u_x(0,t) = 0,\ \ u_x(L,t) = 2,\ \  u(x,0) = x^2 + \cos(\pi x/L)$$
+$$u_t = ku_{xx},\ \ u_x(0,t) = 0,\ \ u_x(L,t) = 2L,\ \  u(x,0) = x^2 + \cos(\pi x/L)$$
 
 is $$u(x,t) = 2kt+x^2 + e^{-\pi^2 kt/L^2}\cos(\pi x/L)$$.
 
