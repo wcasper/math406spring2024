@@ -23,7 +23,7 @@ $$\int_{\mathbb R} \lvert f(x)\rvert^2 dx = \int_{\mathbb R} \lvert \hat f(x)\rv
 
 **Inversion:** If $$f(x)$$ is both integrable and square integrable, then so is $$\widehat f$$ and
 
-$$\wideecheck{\hat f} = f\ \text{and}\ \widehat{(\check{f})} = f.$$
+$$\check{\hat f} = f\ \text{and}\ \widehat{(\check{f})} = f.$$
 
 In other words, the Fourier transform and inverse Fourier transform are inverse functions.
 
