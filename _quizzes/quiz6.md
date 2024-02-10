@@ -11,7 +11,7 @@ For a boundary problem with the heat equation to be well-posed, the boundary con
 
 **Question 2:**  True or false.
 
-The Fourier transform of a function $$f(x)$$ is $$\int e^{2\pi i kx}f(x)dx$$.
+The Fourier transform of a function $$f(x)$$ is $$\int_{\mathbb R} e^{2\pi i kx}f(x)dx$$.
 
 **Question 3:**  True or false.
 
