@@ -15,7 +15,7 @@ The Fourier transform of a function $$f(x)$$ is $$\int_{\mathbb R} e^{2\pi i kx}
 
 **Question 3:**  True or false.
 
-The Fourier transform of $$f''(x)$$ is $$-4\pi^2k^2 \wh f(k)$$.
+The Fourier transform of $$f''(x)$$ is $$-4\pi^2k^2 \hat f(k)$$.
 
 **Question 4**:  Multiple choice.
 
