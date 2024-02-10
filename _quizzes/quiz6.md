@@ -22,7 +22,7 @@ The Fourier transform of $$f''(x)$$ is $$-4\pi^2k^2 \hat f(k)$$.
 Which of the following expressions represents the convolution of $$f(x)$$ and $$g(x)$$?
 
 * (A) $$\int_{\mathbb{R}}f(t)g(x)dt$$
-* (A) $$\int_{\mathbb{R}}f(t)g(x-t)dt$$
+* (B) $$\int_{\mathbb{R}}f(t)g(x-t)dt$$
 * (C) $$\int_{\mathbb{R}}f(t)g(x+t)dt$$
 * (D) $$\int_{\mathbb{R}}f(t)g(t-x)dt$$
 
