@@ -26,13 +26,13 @@ $$H(x) = \left\lbrace\begin{array}{cc}0 & x < 0\\ 1/2 & x = 0\\ & 1 & x = 1\end{
 
 and the **sinc** function
 
-$$\sinc(x) = \left\lbrace\begin{array}{cc}\sin(x)/x & x \neq 0\\ 1 & x = 0\end{array}\right.$$
+$$\text{sinc}(x) = \left\lbrace\begin{array}{cc}\sin(x)/x & x \neq 0\\ 1 & x = 0\end{array}\right.$$
 
 are related via the Fourier transform.
 
 **Prop:**
 
-$$\hat H(x) = \sinc(x).$$
+$$\hat H(x) = \text{sinc}(x).$$
 
 The **Gaussian function** also plays an important role in the study of Fourier transforms
 
