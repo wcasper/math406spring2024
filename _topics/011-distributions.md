@@ -15,7 +15,7 @@ A transformation $$\chi$$ defined this way is also called a **bounded linear fun
 
 The simplest distributions are functions themselves.  Specifically, if $$f(x)$$ is a bounded function on $$\mathbb{R}$$, then 
 
-$$ C_c^\infty(\mathbb{R})\rightarrow \mathbb{R},\ \ \varphi(x)\mapsto \int_{\mathbb R} f(x)\varphi(x)dx$$
+$$\varphi(x)\mapsto \int_{\mathbb R} f(x)\varphi(x)dx$$
 
 is a distribution.  In this sense, distributions can be thought of as *generalizations* of regular functions.
 
