@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Unbound Solutions
+title: Distributions
 ---
 
 Currently Fourier transforms of a lot of functions aren't defined.
