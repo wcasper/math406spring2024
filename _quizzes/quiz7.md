@@ -13,7 +13,7 @@ The Fourier transform of $$e^{-\pi x^2}$$ is $$e^{-\pi k^2}$$.
 
 In order to prove that the inverse Fourier transform of $$\hat f(k)$$ is $$f(x)$$, we considered the limit as $$a\rightarrow 0$$ of the integral
 
-$$\int_{\mathbb R} e^{-ak^2}\wh f(k)e^{2\pi i kx}dk.$$
+$$\int_{\mathbb R} e^{-ak^2}\hat f(k)e^{2\pi i kx}dk.$$
 
 **Question 3:**  True or false.
 
