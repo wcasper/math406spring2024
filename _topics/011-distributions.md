@@ -10,7 +10,7 @@ To do so, we will introduce the notion of a **distribution**.
 
 ## Distributions
 
-A **distribution** on $$\mathbb{R}$$ is a linear transformation $$\chi: C_c^(\infty}(\mathbb{R})\rightarrow \mathbb{R}$$ with the property that for any sequence of functions $$\{f_n(x)\}\in C_c^\infty(\mathbb{R})$$ with $$f_n^{(k)}(x)\rightarrow 0$$ uniformly for all $k$, we must have $$\chi(f_n)\rightarrow 0$$.
+A **distribution** on $$\mathbb{R}$$ is a linear transformation $$\chi: C_c^{\infty}(\mathbb{R})\rightarrow \mathbb{R}$$ with the property that for any sequence of functions $$\{f_n(x)\}\in C_c^\infty(\mathbb{R})$$ with $$f_n^{(k)}(x)\rightarrow 0$$ uniformly for all $k$, we must have $$\chi(f_n)\rightarrow 0$$.
 A transformation $$\chi$$ defined this way is also called a **bounded linear functional** on $$C_c^\infty(\mathbb{R})$$.
 
 The simplest distributions are functions themselves.  Specifically, if $$f(x)$$ is a bounded function on $$\mathbb{R}$$, then 
