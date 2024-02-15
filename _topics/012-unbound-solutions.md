@@ -116,6 +116,6 @@ $$u_t = ku_{xx} + \phi(x,t),\ \ u(x,0) = f(x)$$
 
 is given by
 
-$$u(x,t) = \int_0^t \int_{\mathbb{R}}\int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
+$$u(x,t) = \int_0^t \int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
 
 
