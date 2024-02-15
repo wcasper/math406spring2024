@@ -8,11 +8,11 @@ To do so, its worth introducing one of the most powerful tools of mathematics fo
 
 **Definition:** Let $$f(x)$$ be an integrable function $$\mathbb R$$.  The **Fourier transform** of $$f(x)$$, is the function $$\widehat{f}(k)$$ on $$\mathbb{R}$$ defined by
 
-$$\hat{f}(k) = \int_{\mathbb{R}} e^{-2\pi i kx}f(x)dx.$$
+$$\hat{f}(\xi) = \int_{\mathbb{R}} e^{-2\pi i \xix}f(x)dx.$$
 
-Similarly, if $$g(k)$$ is an integrable function on $$\mathbb{R}$$, the **inverse Fourier transform** is defined to be
+Similarly, if $$g(\xi)$$ is an integrable function on $$\mathbb{R}$$, the **inverse Fourier transform** is defined to be
 
-$$\check{f}(k) = \int_{\mathbb{R}} e^{2\pi i kx}f(x)dx.$$
+$$\chec\xi{f}(\xi) = \int_{\mathbb{R}} e^{2\pi i \xix}f(x)dx.$$
 
 Physically speaking, we can think about the Fourier transform and its inverse as describing the same quantity in two different ways.
 * in **physical space** we are saying what the value of the function is at any particular position
@@ -38,7 +38,7 @@ The **Gaussian function** also plays an important role in the study of Fourier t
 
 **Prop:**  If $$f(x) = e^{-ax^2}$$ then
 
-$$\hat f(k) = \sqrt{\frac{\pi}{a}}e^{-\pi^2k^2/a}.$$
+$$\hat f(\xi) = \sqrt{\frac{\pi}{a}}e^{-\pi^2\xi^2/a}.$$
 
 
 ## Basic Properies of the Fourier Transform
@@ -47,15 +47,15 @@ Assume that $$f(x)$$ is integrable on $$\mathbb{R}$$.
 
 **Fourier Transforms of Translations:** Let $$a\in\mathbb{R}$$.  If $$g(x) = f(x+a)$$ then
 
-$$\hat g(k) = e^{2\pi i ka}\hat f(k).$$
+$$\hat g(\xi) = e^{2\pi i \xia}\hat f(\xi).$$
 
 **Fourier Transforms of Rescalings:**  Let $$r\neq 0$$.  If $$g(x) = f(ra)$$ then
 
-$$\hat g(k) = \frac{1}{r}\hat f(k/r).$$
+$$\hat g(\xi) = \frac{1}{r}\hat f(\xi/r).$$
 
 **Fourier Transforms of Derivatives:**  Assume that $$f'(x)$$ exists for all $$x\in\mathbb{R}$$ and is integrable on $$\mathbb{R}$$.  Then
 
-$$\hat{f'}(k) = 2\pi i k\hat f(k).$$
+$$\hat{f'}(\xi) = 2\pi i \xi\hat f(\xi).$$
 
 ## Fourier Inversion
 
@@ -67,14 +67,14 @@ In other words, the Fourier transform and inverse Fourier transform are inverse 
 
 **Proof:**
 
-For any $$\epsilon > 0$$, define $$g_\epsilon(k) = e^{-4\pi\epsilon^2k^2}.$$
+For any $$\epsilon > 0$$, define $$g_\epsilon(\xi) = e^{-4\pi\epsilon^2\xi^2}.$$
 We calculate
 
 $$\begin{align}
 \check{g_\epsilon\hat f}(x)
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}} e^{2\pi i kx}e^{-2\pi i kt}f(t)e^{-4\pi\epsilon^2k^2}dtdk\\
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}} e^{2\pi i kx}e^{-2\pi i kt}f(t)e^{-4\pi\epsilon^2k^2}dkdt\\
-  & = \int_{\mathbb{R}}f(t)\int_{\mathbb{R}} e^{-2\pi i k(t-x)}e^{-\pi\epsilon^2k^2}dkdt\\
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}} e^{2\pi i \xix}e^{-2\pi i \xit}f(t)e^{-4\pi\epsilon^2\xi^2}dtd\xi\\
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}} e^{2\pi i \xix}e^{-2\pi i \xit}f(t)e^{-4\pi\epsilon^2\xi^2}d\xidt\\
+  & = \int_{\mathbb{R}}f(t)\int_{\mathbb{R}} e^{-2\pi i \xi(t-x)}e^{-\pi\epsilon^2\xi^2}d\xidt\\
   & = \int_{\mathbb{R}}f(t)\frac{1}{\epsilon}e^{-\pi(t-x)^2/\epsilon^2}dt\\
   & = \int_{\mathbb{R}}f(t+x)\frac{1}{\epsilon}e^{-\pi t^2/\epsilon^2}dt\\
   & = f(x) + \int_{\mathbb{R}}(f(t+x)-f(x)\frac{1}{\epsilon}e^{-\pi t^2/\epsilon^2}dt\\

@@ -10,7 +10,7 @@ To do so, we will introduce the notion of a **distribution**.
 
 ## Distributions
 
-A **distribution** on $$\mathbb{R}$$ is a linear transformation $$\chi: C_c^{\infty}(\mathbb{R})\rightarrow \mathbb{R}$$ with the property that for any sequence of functions $$\{f_n(x)\}\in C_c^\infty(\mathbb{R})$$ with $$f_n^{(k)}(x)\rightarrow 0$$ uniformly for all $$k$$, we must have $$\chi(f_n)\rightarrow 0$$.
+A **distribution** on $$\mathbb{R}$$ is a linear transformation $$\chi: C_c^{\infty}(\mathbb{R})\rightarrow \mathbb{R}$$ with the property that for any sequence of functions $$\{f_n(x)\}\in C_c^\infty(\mathbb{R})$$ with $$f_n^{(\xi)}(x)\rightarrow 0$$ uniformly for all $$\xi$$, we must have $$\chi(f_n)\rightarrow 0$$.
 A transformation $$\chi$$ defined this way is also called a **bounded linear functional** on $$C_c^\infty(\mathbb{R})$$.
 
 The simplest distributions are functions themselves.  Specifically, if $$f(x)$$ is a bounded function on $$\mathbb{R}$$, then 
@@ -23,9 +23,9 @@ is a distribution.  In this sense, distributions can be thought of as *generaliz
 
 The simplest examples of distributions are the **Dirac delta distribution** and it's distributional derivatives $$\delta_a(x),\delta_a'(x),\dots$$ defined by
 
-$$\int_{\mathbb{R}} f(x)\delta_a^{(k)}(x) dx = f^{(k)}(a).$$
+$$\int_{\mathbb{R}} f(x)\delta_a^{(\xi)}(x) dx = f^{(\xi)}(a).$$
 
-As a special case, we write $$\delta^{(k)}(x)$$ in place of $$\delta_0^{(k)}(x)$$.
+As a special case, we write $$\delta^{(\xi)}(x)$$ in place of $$\delta_0^{(\xi)}(x)$$.
 Note that linear combinations of distributions are also disributions, so they form a vector space.
 
 We say that a sequence of distributions $$\chi_n$$ **converges weakly** or **converges in distribution** to $$\chi$$ if for all test functions $$\varphi$$ we have
@@ -36,27 +36,27 @@ $$\lim \int_{\mathbb{R}} \varphi(x)\chi_n(x)dx = \int_{\mathbb{R}}\varphi(x)\chi
 
 **Definition:** The Fourier transform of a distribution $$\chi$$ is the distribution $$\hat\chi$$ defined by
 
-$$\int_{\mathbb{R}} \varphi(x)\hat{\chi}(x)dx = \int_{\mathbb{R}} \hat\varphi(k)\chi(k)dk.$$
+$$\int_{\mathbb{R}} \varphi(x)\hat{\chi}(x)dx = \int_{\mathbb{R}} \hat\varphi(\xi)\chi(\xi)d\xi.$$
 
 This notion allows us to take Fourier transforms of more functions, such as bounded functions, viewing them as *distributions*.
 
 **Theorem:** The Fourier transform of the Heaviside step function is
 
-$$\hat H (k) = \frac{1}{2}\delta(k) - \frac{i}{2\pi k}.$$
+$$\hat H (\xi) = \frac{1}{2}\delta(\xi) - \frac{i}{2\pi \xi}.$$
 
-**Theorem:** The Fourier transform of $$e^{2\pi i ax}$$ is $$\delta_a(k)$$.
+**Theorem:** The Fourier transform of $$e^{2\pi i ax}$$ is $$\delta_a(\xi)$$.
 
 **Proof:**
 
 Start with the distribution $$\chi(x) = e^{2\pi i ax}$$.
 We calculate
 
-$$\int_{\mathbb R}\varphi(x)\hat{\chi}(x) dx = \int_{\mathbb R} \hat\varphi(k)\chi(k)dk = \int_{\mathbb R} \hat\varphi_a(k)dk$$
+$$\int_{\mathbb R}\varphi(x)\hat{\chi}(x) dx = \int_{\mathbb R} \hat\varphi(\xi)\chi(\xi)d\xi = \int_{\mathbb R} \hat\varphi_a(\xi)d\xi$$
 
 for $$\varphi_a(x) = \varphi(x+a).$$
 Now by Fourier Inversion
 
-$$\varphi_a(x) = \int_{\mathbb{R}}\hat\varphi_a(k)e^{2\pi i kx}dk.$$
+$$\varphi_a(x) = \int_{\mathbb{R}}\hat\varphi_a(\xi)e^{2\pi i \xix}d\xi.$$
 
 Using the special case of $$x=0$$:
 
