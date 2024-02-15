@@ -13,82 +13,109 @@ $$u_t = ku_{xx},\ \ u(x,0) = f(x).$$
 
 To solve the Cauchy problem, we use a new fundamental solution, called the heat kernel.
 
-# Heat kernel
+## Heat kernel
+
+To solve the Cauchy problem for the homogeneous heat equation above, we take the Fourier transform of the entire expression above with respect to the spatial variable $$x$$.
+This changes $$x$$ derivatives into multiplication by a polynomial!
+
+$$\hat u_t = -4\pi^2\xi^2k\hat u,\ \ \hat u(\xi,0) = \hat f(\xi),$$
+
+where here
+
+$$\hat u(x,t) = \int_{\mathbb{R}} u(x,t)e^{-2\pi i\xi x}dx.$$
+
+This is a simple first-order partial differential equation for $$\hat u$$!
+The solution is
+
+$$\hat u = e^{-4\pi^2k\xi^2 t}\hat f(\xi).$$
+
+Using the inverse Fourier transform, which takes products to convolutions, we obtain
+
+$$u(x,t) = \int_{\mathbb{R}} K(x-y,t)f(y)dy,$$
+
+where here $$K(x,y)$$ is the inverse Fourier transform of a Gaussian:
+
+$$K(x,t) = \frac{1}{\sqrt{4\pi^2kt}}e^{-x^2/(4\pi kt)}.$$
+
+This very important function is called the heat kernel.
 
 **Definition:** The one-dimensional **heat kernel** is the function
 
-$$K(x,t) = \frac{1}{\sqrt{4\pi kt}}e^{-x^2/(4kt)}, t > 0.$$
+$$K(x,t) = \frac{1}{\sqrt{4\pi kt}}e^{-x^2/(4kt)},\ \ t > 0.$$
 
-The heat kernel itself is a solution of the heat equation for $$x\in\mathbb{R}$$ and $$t > 0$$.
-Of course it's not defined for $$t=0$$, but the limit as $$t\rightarrow 0$$ of $$K(x,t)$$ does exist in a certain sense.
-To see how, we need to think about certain really nice functions, called **test functions**.
+**Note:** The heat kernel itself is a solution of the heat equation for $$x\in\mathbb{R}$$ and $$t > 0$$, with the initial temperature being a Dirac delta distribution $$u(x,0) = \delta(x)$$.
+In fact, one can prove that $$\lim_{t\rightarrow 0+} K(x,t)$$ converges weakly to $$\delta(x)$$.
 
-**Definition:** A function $$f(x)$$ has **compact support**, if the set $$\{x: f(x)\neq 0\}$$ is closed and bounded.
-A function is called **smooth** if it has derivatives of every degree at every point.  A smooth function with compact support is called a **test function**.
-Sometimes, these are also called **bump functions**.
+To summarize, we have the following theorem:
 
-**Theorem:** If $$f(x)$$ is a test function, or more generally if there exist constants $$C,r\in\mathbb{R}$$ with $$\lvert f(x)\rvert \leq Ce^{-rx^2}$$ for all $$x\in \mathbb{R}$$ then
-
-$$\lim_{t\rightarrow 0+}\int_{\mathbb R} K(y,t)f(x-y)dy = f(x).$$
-
-Because of this result, physicists imagined the limit $$\lim_{t\rightarrow0+} K(x,t)$$ as a new function $$\delta(x)$$ called the **Dirac delta function** given by
-
-$$\delta(x)=\left\lbrace \begin{array}{cc} 0, & x\neq 0\\ \infty, & x = 0\end{array}\right.$$
-
-and with the property that
-
-$$\int_{\mathbb{R}} f(x)\delta(x)dx = f(0).$$
-
-Clearly this isn't a real function, but the idea can be made mathematically rigorous using the idea of disributions, which define next.
-
-## Distributions
-
-A **distribution** on $$\mathbb{R}$$ is a linear transformation $$\chi: C_c^(\infty}(\mathbb{R})\rightarrow \mathbb{R}$$ with the property that for any sequence of functions $$\{f_n(x)\}\in C_c^\infty(\mathbb{R})$$ with $$f_n^{(k)}(x)\rightarrow 0$$ uniformly for all $k$, we must have $$\chi(f_n)\rightarrow 0$$.
-A transformation $$\chi$$ defined this way is also called a **bounded linear functional** on $$C_c^\infty(\mathbb{R})$$.
-
-The simplest distributions are functions themselves.  Specifically, if $$f(x)$$ is an integrable function on $$\mathbb{R}$$, then 
-
-$$ C_c^\infty(\mathbb{R})\rightarrow \mathbb{R},\ \ \varphi(x)\mapsto \int_{\mathbb R} f(x)\varphi(x)dx$$
-
-is a distribution.  In this sense, distributions can be thought of as *generalizations* of regular functions.
-
-**Notation:** If $$\chi$$ is a distribution, we write $$\int \varphi(x) \chi(x)dx$$ to mean $$\chi(\varphi)$$.  This notation naturally extends the idea of distributions as generalizations of functions.
-
-The simplest examples of distributions are the **Dirac delta distribution** and it's distributional derivatives $$\delta_a(x),\delta_a'(x),\dots$$ defined by
-
-$$\int_{\mathbb{R}} f(x)\delta_a^{(k)}(x) dx = f^{(k)}(a).$$
-
-As a special case, we write $$\delta^{(k)}(x)$$ in place of $$\delta_0^{(k)}(x)$$.
-Note that linear combinations of distributions are also disributions, so they form a vector space.
-
-We say that a sequence of distributions $$\chi_n$$ **converges weakly** or **converges in distribution** to $$\chi$$ if for all test functions $$\varphi$$ we have
-
-$$\lim \int_{\mathbb{R}} \varphi(x)\chi_n(x)dx = \int_{\mathbb{R}}\varphi(x)\chi(x).$$
-
-In terms of this definition, the theorem above may be restated as the fact that in the limit as $$t\rightarrow 0+$$ the heat kernel converges weakly to the Dirac delta distribution $$\delta(x)$$.
-
-## Solving the unbound heat equation.
-
-**Theorem:**  Suppose that $$f(x)$$ is a piecewise continuous function and that there exist constants $$C$$ and $$r$$ with $$\lvert f(x)\rvert \leq Ce^{-rx^2}$$.  Then a solution of the Cauchy problem
+**Theorem:**  Suppose $$f(x)$$ is a locally integrable function and $$\lvert f(x)\rvert \leq Ce^{rx}$$ for some constants $$C,r$$ (ie. $$f(x)$$ has subexponential growth).  Thn a solution of the Cauchy problem
 
 $$u_t = ku_{xx},\ \ u(x,0) = f(x)$$
 
 is given by
 
-$$u(x,t) = \int_{\mathbb{R}} K(y,t)f(x-y)dy.$$
+$$u(x,t) = \int_{\mathbb{R}} K(x-y,t)f(y)dy.$$
 
 
-More generally, we can solve the Cauchy problem with a nonhomogeneous heat equation
+### Example
 
-**Theorem:**  Suppose that $$f(x)$$ is a piecewise continuous function and that there exist constants $$C$$ and $$r$$ with $$\lvert f(x)\rvert \leq Ce^{-rx^2}$$.  Then a solution of the Cauchy problem
+As a first example, consider the Cauchy problem
+
+$$u_t = ku_{xx},\ \ u(x,0) = \left\lbrace\begin{array}{cc} 1 & x\geq 0\\0 & x < 0\end{array}\right.$$
+
+The solution is
+
+$$\begin{align}
+u(x,t)
+  &= \int_{\mathbb{R}} K(x-y,t)f(y)dy\\
+  &= \int_0^\infty \frac{1}{\sqrt{4\pi kt}}e^{-(x-y)^2/(4kt)}dy\\
+  &=  \frac{1}{\sqrt{4\pi kt}}\int_{-x}^\infty e^{-y^2/(4kt)}dy\\
+  &=  \frac{1}{2}+\frac{1}{2}\text{erf}(x/\sqrt{4kt}),
+\end{align}$$
+
+where here $$\text{erf}(x)$$ is the **error function**
+
+$$\text{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}dt.$$
+
+## Nonhomogeneous Cauchy problem
+
+As a more general problem, we can ask ourselves how we might find a solution of a Cauchy problem for a nonhomogeneous heat equation
+
+
+$$u_t = ku_{xx} + \phi(x,t),\ \ u(x,0) = f(x).$$
+
+Again, we can take the Fourier transform, getting
+
+$$\hat u_t = -4\pi^2\xi^2 k\hat u + \hat\phi(\xi,t),\ \ \hat u(\xi,0) = \hat f(\xi).$$
+
+This is a **first-order linear ODE** in the variable $$t$$, so we multiply by the integrating factor $$\mu(t) = e^{4\pi^2\xi^2kt}$$.
+Then the equation becomes
+
+$$e^{4\pi^2\xi^2kt}\hat u_t = -4\pi^2\xi^2 ke^{4\pi^2\xi^2kt}\hat u + e^{4\pi^2\xi^2kt}\hat\phi(\xi,t).$$
+
+Now grouping all of the $$u$$ terms together, we find
+
+$$\frac{\partial}{\partial t}(e^{4\pi^2\xi^2kt}\hat u) = e^{4\pi^2\xi^2kt}\hat\phi(\xi,t).$$
+
+Integrating with respect to $$t$$ and using our initial condition then gives
+
+$$\hat u(x,t) = e^{-4\pi^2\xi^2kt}\int_0^t e^{4\pi^2\xi^2ks}\hat \phi(\xi,s)ds + e^{-4\pi^2\xi^2kt}\hat f(\xi).$$
+
+Finally, applying the inverse Fourier transform gives
+
+$$u(x,t) = \int_0^t \int_{\mathbb{R}}\int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
+
+:warning:  The integral involving $$\phi$$ above may not exist, since we are integrating against something that is growing more than exponentially fast.  To make sure this exists, we need the forcing function $$\phi(x,t)$$ to fall off fast enough for large $$x$$, or even better to have compact support.
+
+To summarize, we have the following theorem.
+
+**Theorem:** Suppose that $$f(x)$$ locally integrable and has subexponential growth, and that $$\phi(x,t)$$ decays sufficiently quickly as $$\lvert x\rvert$$ increases.
+Then a solution of 
 
 $$u_t = ku_{xx} + \phi(x,t),\ \ u(x,0) = f(x)$$
 
 is given by
 
-$$u(x,t) = \int_{\mathbb{R}} K(y,t)f(x-y)dy + \int_0^t \int_{\mathbb{R}} K(y,t-s)\phi(x-y,s)dy \phi(s)ds.$$
-
-
-
+$$u(x,t) = \int_0^t \int_{\mathbb{R}}\int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
 
 
