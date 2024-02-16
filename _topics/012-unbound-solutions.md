@@ -103,7 +103,7 @@ $$\hat u(x,t) = e^{-4\pi^2\xi^2kt}\int_0^t e^{4\pi^2\xi^2ks}\hat \phi(\xi,s)ds +
 
 Finally, applying the inverse Fourier transform gives
 
-$$u(x,t) = \int_0^t \int_{\mathbb{R}}\int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
+$$u(x,t) = \int_0^t \int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
 
 :warning:  The integral involving $$\phi$$ above may not exist, unless the growth of the functions $$f$$ and $$\phi$$ is bounded in some way.
 
