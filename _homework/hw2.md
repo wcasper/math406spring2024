@@ -21,8 +21,8 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 Determine the Fourier transform of each of the following functions.
 
-* (a) $$xe^{x^2}$$
-* (b) $$x^2e^{x^2}$$
+* (a) $$xe^{-x^2}$$
+* (b) $$x^2e^{-x^2}$$
 * (c) $$\cos(x)$$
 * (d) the Heaviside step function
 * (e) $$x^n$$
