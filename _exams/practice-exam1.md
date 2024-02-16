@@ -45,7 +45,7 @@ Prove each of the following properties of the Fourier transform
 
 Find a solution of the following nonhomogeneous heat equation
 
-$$u_t = 8u_{xx} + (x/\pi)\cos(t) + e^t\sin(3x),\ \ 0\leq x\leq \pi,\ t>0$$
+$$u_t = 8u_{xx} + (1-x/\pi)\cos(t) + e^t\sin(3x),\ \ 0\leq x\leq \pi,\ t>0$$
 
 with the nonhomogeneous boundary conditions
 
