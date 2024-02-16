@@ -105,7 +105,7 @@ Finally, applying the inverse Fourier transform gives
 
 $$u(x,t) = \int_0^t \int_{\mathbb{R}}\int_{\mathbb{R}} K(t-s,x-y)\phi(y,s)dsdy + \int_{\mathbb{R}} K(t,x-y)f(y)dy.$$
 
-:warning:  The integral involving $$\phi$$ above may not exist, since we are integrating against something that is growing more than exponentially fast.  To make sure this exists, we need the forcing function $$\phi(x,t)$$ to fall off fast enough for large $$x$$, or even better to have compact support.
+:warning:  The integral involving $$\phi$$ above may not exist, unless the growth of the functions $$f$$ and $$\phi$$ is bounded in some way.
 
 To summarize, we have the following theorem.
 
