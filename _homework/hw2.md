@@ -96,10 +96,10 @@ $$\lim_{\epsilon\rightarrow 0+} I_\epsilon = \frac{1}{2}\varphi(0)$$
 $$\lim_{\epsilon\rightarrow 0+} J_\epsilon = \int_{\mathbb{R}} (\varphi(\xi)-\varphi(0))\frac{1}{2\pi i \xi} d\xi.$$
 
 This expression on the right hand side is called the **principal value** of the integral $$\int_{\mathbb{R}}\varphi(\xi)\frac{1}{2\pi i \xi} d\xi$$.
-We write $$\text{P.V.}\frac{1}{2\pi i \xi}$$ to denote this distribution.
+We write $$\text{PV}\left[\frac{1}{2\pi i \xi}\right]$$ to denote this distribution.
 
 * (f) Conclude that 
 
-$$\hat H(\chi) = \frac{1}{2}\delta(\xi) + \text{P.V.}\frac{1}{2\pi i \xi}.$$
+$$\hat H(\chi) = \frac{1}{2}\delta(\xi) + \text{PV}\left[\frac{1}{2\pi i \xi}\right].$$
 
 
