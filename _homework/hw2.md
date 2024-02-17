@@ -70,7 +70,7 @@ $$H(x) = \left\lbrace\begin{array}{cc}0 & x < 0,\\ 1 & x > 0\end{array}\right.$$
 
 * (a) Explain why
 
-$$\int_{\mathbb R} \varphi(\xi)\wh H(\xi) d\xi =  \int_{\mathbb R} \hat\varphi(x)H(x)dx.$$
+$$\int_{\mathbb R} \varphi(\xi)\hat H(\xi) d\xi =  \int_{\mathbb R} \hat\varphi(x)H(x)dx.$$
 
 * (b) Use the fact that $$\lim_{\epsilon\rightarrow 0+} 1_{[0,\infty)} e^{-\epsilon x}$$ converges to $$H(x)$$ as a distribution to prove
 
@@ -89,7 +89,7 @@ J_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{2\pi i\xi}{\epsilon^2 + 4\pi^2\
 
 * (d) Prove that
 
-$$\lim_{\epsilon\righarrow 0+} I_\epsilon = \frac{1}{2}\varphi(0)$$
+$$\lim_{\epsilon\rightarrow 0+} I_\epsilon = \frac{1}{2}\varphi(0)$$
 
 * (e) Prove that 
 
@@ -100,6 +100,6 @@ We write $$\text{P.V.}\frac{1}{2\pi i \xi}$$ to denote this distribution.
 
 * (f) Conclude that 
 
-$$\wh H(\chi) = \frac{1}{2}\delta(\xi) + \text{P.V.}\frac{1}{2\pi i \xi}.$$
+$$\hat H(\chi) = \frac{1}{2}\delta(\xi) + \text{P.V.}\frac{1}{2\pi i \xi}.$$
 
 
