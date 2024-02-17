@@ -74,7 +74,7 @@ $$\int_{\mathbb R} \varphi(\xi)\hat H(\xi) d\xi =  \int_{\mathbb R} \hat\varphi(
 
 * (b) Use the fact that $$\lim_{\epsilon\rightarrow 0+} 1_{[0,\infty)} e^{-\epsilon x}$$ converges to $$H(x)$$ as a distribution to prove
 
-$$\int_{\mathbb R} \hat\varphi(x)H(x)dx = \lim_{\epsilon\rightarrow 0+} \int_{\mathbb R} \varphi(\xi)\frac{-1}{\epsilon + 2\pi i\xi}d\xi.$$
+$$\int_{\mathbb R} \hat\varphi(x)H(x)dx = \lim_{\epsilon\rightarrow 0+} \int_{\mathbb R} \varphi(\xi)\frac{1}{\epsilon + 2\pi i\xi}d\xi.$$
 
 * (c) Use (b) to show that
 
@@ -83,8 +83,8 @@ $$\int_{\mathbb R} \hat\varphi(x)H(x)dx = \lim_{\epsilon\rightarrow 0+} I(\epsil
 where here
 
 $$\begin{align}
-I_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{-\epsilon^2}{\epsilon^2 + 4\pi^2\xi^2}d\xi,\\
-J_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{2\pi i\xi}{\epsilon^2 + 4\pi^2\xi^2}d\xi.
+I_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{\epsilon^2}{\epsilon^2 + 4\pi^2\xi^2}d\xi,\\
+J_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{-2\pi i\xi}{\epsilon^2 + 4\pi^2\xi^2}d\xi.
 \end{align}$$
 
 * (d) Prove that
