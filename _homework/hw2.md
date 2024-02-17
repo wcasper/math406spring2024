@@ -24,10 +24,9 @@ Determine the Fourier transform of each of the following functions.
 * (a) $$xe^{-x^2}$$
 * (b) $$x^2e^{-x^2}$$
 * (c) $$\cos(x)$$
-* (d) the Heaviside step function
-* (e) $$x^n$$
+* (d) $$x^n$$
 
-# Problem 2
+# Problem 3
 
 Prove **Plancherel's Theorem**, which states that if $$f(x)$$ is a real-valued function which is square integrable, then
 
@@ -63,6 +62,44 @@ $$T_t + vT_x = kT_{xx},\quad T(x,0) = f(x),$$
 where here $$v$$ is a constant.
 
 
+# Problem 5 (BONUS)
 
+In this problem, we calculate the Fourier transform of the Heaviside step function
+
+$$H(x) = \left\lbrace\begin{array}{cc}0 & x < 0,\\ 1 & x > 0\end{array}\right.$$
+
+* (a) Explain why
+
+$$\int_{\mathbb R} \varphi(\xi)\wh H(\xi) d\xi =  \int_{\mathbb R} \hat\varphi(x)H(x)dx.$$
+
+* (b) Use the fact that $$\lim_{\epsilon\rightarrow 0+} 1_{[0,\infty)} e^{-\epsilon x}$$ converges to $$H(x)$$ as a distribution to prove
+
+$$\int_{\mathbb R} \hat\varphi(x)H(x)dx = \lim_{\epsilon\rightarrow 0+} \int_{\mathbb R} \varphi(\xi)\frac{-1}{\epsilon + 2\pi i\xi}d\xi.$$
+
+* (c) Use (b) to show that
+
+$$\int_{\mathbb R} \hat\varphi(x)H(x)dx = \lim_{\epsilon\rightarrow 0+} I(\epsilon) + \lim_{\epsilon\rightarrow 0+} I(\epsilon)$$
+
+where here
+
+$$\begin{align}
+I_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{-\epsilon^2}{\epsilon^2 + 4\pi^2\xi^2}d\xi,\\
+J_\epsilon &= \int_{\mathbb R} \varphi(\xi)\frac{2\pi i\xi}{\epsilon^2 + 4\pi^2\xi^2}d\xi.
+\end{align}$$
+
+* (d) Prove that
+
+$$\lim_{\epsilon\righarrow 0+} I_\epsilon = \frac{1}{2}\varphi(0)$$
+
+* (e) Prove that 
+
+$$\lim_{\epsilon\rightarrow 0+} J_\epsilon = \int_{\mathbb{R}} (\varphi(\xi)-\varphi(0))\frac{1}{2\pi i \xi} d\xi.$$
+
+This expression on the right hand side is called the **principal value** of the integral $$\int_{\mathbb{R}}\varphi(\xi)\frac{1}{2\pi i \xi} d\xi$$.
+We write $$\text{P.V.}\frac{1}{2\pi i \xi}$$ to denote this distribution.
+
+* (f) Conclude that 
+
+$$\wh H(\chi) = \frac{1}{2}\delta(\xi) + \text{P.V.}\frac{1}{2\pi i \xi}.$$
 
 
