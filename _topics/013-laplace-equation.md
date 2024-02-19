@@ -26,7 +26,7 @@ The value of a function which is harmonic in $$\Omega$$ is determined by the val
 Geometrically in two dimensions, a harmonic function looks like what happens when you stretch rubber over a cut up tin can.
 If we saw the sides of the box down so that the height at each point is $$f(x,y)$$, and then stretch our rubber as tight as possible, the surface we end up with is a solution of Laplaces equation.
 
-<p align="center"><img width=400 src="fig/014-boundary.png"/></p>
+<p align="center"><img width=400 src="fig/013-solution-visual.png"/></p>
 
 In three dimensions, harmonic functions describe gravitatial fields in the empty spaces *between* massive objects like planets, or electric fields in the empty spaces away frmo the source of the electric charge.
 
