@@ -24,9 +24,12 @@ Inside $$\Omega$$, harmonic functions feature two important properties: the Mean
 
 The value of a function which is harmonic in $$\Omega$$ is determined by the value of the function on the booundary $$\partial\Omega$$.
 Geometrically in two dimensions, a harmonic function looks like what happens when you take a wooden box and sand down the sides unevenly, so that the height of each side is described by some function.
-Then if you stretch a rubber sheet oveer the top and pull it as tight as possible, the resulting surfce is a solution of Laplace's equation.
+Then if you stretch a rubber sheet oveer the top and pull it as tight as possible, the resulting surfce is a solution of Laplace's equation with Dirichlet boundary conditions
 
-<p align="center"><img width=400 src="fig/013-solution-visual.png"/></p>
+
+$$u_{xx} + u_{yy} = 0,\ \ u(x,0) = f_1(x),\ \ u(x,M) = f_2(x),\ \ u(0,y) = g_1(y),\ \ u(L,y) = g_2(y).$$
+
+<p align="center"><img width=600 src="fig/013-solution-visual.png"/></p>
 
 In three dimensions, harmonic functions describe gravitatial fields in the empty spaces *between* massive objects like planets, or electric fields in the empty spaces away frmo the source of the electric charge.
 
