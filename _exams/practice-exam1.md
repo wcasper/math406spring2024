@@ -19,7 +19,7 @@ $$u_{t} = 9tu_{xx}$$
 
 with the boundary conditions
 
-$$u(0,t) = 0,\ \ u(L,t) = \sin(2\pi x/L) + \sin(5\pi x/L).$$
+$$u(0,t) = 0,\ \ u(L,t) = 0,\ \ u(x,0) = \sin(2\pi x/L) + \sin(5\pi x/L).$$
 
 **Problem 3:**
 
