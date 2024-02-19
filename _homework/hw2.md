@@ -26,7 +26,7 @@ Determine the Fourier transform of each of the following functions.
 * (c) $$\cos(x)$$
 * (d) $$x^n$$
 
-# Problem 3
+# Problem 2
 
 Prove **Plancherel's Theorem**, which states that if $$f(x)$$ is a real-valued function which is square integrable, then
 
