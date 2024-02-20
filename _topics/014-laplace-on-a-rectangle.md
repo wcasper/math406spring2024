@@ -158,4 +158,9 @@ A surface plot of the solution is provided below.
 
 <p align="center"><img width=600 src="fig/014-plot-of-solution.png"/></p>
 
+An animation showing a rotation of the surface is shown here.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="vid/014-anim-of-solution.mp4" type="video/mp4">
+</video>
 
