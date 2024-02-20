@@ -122,7 +122,7 @@ $$\begin{align}
 u(x,y)
   & = \sum_{n=1}^\infty \frac{F_{1,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (L-y)}{L}\right)\\
   & + \sum_{n=1}^\infty \frac{F_{2,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{G_{1,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right)
+  & + \sum_{n=1}^\infty \frac{G_{1,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right)\\
   & + \sum_{n=1}^\infty \frac{G_{2,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
 \end{align}$$
 
