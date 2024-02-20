@@ -40,6 +40,21 @@ The Mean Value Property says that for any circle in $$\Omega$$, if we take the a
 
 $$\frac{1}{2\pi}\oint_0^{2\pi} u(a + r\cos(\theta),b + r\sin(\theta)) d\theta = u(a,b).$$
 
+**Proof:**
+Consider the disk of radius $$r$$ centered at $$(a,b)$$.
+
+$$D_r(a,b) = \{(x,y): (x-a)^2 + (y-b)^2\leq r^2\}$$
+
+By Green's Theorem, the integral of $$u$$ over this disk satisfies
+
+$$\begin{align}
+\iint_{D_r(a,b)} \Delta u(x,y)dA
+  & = \int_{0}^{2\pi} u_x(a + r\cos(\theta),b + r\sin(\theta)) (r\sin\theta) +u_y(a + r\cos(\theta),b + r\sin(\theta)) (r\cos\theta) d\theta\\
+  & = \int_{0}^{2\pi}r\frac{\partial}{\partial r} u(a + r\cos(\theta),b + r\sin(\theta)) d\theta\\
+  & = r\frac{d}{d r}\int_{0}^{2\pi} u(a + r\cos(\theta),b + r\sin(\theta)) d\theta\\
+\end{align}.$$
+
+
 In three dimensions, this generalizes to the average over the surface of a ball being equal to the value at the center of the ball.
 This generalizes to $$n$$ dimensions by replacing surface with hypersurface.
 
