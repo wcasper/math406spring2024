@@ -22,7 +22,7 @@ The answer isn't to take it to be zero on all the boundaries, since the only sol
 Instead, what we do is take one side to be nonzero, and the remaining three to be zero.
 By doing this for every side separately, we can add four separate solutions together to find a solution to any Dirichlet BVP.
 
-<p align="center"><img width=400 src="fig/014-boundary.png"/></p>
+<p align="center"><img width=600 src="fig/014-boundary.png"/></p>
 
 In separation of variables, we propose a solution of the form $$u(x,y) = F(x)G(y)$$.
 Inserting this into the above equation gives

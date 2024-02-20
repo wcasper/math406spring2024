@@ -56,7 +56,7 @@ is given by
 
 $$u(x,t) = \int_{\mathbb{R}} K(x-y,t)f(y)dy.$$
 
-<p align="center"><img width=400 src="fig/012-heat-kernel.png"/></p>
+<p align="center"><img width=500 src="fig/012-heat-kernel.png"/></p>
 
 ### Example
 
