@@ -65,11 +65,11 @@ $$f_2(x) = \sum_{n=1}^\infty B_n\sin\left(\frac{n\pi x}{L}\right)$$
 
 then the combination of fundamental solutions
 
-$$u_n(x,y) = \sum_{n=1}^\infty \frac{B_n}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{L}\right)\cosh\left(\frac{n\pi x}{L}\right)$$
+$$u_n(x,y) = \sum_{n=1}^\infty \frac{B_n}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)$$
 
 solves the top boundary BVP.
 
-:warning: Notice the $$\sinh(n\pi)$$ term, which arises from matching with the desired initial condition.
+:warning: Notice the $$\sinh(n\pi M/L)$$ term, which arises from matching with the desired initial condition.
 
 ### Other boundaries
 
@@ -77,7 +77,7 @@ To get solutions for the other three boundaries, we can set up the associated BV
 We can exploit some of the symmetries of Laplace's equation which are simultaneously symmetries of the rectangle.
 For example, if $$u(x,y)$$ is a solution of Laplace's equation, then so are the transformations
 
-* the reflection $$u(x,L-y)$$
+* the reflection $$u(x,M-y)$$
 * the reflection plus rescaling $$u(Ly/M,Lx/M)$$
 * the rotation plus rescaling $$u(Ly/M,L-Lx/M)$$
 
@@ -90,7 +90,7 @@ $$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)
 
 * the **bottom boundary fundamental solutions**
 
-$$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (L-y)}{L}\right).$$
+$$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (M-y)}{L}\right).$$
 
 * the **right boundary fundamental solutions**
 
@@ -98,7 +98,7 @@ $$u_n(x,y) = \sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
 
 * the **left boundary fundamental solutions**
 
-$$u_n(x,y) = \sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right).$$
+$$u_n(x,y) = \sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (L-x)}{M}\right).$$
 
 
 ## Solving the Dirichlet BVP
@@ -120,10 +120,10 @@ Then take the linear combination of the appropriate fundamental solutions
 
 $$\begin{align}
 u(x,y)
-  & = \sum_{n=1}^\infty \frac{F_{1,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (L-y)}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{F_{2,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{G_{1,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right)\\
-  & + \sum_{n=1}^\infty \frac{G_{2,n}}{\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
+  & = \sum_{n=1}^\infty \frac{F_{1,n}}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (M-y)}{L}\right)\\
+  & + \sum_{n=1}^\infty \frac{F_{2,n}}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)\\
+  & + \sum_{n=1}^\infty \frac{G_{1,n}}{\sinh(n\pi L/M)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (L-x)}{M}\right)\\
+  & + \sum_{n=1}^\infty \frac{G_{2,n}}{\sinh(n\pi L/M)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
 \end{align}$$
 
 ## Example
