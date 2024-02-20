@@ -159,5 +159,6 @@ u(x,y)
   & + \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
 \end{align}$$
 
+<p align="center"><img width=600 src="fig/014-plot-of-solution.png"/></p>
 
 
