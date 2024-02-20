@@ -133,21 +133,16 @@ Consider the Dirichlet BVP
 $$u_{xx} + u_{yy} = 0,\ \ u(x,0) = x^2/L^2,\ \ u(x,M) = 1,\ \ u(0,y) = y^2/M^2,\ \ u(L,y) = 1.$$
 
 
-The sine expansion of $$1$$ on $$[0,L]$$ is 
+The coefficients of the sine expansion of $$1$$ on $$[0,L]$$ are the same as those for the sine expansion on $$[0,M]$$.
+Therefore $$F_{2,n} = G_{2,n}$$.
+Likewise $$F_{1,n} = G_{1,n}$$.
+Direct calculation gives
 
-$$1 = \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi}\sin\left(\frac{n\pi x}{L}\right),$$
+$$F_{1,n} = 2\left(\frac{2(-1)^n}{n^3\pi^3} - \frac{2}{n^2\pi^2} - \frac{(-1)^n}{n\pi}\right)$$
 
-while the expansion on $$[0,M]$$ is 
+as well as
 
-$$1 = \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi}\sin\left(\frac{n\pi x}{L}\right).$$
-
-The sine expansion of $$x^2/L^2$$ on $$[0,L]$$ is 
-
-$$\frac{x^2}{L^2} = \sum_{j=1}^\infty \left(\frac{4(-1)^n}{n^3\pi^3} - \frac{4}{n^2\pi^2} - \frac{(-1)^n2}{n\pi}\right)\sin\left(\frac{n\pi x}{L}\right),$$
-
-while the expansion of $$x^2/M^2$$ on $$[0,M]$$ is
-
-$$\frac{x^2}{M^2} = \sum_{j=1}^\infty \left(\frac{4(-1)^n}{n^3\pi^3} - \frac{4}{n^2\pi^2} - \frac{(-1)^n2}{n\pi}\right)\sin\left(\frac{n\pi x}{L}\right).$$
+$$F_{2,n} = \frac{2(1-\cos(n\pi))}{n\pi}.$$
 
 Thus our solution is given by
 
@@ -158,6 +153,8 @@ u(x,y)
   & + \sum_{n=1}^\infty \frac{2}{\sinh(n\pi)}\left(\frac{2(-1)^n}{n^3\pi^3} - \frac{2}{n^2\pi^2} - \frac{(-1)^n}{n\pi}\right)\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right)\\
   & + \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
 \end{align}$$
+
+A surface plot of the solution is provided below.
 
 <p align="center"><img width=600 src="fig/014-plot-of-solution.png"/></p>
 
