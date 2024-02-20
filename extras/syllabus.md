@@ -11,7 +11,7 @@ permalink: /extras/syllabus
 
 **Email:** wcasper@fullerton.edu
 
-**Office hourse:** T,Th 12-1PM and Th 4-5PM.  Additional office hours are always available by request.
+**Office hourse:** T,Th 12-1PM in MH 501 and Th 4-5PM in my office.  Additional office hours are always available by request.
 
 **Course website:** we will use Canvas website (Spring 2024 MATH 406-1 10067), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math406spring2024">Github Pages site (link)</a> which you may find more convenient for pulling material.
 
