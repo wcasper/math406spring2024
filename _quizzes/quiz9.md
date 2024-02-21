@@ -21,7 +21,7 @@ $$u(x,y) = \sin(n\pi x/L)\sinh(n\pi y/L)$$
 
 is harmonic.
 
-**Question 4**:
+**Question 4**: True or false.
 
 If $$u(x,y)$$ is harmonic on a domain $$\Omega$$ and $$u(x,y)$$ is smooth and harmonic in $$\Omega$$, then $$u_x(x,y)$$ is also harmonic in $$\Omega$$.
 
