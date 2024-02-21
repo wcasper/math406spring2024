@@ -39,7 +39,7 @@ Prove each of the following properties of the Fourier transform
 * (a) if $$g(x) = f(x+x_0)$$, then $$\hat g(\xi) = e^{2\pi i\xi x_0}f(\xi)$$
 * (b) if $$g(x) = f'(x)$$, then $$\hat g(\xi) = 2\pi i\xi \hat f(\xi)$$
 * (c) if $$h(x) = f(x)g(x)$$, then $$\hat h(\xi) = (\hat f * \hat g)(\xi)$$
-* (d) if $$\hat f(\xi) = \delta_2'(\xi)$$, then $$f(x) = -2\pi i x e^{4\pi i x}$$
+* (d) if $$\hat f(\xi) = \delta_2'(\xi)$$, then $$f(x) = 2\pi i x e^{4\pi i x}$$
 
 **Problem 5:**
 
