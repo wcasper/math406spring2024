@@ -120,7 +120,7 @@ $$\sin(x) = \frac{2}{\pi} + \sum_{n=2}^\infty \frac{2}{\pi} \frac{(-1)^{n-1}-1}{
 
 * (b) From (b) and the fundamental solutions we get
 
-$$u(x,t) = \frc{2}{\pi} + \sum_{n=2}^\infty \frac{2}{\pi} \frac{(-1)^{n-1}-1}{(n-1)(n+1)}e^{-n^2kt}\cos(nx).$$
+$$u(x,t) = \frac{2}{\pi} + \sum_{n=2}^\infty \frac{2}{\pi} \frac{(-1)^{n-1}-1}{(n-1)(n+1)}e^{-n^2kt}\cos(nx).$$
 
 
 **Problem 4:**
