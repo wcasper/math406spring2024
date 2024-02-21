@@ -3,7 +3,7 @@ author:
   name: William Casper
   email: wcasper@fullerton.edu
 description: > # this means to ignore newlines until "show_excerpts:"
-  Course webpage for a semester-long course in number theory.
+  Course webpage for a semester-long course in partial differential equations.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
