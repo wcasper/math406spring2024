@@ -156,10 +156,10 @@ $$\begin{align}
 $$\begin{align}
 \hat h(\xi)
   & = \int_{\mathbb{R}} f(x)g(x)e^{-2\pi i x\xi}dx\\
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}}\int_{\mathbb{R}} \wh f(s)\wh g(t)e^{-2\pi i x(\xi-s-t)}dsdtdx\\
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}}\int_{\mathbb{R}} \wh f(s)\wh g(t)e^{-2\pi i x(\xi-s-t)}dxdsdt\\
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}} \wh f(s)\wh g(t)\delta(\xi-s-t)dsdt\\
-  & = \int_{\mathbb{R}}\int_{\mathbb{R}} \wh f(\xi-t)\wh g(t)dt = (\wh f * \wh g)(\xi)
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}}\int_{\mathbb{R}} \hat f(s)\hat g(t)e^{-2\pi i x(\xi-s-t)}dsdtdx\\
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}}\int_{\mathbb{R}} \hat f(s)\hat g(t)e^{-2\pi i x(\xi-s-t)}dxdsdt\\
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}} \hat f(s)\hat g(t)\delta(\xi-s-t)dsdt\\
+  & = \int_{\mathbb{R}}\int_{\mathbb{R}} \hat f(\xi-t)\hat g(t)dt = (\hat f * \hat g)(\xi)
 \end{align}$$
 
 * (d)
