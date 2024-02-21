@@ -35,7 +35,7 @@ $$u(x,t) = \int_{\mathbb{R}} K(x-y,t)f(y)dy,$$
 
 where here $$K(x,y)$$ is the inverse Fourier transform of a Gaussian:
 
-$$K(x,t) = \frac{1}{\sqrt{4\pi kt}}e^{-x^2/(4\pi kt)}.$$
+$$K(x,t) = \frac{1}{\sqrt{4\pi kt}}e^{-x^2/(4 kt)}.$$
 
 This very important function is called the heat kernel.
 
