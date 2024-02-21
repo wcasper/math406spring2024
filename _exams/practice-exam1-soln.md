@@ -184,7 +184,7 @@ $$u(0,t) = \sin(t),\ \ \ u(\pi,t) = 0,\ \ \ u(x,0) = 0.$$
 
 **Solution:**
 
-We propose a solution of the form
+We move the nonhomogeneity to the boundary by proposing a solution of the form
 
 $$u(x,t) = (1-x/\pi)\sin(t) + v(x,t).$$
 
