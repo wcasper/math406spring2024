@@ -66,7 +66,7 @@ $$f(x) = u(x,0) = \sum_{n=1}^\infty B_n(0)\sin\left(\frac{n\pi x}{L}\right).$$
 This says that the initial values $$B_n(0)$$ of the $$B_n(t)'s$$ should come from the sine series expansion of $$f(x)$$.
 In other words, if $$f(x) = \sum_{n=1}^\infty b_n\sin\left(\frac{n\pi x}{L}\right)$$, then the values of $$B_n(t)$$ are given *without an arbitrary constant* by the definite integrals
 
-$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t e^{-\frac{n^2\pi^2}{L^2}ks}ds + b_n\right).$$
+$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t \phi_n(s)e^{-\frac{n^2\pi^2}{L^2}ks}ds + b_n\right).$$
 
 ## Summary of method
 
@@ -91,7 +91,7 @@ $$\phi(x,t) = \sum_{n=1}^\infty \phi_n(t)\sin\left(\frac{n\pi x}{L}\right).$$
 
 3. Calculate $$B_n(t)$$ for each $$n$$ using the following formula
 
-$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t e^{-\frac{n^2\pi^2}{L^2}ks}ds + b_n\right)$$
+$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t \phi_n(s)e^{-\frac{n^2\pi^2}{L^2}ks}ds + b_n\right)$$
 
 Then the solution of the BVP is
 
