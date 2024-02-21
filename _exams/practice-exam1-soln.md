@@ -69,7 +69,7 @@ $$\frac{1}{8t}G'(t)/G(t) = -\lambda,\ \  F''(x)/F(x) = -\lambda.$$
 
 Then solving these equations, we find
 
-$$F(x) = A\cos(\sqr{\lambda} x) + B\sin(\sqrt{\lambda} x)$$
+$$F(x) = A\cos(\sqrt{\lambda} x) + B\sin(\sqrt{\lambda} x)$$
 
 and also
 
