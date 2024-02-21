@@ -42,12 +42,12 @@ $$\sum_{n=1}^\infty \left(B_n'(t) + \frac{kn^2\pi^2}{L^2}B_n(t) - \phi_n(t)\righ
 
 Now since the sine expansion of $$0$$ is unique, this implies that for all $$n$$, $$B_n(t)$$ is solution of the first-order linear ODE
 
-$$B_n'(t) + \frac{kn^2\pi^2}{L^2}B_n(t) - \phi_n(t).$$
+$$B_n'(t) + \frac{kn^2\pi^2}{L^2}B_n(t) - \phi_n(t) = 0.$$
 
 You can solve this equation using whatever your favorite method of solution is: integrating factors, variation of parameters, or the Laplace transform.
 Any way you do it, the answer comes out to be
 
-$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\int e^{-\frac{n^2\pi^2}{L^2}kt}dt.$$
+$$B_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\int \phi_n(t)e^{-\frac{n^2\pi^2}{L^2}kt}dt.$$
 
 With this formula in mind
 
