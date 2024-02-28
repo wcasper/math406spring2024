@@ -24,8 +24,11 @@ The gradient of this is (up to a constant) the force that would be felt by a cha
 
 <p align="center"><img width=600 src="fig/016-dipole.png"/></p>
 
+The python code used to generate these visuals can be found here
+* [code to visualize solution](python/016-dipole.py)
+
 You can conduct a physical experiment that will allow you to see the same sort of structure.
-If we mix some rice seeds in castor oil and then introduce an electric charge, the seeds arrange themselves in the same pattern as the electric field.
+If we mix some rice seeds in mineral oil and then introduce an electric charge, the seeds arrange themselves in the same pattern as the electric field.
 
 {% include youtube.html id="aVzr5KJWHkg" %}
 
