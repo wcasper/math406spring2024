@@ -164,7 +164,7 @@ u(r,\theta)
   & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + 2\sum_{n=1}^\infty (r/R)^n(\cos(n\phi)\cos(n\theta) + \sin(n\phi)\sin(n\theta))\right)h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + 2\sum_{n=1}^\infty (r/R)^n\cos(n(\phi-\theta))\right)h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\left(1 + 2\sum_{n=1}^\infty (r/R)^ne^{in(\phi-\theta)}\right)h(\phi)d\phi\\
-  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{1+(r/R)e^{i(\phi-\theta)}{1-(r/R)e^{i(\phi-\theta)}}h(\phi)d\phi\\
+  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{1+(r/R)e^{i(\phi-\theta)}}{1-(r/R)e^{i(\phi-\theta)}}h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{R^2-r^2}{R^2 -2rR\cos(\theta-\phi) + r^2}h(\phi)d\phi
 \end{align}$$
 
