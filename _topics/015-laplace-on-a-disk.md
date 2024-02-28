@@ -4,7 +4,6 @@ title: Laplace on a Disk
 ---
 
 
-## Dirichlet problem on a disk
 
 We want to find a solution of the Dirichlet boundary value problem for Laplace's equation on a disk
 
@@ -15,7 +14,7 @@ $$u(x,y) = f(x,y),\ \ x^2+y^2 = R.$$
 To solve this problem, we must convert the Laplacian operator to polar coordiates.
 Then, when we are in polar coordinates, we can again use separation of variables.
 
-### Laplacian in polar
+## Laplacian in polar
 
 The relationship between polar coordinates $$(r,\theta)$$ and Cartesian coordinates $$(x,y)$$ is
 
@@ -68,157 +67,84 @@ Adding these together, we find the expression for the Laplacian in polar coordin
 $$ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} = 
 \frac{\partial^2}{\partial r^2} + \frac{1}{r}\frac{\partial}{\partial r} + \frac{1}{r^2}\frac{\partial^2}{\partial\theta^2}.$$
 
-If we think back to the case of the heat equation, our strategy for doing this
-is to use *separation of variables* in order to get a sequence of Fundamental
-solutions to the homogeneous boundary value problem.
+Using this, we can reexpress our Dirichlet problem for Laplace's equation on a disk as
 
-Our situation is simultaneously in many ways, but not quite the same, since we have two spatial dimensions and only one time dimension.
-This makes what our analog of an "initial condition" somewhat unclear.
-So what is the analog of a homogeneous boundary value problem?
+$$u_{rr} + \frac{1}{r}u_r + \frac{1}{r^2}u_{\theta\theta} = 0,\ \ 0 < r < R$$
 
-The answer isn't to take it to be zero on all the boundaries, since the only solution to this is $$u(x,y) = 0$$.
-Instead, what we do is take one side to be nonzero, and the remaining three to be zero.
-By doing this for every side separately, we can add four separate solutions together to find a solution to any Dirichlet BVP.
+with the boundary condition that
 
-<p align="center"><img width=600 src="fig/014-boundary.png"/></p>
+$$u(R,\theta) = h(\theta)$$ 
 
-In separation of variables, we propose a solution of the form $$u(x,y) = F(x)G(y)$$.
-Inserting this into the above equation gives
+for some function $$h(\theta)$$ related to the original boundary condition function by $$h(\theta) = f(R\cos\theta,R\sin\theta)$$.
 
-$$F''(x)G(y) + F(x)G''(y) = 0.$$
+## Solving Dirichlet on a Disk
 
-We rewrite this as
+Now to solve the Dirichlet problem on the disk
 
-$$F''(x)/F(x) = -G''(y)/G(y).$$
+$$u_{rr} + \frac{1}{r}u_r + \frac{1}{r^2}u_{\theta\theta} = 0,\ \ 0 < r < R,\ \ u(R,\theta) = h(\theta)$$
 
-This means that both of them can be set equal to some constant.
-Whether we want a positive or a negative constant depends on the boundary that we are aiming at taking to be nonzero.  (Alternatively, we can resign ourselves to working with complex numbers).
+we again apply separation of variables.  We look for a solution of the form $$u(r,\theta) = F(r)G(\theta)$$.  Inserting this into the equation, we geta
 
-### Top boundary
+$$F''(r)G(\theta) + \frac{1}{r}F'(r)G(\theta) + \frac{1}{r^2}F(r)G''(\theta) = .$$
 
-Let's start by trying to find solutions which are zero on all boundaries but the top, ie.
+Dividing above by $$F(r)G(\theta)$$, we obtain
 
-$$u_{xx} + u_{yy} = 0,\ \ u(x,0) = 0,\ \ u(x,M) = f_2(x),\ \ u(0,y) = 0,\ \ u(L,y) = 0.$$
+$$\frac{F''(r)}{F(r)}}  + \frac{1}{r}\frac{F'(r)}{F(r)} + \frac{1}{r^2}\frac{G''(\theta)}{G(\theta)} = 0.$$
 
-For this, we write
+Putting all of the $$\theta$$ terms on the right side of the equality leads to
 
-$$F''(x)/F(x) = -\lambda^2,\ \ \text{and}\ \ G''(y)/G(y) = \lambda^2.$$
+$$r^2\frac{F''(r)}{F(r)}}  + r\frac{F'(r)}{F(r)} = - \frac{G''(\theta)}{G(\theta)}.$$
 
-Therefore
+It follows that both sides must be equal to a constant $$\lambda^2$$.  Equivalently
 
-$$F(x) = A\cos(\lambda x) + B\sin(\lambda x).$$
+$$G''(\theta) + \lambda^2G(\theta) = 0$$
 
-and
+and also
 
-$$G(x) = C\cosh(\lambda y) + D\sinh(\lambda y).$$
+$$r^2F''(r) + rF'(r) = \lambda^2 F(r).$$
 
-With the homogeneous boundary conditions $$u(0,y) = 0$$ and $$u(L,y) = 0$$, we get that $$A=0$$ and $$\lambda = n\pi/L$$.
-Furthermore since $$u(x,0) = 0$$ we get $$C = 0$$, resulting in the **top boundary fundamental solutions**
+If $$\lambda\neq 0$$, then the general solutions of each equation are
 
-$$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right).$$
+$$G(\theta) = A\cos(\lambda\theta) + B\sin(\lambda\theta)$$
 
-By the superposition principle, any linear combination of solutions is also a solution, so if we take the sine series expansion of $$f_2(x)$$ on $$[0,L]$$
+and also
 
-$$f_2(x) = \sum_{n=1}^\infty B_n\sin\left(\frac{n\pi x}{L}\right)$$
+$$F(r) = Cr^\lambda + Dr^{-\lambda}.$$
 
-then the combination of fundamental solutions
+Not all values of $$\lambda$$ are possible.  Since we are on a circle, our solutions must be periodic in $$\theta$$ with period $$2\pi$$, so $$\lambda = n$$ for some integer $$n$$.
+Also, our solution should be continuous inside the disk, so we must have $$D=0$$.
 
-$$u_n(x,y) = \sum_{n=1}^\infty \frac{B_n}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)$$
+In the special case that $$\lambda = 0$$, the general solution is
 
-solves the top boundary BVP.
+$$G(\theta) = A + B\theta$$
 
-:warning: Notice the $$\sinh(n\pi M/L)$$ term, which arises from matching with the desired initial condition.
+and also
 
-### Other boundaries
+$$F(r) = C + D\ln r.$$
 
-To get solutions for the other three boundaries, we can set up the associated BVP as we just did and solve.  However, there is a much faster alternative.
-We can exploit some of the symmetries of Laplace's equation which are simultaneously symmetries of the rectangle.
-For example, if $$u(x,y)$$ is a solution of Laplace's equation, then so are the transformations
+By periodicity and continuity, we see $$B=0$$ and $$D=0$$.
+This leads to the collection of **fundamental solutions on the disk**
 
-* the reflection $$u(x,M-y)$$
-* the reflection plus rescaling $$u(Ly/M,Lx/M)$$
-* the rotation plus rescaling $$u(Ly/M,L-Lx/M)$$
+$$r^{n}\cos(n\theta),\ \ \ r^n\sin(n\theta),\ \ n\in\mathbb{N}.$$
 
-which take the upper boundary to all of the other three boundaries.
-These lead to four distinct flavors of fundamental solutions.
+By the superposition principle, an arbitrary linear combination of these fundamental solutions
 
-* the **top boundary fundamental solutions**
+$$u(r,\theta) = \sum_{n=0}^\infty \widetilde A_n r^n\cos(n\theta) + \sum_{n=1}^\infty \widetilde B_nr^n\sin(n\theta)$$
 
-$$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right).$$
+is also a solution of Laplace's equation on the disk.
+The value of this solution the boundary is 
 
-* the **bottom boundary fundamental solutions**
+$$u(R,\theta) = \sum_{n=0}^\infty \widetilde A_n R^n\cos(n\theta) + \sum_{n=1}^\infty \widetilde B_nr^n\sin(n\theta).$$
 
-$$u_n(x,y) = \sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (M-y)}{L}\right).$$
+If we take $$A_n$$ and $$B_n$$ to be the coefficients in the Fourier series expansion of $$h(\theta)$$
 
-* the **right boundary fundamental solutions**
+$$h(\theta) = \sum_{n=0}^\infty A_n\cos(n\theta) + \sum_{n=1}^\infty B_n\sin(n\theta),$$
 
-$$u_n(x,y) = \sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right).$$
-
-* the **left boundary fundamental solutions**
-
-$$u_n(x,y) = \sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (L-x)}{M}\right).$$
+then taking $$\widetilde A_n = A_n/R^n$$ and $$\widetilde B_n = B_n/R^n$$ gives us a solution of the Dirichlet problem for Laplace's equation on the disk
 
 
-## Solving the Dirichlet BVP
-
-Puting this all together, to solve the Dirichlet BVP
-
-$$u_{xx} + u_{yy} = 0,\ \ u(x,0) = f_1(x),\ \ u(x,M) = f_2(x),\ \ u(0,y) = g_1(y),\ \ u(L,y) = g_2(y).$$
-
-we start by taking the sine series expansions of all of the boundary functions on the corresponding intervals
-
-$$\begin{align}
-f_1(x) &= \sum_{n=1}^\infty F_{1,n}\sin\left(\frac{n\pi x}{L}\right)\\
-f_2(x) &= \sum_{n=1}^\infty F_{2,n}\sin\left(\frac{n\pi x}{L}\right)\\
-g_1(y) &= \sum_{n=1}^\infty G_{1,n}\sin\left(\frac{n\pi y}{M}\right)\\
-g_2(y) &= \sum_{n=1}^\infty G_{2,n}\sin\left(\frac{n\pi y}{M}\right)
-\end{align}$$
-
-Then take the linear combination of the appropriate fundamental solutions
-
-$$\begin{align}
-u(x,y)
-  & = \sum_{n=1}^\infty \frac{F_{1,n}}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (M-y)}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{F_{2,n}}{\sinh(n\pi M/L)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{G_{1,n}}{\sinh(n\pi L/M)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (L-x)}{M}\right)\\
-  & + \sum_{n=1}^\infty \frac{G_{2,n}}{\sinh(n\pi L/M)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
-\end{align}$$
-
-## Example
-
-Consider the Dirichlet BVP
-
-$$u_{xx} + u_{yy} = 0,\ \ u(x,0) = x^2/L^2,\ \ u(x,M) = 1,\ \ u(0,y) = y^2/M^2,\ \ u(L,y) = 1.$$
+$$u(r,\theta) = \sum_{n=0}^\infty A_n (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty B_n(r/R)^n\sin(n\theta).$$
 
 
-The coefficients of the sine expansion of $$1$$ on $$[0,L]$$ are the same as those for the sine expansion on $$[0,M]$$.
-Therefore $$F_{2,n} = G_{2,n}$$.
-Likewise $$F_{1,n} = G_{1,n}$$.
-Direct calculation gives
 
-$$F_{1,n} = 2\left(\frac{2(-1)^n}{n^3\pi^3} - \frac{2}{n^2\pi^2} - \frac{(-1)^n}{n\pi}\right)$$
-
-as well as
-
-$$F_{2,n} = \frac{2(1-\cos(n\pi))}{n\pi}.$$
-
-Thus our solution is given by
-
-$$\begin{align}
-u(x,y)
-  & = \sum_{n=1}^\infty \frac{2}{\sinh(n\pi)}\left(\frac{2(-1)^n}{n^3\pi^3} - \frac{2}{n^2\pi^2} - \frac{(-1)^n}{n\pi}\right)\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi (L-y)}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi\sinh(n\pi)}\sin\left(\frac{n\pi x}{L}\right)\sinh\left(\frac{n\pi y}{L}\right)\\
-  & + \sum_{n=1}^\infty \frac{2}{\sinh(n\pi)}\left(\frac{2(-1)^n}{n^3\pi^3} - \frac{2}{n^2\pi^2} - \frac{(-1)^n}{n\pi}\right)\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi (M-x)}{M}\right)\\
-  & + \sum_{n=1}^\infty \frac{2(1-\cos(n\pi))}{n\pi\sinh(n\pi)}\sin\left(\frac{n\pi y}{M}\right)\sinh\left(\frac{n\pi x}{M}\right)
-\end{align}$$
-
-A surface plot of the solution is provided below.
-
-<p align="center"><img width=600 src="fig/014-plot-of-solution.png"/></p>
-
-An animation showing a rotation of the surface is shown here.
-
-<video controls="" width="700" height="500" muted="" loop="" autoplay="">
-<source src="vid/014-anim-of-solution.mp4" type="video/mp4">
-</video>
 
