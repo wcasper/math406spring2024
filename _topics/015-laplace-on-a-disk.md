@@ -56,7 +56,7 @@ $$\begin{align}
 and also
 
 $$\begin{align}
-\frac{\partial^2}{\partial_y^2}
+\frac{\partial^2}{\partial y^2}
   & = \left(\sin\theta\frac{\partial}{\partial r} + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\right)^2\\
   & = \sin\theta\frac{\partial}{\partial r}\sin\theta\frac{\partial}{\partial r} + \sin\theta\frac{\partial}{\partial r}\frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\\
   & + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\sin\theta\frac{\partial}{\partial r} + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\\
