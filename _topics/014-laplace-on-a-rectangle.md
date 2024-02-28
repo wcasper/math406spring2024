@@ -164,3 +164,7 @@ An animation showing a rotation of the surface is shown here.
 <source src="vid/014-anim-of-solution.mp4" type="video/mp4">
 </video>
 
+The python code used to generate these visuals can be found here
+* [code to visualize solution](python/014-rectangle-example.py)
+
+
