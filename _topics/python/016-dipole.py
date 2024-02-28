@@ -21,15 +21,9 @@ Z = np.zeros([nx,ny])
 U = np.zeros([nx,ny])
 V = np.zeros([nx,ny])
 
-
-for j in range(nx):
-  for k in range(ny):
-    Z[k,j] = -np.log((x[j]-1)**2+y[k]**2) + np.log((x[j]+1)**2+y[k]**2) 
-    U[k,j] = -(x[j]-1)/((x[j]-1)**2+y[k]**2) + (x[j]+1)/((x[j]+1)**2+y[k]**2) 
-    V[k,j] = -(y[k]-0)/((x[j]-1)**2+y[k]**2) + (y[k]+0)/((x[j]+1)**2+y[k]**2) 
-
-
-
+Z = -np.log((X-1)**2+Y**2) + np.log((X+1)**2+Y**2)
+U = -2*(X-1)/((X-1)**2+Y**2) + 2*(X+1)/((X+1)**2+Y**2)
+V = -2*Y/((X-1)**2+Y**2) + 2*Y/((X+1)**2+Y**2)
 
 
 #plt.xlabel(r'$x$')
@@ -43,11 +37,11 @@ V = V / norm
 fig, ax = plt.subplots(1, 1)
 #ax.set_aspect(1)
 
-ax.quiver(Y[0:nx:3,0:ny:3], X[0:nx:3,0:ny:3], U[0:nx:3,0:ny:3], V[0:nx:3,0:ny:3], units='xy', scale=8, color='gray', headwidth=0)
+ax.quiver(X[0:nx:3,0:ny:3], Y[0:nx:3,0:ny:3], U[0:nx:3,0:ny:3], V[0:nx:3,0:ny:3], units='xy', scale=8, color='gray', headwidth=0)
 ax.contour(X, Y, Z, 100, cmap='jet', lw=2)
 
-#plt.xticks([0,L/2,L],['0',r'$L/2$',r'$L$'])
-#plt.yticks([0,M/2,M],['0',r'$M/2$',r'$M$'])
+#plt.xticks([-L,-L/2,0,L/2,L],[r'$-L$',r'$-L/2$','0',r'$L/2$',r'$L$'])
+#plt.yticks([-M,-M/2,0,M/2,M],[r'$-M$',r'$-M/2$','0',r'$M/2$',r'$M$'])
 
 
 #plt.show()
