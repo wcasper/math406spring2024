@@ -158,7 +158,7 @@ Inserting this into our solution above
 $$\begin{align}
 u(r,\theta)
   & = \sum_{n=0}^\infty A_n (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty B_n(r/R)^n\sin(n\theta)\\
-  & = \sum_{n=0}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi(r/R)^n\sin(n\theta)\\
+  & = \sum_{n=0}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi\cdot (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi\cdot (r/R)^n\sin(n\theta)\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + \sum_{n=1}^\infty (r/R)^n(\cos(n\phi)\cos(n\theta) + \sin(n\phi)\sin(n\theta))\right)h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + \sum_{n=1}^\infty (r/R)^n\cos(n(\phi-\theta))\right)h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\left(1 + \sum_{n=1}^\infty (r/R)^ne^{in(\phi-\theta)}\right)h(\phi)d\phi\\
