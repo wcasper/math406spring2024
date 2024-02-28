@@ -89,11 +89,11 @@ $$F''(r)G(\theta) + \frac{1}{r}F'(r)G(\theta) + \frac{1}{r^2}F(r)G''(\theta) = .
 
 Dividing above by $$F(r)G(\theta)$$, we obtain
 
-$$\frac{F''(r)}{F(r)}}  + \frac{1}{r}\frac{F'(r)}{F(r)} + \frac{1}{r^2}\frac{G''(\theta)}{G(\theta)} = 0.$$
+$$\frac{F''(r)}{F(r)}  + \frac{1}{r}\frac{F'(r)}{F(r)} + \frac{1}{r^2}\frac{G''(\theta)}{G(\theta)} = 0.$$
 
 Putting all of the $$\theta$$ terms on the right side of the equality leads to
 
-$$r^2\frac{F''(r)}{F(r)}}  + r\frac{F'(r)}{F(r)} = - \frac{G''(\theta)}{G(\theta)}.$$
+$$r^2\frac{F''(r)}{F(r)}  + r\frac{F'(r)}{F(r)} = - \frac{G''(\theta)}{G(\theta)}.$$
 
 It follows that both sides must be equal to a constant $$\lambda^2$$.  Equivalently
 
