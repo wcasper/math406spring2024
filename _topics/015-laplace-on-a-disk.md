@@ -151,18 +151,20 @@ $$u(r,\theta) = \sum_{n=0}^\infty A_n (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty B
 It turns out that there's a beautiful way to express solutions of the Dirichlet problem for Laplace's equation on a disk using a convolution-type integral with a certain function called the Poisson kernel.
 To see this, recall the expressions for the coefficients in the sine and cosine series expansions of $$h(\theta)$$:
 
-$$A_n = \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi\ \ \text{and}\ \ B_n = \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi.$$
+$$A_n = \frac{1}{\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi\ \ \text{and}\ \ B_n = \frac{1}{\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi$$
+
+for $$n\geq 1$$, with the exception $$A_0 = \frac{1}{2\pi}\int_0^{2\pi}h(\phi)d\phi$$.
 
 Inserting this into our solution above
 
 $$\begin{align}
 u(r,\theta)
   & = \sum_{n=0}^\infty A_n (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty B_n(r/R)^n\sin(n\theta)\\
-  & = \sum_{n=0}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi\cdot (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi\cdot (r/R)^n\sin(n\theta)\\
-  & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + \sum_{n=1}^\infty (r/R)^n(\cos(n\phi)\cos(n\theta) + \sin(n\phi)\sin(n\theta))\right)h(\phi)d\phi\\
-  & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + \sum_{n=1}^\infty (r/R)^n\cos(n(\phi-\theta))\right)h(\phi)d\phi\\
-  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\left(1 + \sum_{n=1}^\infty (r/R)^ne^{in(\phi-\theta)}\right)h(\phi)d\phi\\
-  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{1}{1-(r/R)e^{i(\phi-\theta)}}h(\phi)d\phi\\
+  & = A_0 + \sum_{n=1}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\cos(n\phi)d\phi\cdot (r/R)^n\cos(n\theta) + \sum_{n=1}^\infty \frac{1}{2\pi}\int_0^{2\pi}h(\phi)\sin(n\phi)d\phi\cdot (r/R)^n\sin(n\theta)\\
+  & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + 2\sum_{n=1}^\infty (r/R)^n(\cos(n\phi)\cos(n\theta) + \sin(n\phi)\sin(n\theta))\right)h(\phi)d\phi\\
+  & = \frac{1}{2\pi}\int_0^{2\pi} \left(1 + 2\sum_{n=1}^\infty (r/R)^n\cos(n(\phi-\theta))\right)h(\phi)d\phi\\
+  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\left(1 + 2\sum_{n=1}^\infty (r/R)^ne^{in(\phi-\theta)}\right)h(\phi)d\phi\\
+  & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{1+(r/R)e^{i(\phi-\theta)}{1-(r/R)e^{i(\phi-\theta)}}h(\phi)d\phi\\
   & = \frac{1}{2\pi}\int_0^{2\pi} \text{Re}\frac{R^2-r^2}{R^2 -2rR\cos(\theta-\phi) + r^2}h(\phi)d\phi
 \end{align}$$
 
