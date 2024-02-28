@@ -46,12 +46,11 @@ $$\begin{align}
 Therefore
 
 $$\begin{align}
-\frac{\parial^2}{\partial x^2}
+\frac{\partial^2}{\partial x^2}
  & = \left(\cos\theta\frac{\partial}{\partial r} - \frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\right)^2\\
  & = \cos\theta\frac{\partial}{\partial r}\cos\theta\frac{\partial}{\partial r} - \cos\theta\frac{\partial}{\partial r}\frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\\
  & - \frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\cos\theta\frac{\partial}{\partial r} + \frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\\
- & = \cos^2\theta\frac{\partial^2}{\partial r^2} - \frac{2}{r}\sin\theta\cos\theta\frac{\partial}{\partial r}\frac{\partial}{\partial\theta} + \frac{2}{r^2}\sin\theta\cos\theta\frac{\partial}{\partial\theta}\\
- & + \frac{1}{r}\sin^2\theta\frac{\partial}{\partial r} + \frac{1}{r^2}\sin^2\theta\frac{\partial^2}{\partial\theta^2}\\
+ & = \cos^2\theta\frac{\partial^2}{\partial r^2} - \frac{2}{r}\sin\theta\cos\theta\frac{\partial}{\partial r}\frac{\partial}{\partial\theta} + \frac{2}{r^2}\sin\theta\cos\theta\frac{\partial}{\partial\theta} + \frac{1}{r}\sin^2\theta\frac{\partial}{\partial r} + \frac{1}{r^2}\sin^2\theta\frac{\partial^2}{\partial\theta^2}\\
 \end{align}$$
 
 and also
@@ -61,6 +60,7 @@ $$\begin{align}
   & = \left(\sin\theta\frac{\partial}{\partial r} + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\right)^2\\
   & = \sin\theta\frac{\partial}{\partial r}\sin\theta\frac{\partial}{\partial r} + \sin\theta\frac{\partial}{\partial r}\frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\\
   & + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\sin\theta\frac{\partial}{\partial r} + \frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\frac{1}{r}\cos\theta\frac{\partial}{\partial\theta}\\
+ & = \sin^2\theta\frac{\partial^2}{\partial r^2} + \frac{2}{r}\sin\theta\cos\theta\frac{\partial}{\partial r}\frac{\partial}{\partial\theta} - \frac{2}{r^2}\sin\theta\cos\theta\frac{\partial}{\partial\theta} + \frac{1}{r}\sin^2\theta\frac{\partial}{\partial r} + \frac{1}{r^2}\sin^2\theta\frac{\partial^2}{\partial\theta^2}\\
 \end{align}$$
 
 If we think back to the case of the heat equation, our strategy for doing this
