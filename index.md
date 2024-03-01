@@ -11,6 +11,8 @@ title: Math 406 Intro. to Partial Differential Equations
 
 **Instructor:** Dr. W. Riley Casper [(About your instructor)](instructor)
 
+**Office:** MH 160A
+
 **Email:** wcasper@fullerton.edu
 
 **Course meetings:** Tuesday and Thursday 2:00PM-3:50PM
