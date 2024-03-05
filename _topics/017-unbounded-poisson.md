@@ -52,7 +52,7 @@ Consequently
 $$\begin{align}
 \Phi(x,y)
   & = \int_{\mathbb R}\int{\mathbb R} \frac{-1}{4\pi^2(\xi_x^2+\xi_y^2)} e^{2\pi i(x\xi_x + y\xi_y)} d\xi_x d\xi_y\\
-  & = -\int_{\mathbb R}\int{\mathbb R} \int_0^\infty e^{2\pi i(x\xi_x + y\xi_y)-4\pi^2 t(\xi_x^2+\xi_y^2} dt d\xi_x d\xi_y\\
+  & = -\int_{\mathbb R}\int{\mathbb R} \int_0^\infty e^{2\pi i(x\xi_x + y\xi_y)-4\pi^2 t(\xi_x^2+\xi_y^2)} dt d\xi_x d\xi_y\\
   & = -\int_0^\infty\left(\int_{\mathbb R}e^{2\pi ix\xi_x -4\pi^2\xi_x^2t}d\xi_x\right)\left(\int_{\mathbb R}  e^{2\pi iy\xi_y -4\pi^2\xi_y^2t}d\xi_y\right)dt\\
   & = -\frac{1}{4\pi}\int_0^\infty\frac{1}{t}e^{-(x^2+y^2)/4t}dt\\
   & = -\frac{1}{4\pi}\int_0^\infty u^2e^{-(x^2+y^2)u^2/4}dt\\
