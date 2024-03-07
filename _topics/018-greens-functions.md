@@ -49,11 +49,11 @@ $$G''(x;t) - G(x;t) = \delta(x-t).$$
 
 Taking the Fourier transform, we obtain
 
-$$-4\pi^2 \xi^2 \hatG(\xi;t) -  \hat G(\xi;t) = e^{-2\pi i \xi t}.$$
+$$-4\pi^2 \xi^2 \hat G(\xi;t) -  \hat G(\xi;t) = e^{-2\pi i \xi t}.$$
 
 This says
 
-$$\hatG(\xi;t) = \frac{-1}{1 + 4\pi^2\xi^2}e^{-2\pi i \xi t}$$
+$$\hat G(\xi;t) = \frac{-1}{1 + 4\pi^2\xi^2}e^{-2\pi i \xi t}$$
 
 and therefore
 
