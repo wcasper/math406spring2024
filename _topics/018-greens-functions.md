@@ -126,9 +126,9 @@ $$G(x,y;s,t) = \frac{1}{2\pi}\ln \frac{\sqrt{(x-s)^2+(y-t)^2}}{R}.$$
 
 The gradient is
 
-$$\nabla_{s,t} G(x,y;s,t) = \frac{1}{2\pi}\frac{1}{\sqrt{(x-s)^2+(y-t)^2}} \lvert s-x,t-y\rvert$$ 
+$$\nabla_{s,t} G(x,y;s,t) = \frac{1}{2\pi}\frac{1}{\sqrt{(x-s)^2+(y-t)^2}} \langle s-x,t-y\rangle$$ 
 
-and unit vector $$\hat n$$ at a point $$(s,t)\in\partial D_R(0,0)$$ is $$\hat n = \frac{1}{\sqrt{s^2+t^2}}\lvert s,t\rvert = \frac{1}{R}\lvert s,t\rvert$$, so the Poisson kernel is
+and unit vector $$\hat n$$ at a point $$(s,t)\in\partial D_R(0,0)$$ is $$\hat n = \frac{1}{\sqrt{s^2+t^2}}\langle s,t\rangl = \frac{1}{R}\langle s,t\rangle$$, so the Poisson kernel is
 
 $$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2-sx + t^2-ty}{\sqrt{(x-s)^2+(y-t)^2}}.$$
 
