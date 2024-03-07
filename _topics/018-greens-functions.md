@@ -41,7 +41,7 @@ $$Lu = f(\vec x),\ \ \text{with}\ \ u(\vec x)\rightarrow 0\ \ \text{as}\ \ \vec 
 
 **Example:**  Consider the one dimensional boundary value problem
 
-$$y'' -y = f(x),\ \ y(\pi/2) = 0,\ y(\pi = 0).$$
+$$y'' -y = f(x),\ \ y(\pi/2) = 0,\ y(\pi) = 0.$$
 
 To solve this, we look for the Green's function $$G(x;t)$$ which satisfies
 
