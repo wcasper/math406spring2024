@@ -130,7 +130,7 @@ $$\nabla_{s,t} G(x,y;s,t) = \frac{1}{2\pi}\frac{1}{(x-s)^2+(y-t)^2} \langle s-x,
 
 and unit vector $$\hat n$$ at a point $$(s,t)\in\partial D_R(0,0)$$ is $$\hat n = \frac{1}{\sqrt{s^2+t^2}}\langle s,t\rangle = \frac{1}{R}\langle s,t\rangle$$, so the Poisson kernel is
 
-$$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2-sx + t^2-ty}{\sqrt{(x-s)^2+(y-t)^2}}.$$
+$$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2+t^2-(x^2+y^2)}{(x-s)^2+(y-t)^2}.$$
 
 If we parameterize the boundary as $$s = R\cos(\phi)$$ and $$t = R\sin(\phi)$$, and switch to polar coordinates $$x = r\cos\theta$$ and $$y=r\sin\theta$$, this becomes
 
