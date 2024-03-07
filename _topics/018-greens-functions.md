@@ -72,17 +72,28 @@ The Green's function for this equation satisfies
 
 $$G_{xx}(x,y;s,t) + G_{yy}(x,y;s,t) = \delta(x-s,y-t),\ \ (x,y)\in D_R(0,0).$$
 
-As we saw previously, the solution of this equation is
+A solution of this equation is
 
-$$G(x,y;s,t) = \frac{1}{2\pi}\ln \sqrt{(x-s)^2+(y-t)^2} + B$$
+$$G(x,y;s,t) = \frac{1}{2\pi}\ln \sqrt{(x-s)^2+(y-t)^2} + H(x,y;s,t)$$
 
-for any constants $$A$$ and $$B$$.
-To satisfy the boundary condition $$G(x,y;s,t) = 0$$ for $$(x,y)\in\partial D_R(0,0)$$, we should take $$B = -\frac{1}{2\pi}\ln(R)$$.
+for any function $$H$$ which is harmonic on $$D_R(0,0)$$.
+
+Consider the point $$(s^*,t^*) = R^2(s,t)/(s^2+t^2)$$.
+Then for any $$(x,y)\in\partial D_R(0,0)$$ 
+
+$$\sqrt{(x-s^*)^2+(y-t^*)^2} = \sqrt{R^2-2c(xs+yt) + c^2(s^2+t^2)} = \frac{R}{\sqrt{s^2+t^2}}\sqrt{(s-x)^2+(y-t)^2}.$$
+
+It follows that
+
+$$H(x,y;s,t) = -\frac{1}{2\pi}\ln \sqrt{(x-s^*)^2+(y-t^*)^2} + \frac{1}{2\pi} \ln \frac{R}{\sqrt{s^2+t^2}}$$
+
+is harmonic on $$D_R(0,0)$$ and makes $$G(x,y;s,t)$$ vanish on $$\partial D_R(0,0)$$.
+
 Thus the Green's function is
 
-$$G(x,y;s,t) = \frac{1}{2\pi}\ln \frac{\sqrt{(x-s)^2+(y-t)^2}}{R}.$$
+$$G(x,y;s,t) = \frac{1}{2\pi}\ln \frac{\sqrt{(x-s)^2+(y-t)^2}}{R} - \frac{1}{2\pi}\ln \frac{\sqrt{(x-s^*)^2+(y-t^*)^2}}{R}+ \frac{1}{2\pi} \ln \frac{R}{\sqrt{s^2+t^2}}.$$
 
-**Example:**  The Green's function for Poissn's equation on the upper half plane $$\mathbb H = \{(x,y): y>0\}$$ is given by
+**Example:**  The Green's function for Poisson's equation on the upper half plane $$\mathbb H = \{(x,y): y>0\}$$ is given by
 
 $$G(x,y;s,t) = \frac{1}{4\pi}\ln \frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}.$$
 
@@ -120,20 +131,15 @@ where here $$\hat n$$ is the normal unit vector pointing outward from the interi
 The function $$P(x,y;s,t) = \nabla_{s,t} G(x,y;s,t)\cdot \hat n$$ defined on the boundary of $$\Omega$$ is called the **Poisson kernel** of $$\Omega$$.
 
 **Example:**
-Recall the Green's function for $$D_R(0,0)$$ is
 
-$$G(x,y;s,t) = \frac{1}{2\pi}\ln \frac{\sqrt{(x-s)^2+(y-t)^2}}{R}.$$
+The Poisson kernel is
 
-The gradient is
-
-$$\nabla_{s,t} G(x,y;s,t) = \frac{1}{2\pi}\frac{1}{(x-s)^2+(y-t)^2} \langle s-x,t-y\rangle$$ 
-
-and unit vector $$\hat n$$ at a point $$(s,t)\in\partial D_R(0,0)$$ is $$\hat n = \frac{1}{\sqrt{s^2+t^2}}\langle s,t\rangle = \frac{1}{R}\langle s,t\rangle$$, so the Poisson kernel is
-
-$$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2+t^2-(x^2+y^2)}{(x-s)^2+(y-t)^2}.$$
+$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2+t^2-(x^2+y^2)}{(x-s)^2+(y-t)^2}.$$
 
 If we parameterize the boundary as $$s = R\cos(\phi)$$ and $$t = R\sin(\phi)$$, and switch to polar coordinates $$x = r\cos\theta$$ and $$y=r\sin\theta$$, this becomes
 
-$$P(r,\theta;\phi) = \frac{1}{2\pi}\frac{R^2-Rr\cos(\theta-\phi)}{R^2 + r^2 - 2rR\cos(\theta-\phi)}.$$
+$$P(r,\theta;\phi) = \frac{1}{2\pi}\frac{R^2-r^2)}{R^2 + r^2 - 2rR\cos(\theta-\phi)}.$$
+
+
 
 
