@@ -70,7 +70,11 @@ where here $$\hat n$$ is the normal unit vector pointing outward from the interi
 
 The Green's function for the upper half plane $$\mathbb H = \{(x,y)\in\mathbb R^2: y > 0\}$$ is
 
-$$G(x,y;s,t) = \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y-t)^2} - \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y+t)^2} = \frac{1}{2\pi} \ln\sqrt\frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}.$$
+$$\begin{align}
+G(x,y;s,t)
+& = \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y-t)^2} - \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y+t)^2}\\
+& = \frac{1}{2\pi} \ln\sqrt\frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}.
+\end{align}$$
 
 The normal unit vector at a boundary point $$(s,0)$$ of $$\mathbb{H}$$ is $$\hat n = \langle 0,-1\rangle$$.
 The Poisson kernel is
@@ -81,13 +85,23 @@ On the boundary $$t=0$$, so the expression simplifies to
 
 $$P(x,y;s,0) = \frac{1}{\pi}\frac{y}{(x-s)^2+y^2}.$$
 
+Because the parameter $$s$$ only appears with the $$x$$-term, we call define
+
+$$P(x,y) := P(x,y;0,0) = \frac{1}{\pi}\frac{y}{x^2+y^2}$$
+
+to be the **Poisson kernel of the upper half plane** or the **Poisson kernel on the real line**.
+
 As a consequence the solution of Poisson's equation
 
 $$\Delta u = \rho(x,y),\ \ (x,y)\in\mathbb{H},\quad u(x,0) = g(x)$$
 
 is given by
 
-$$u(x,y) = \frac{1}{2\pi}\int_{\mathbb R}\int_0^\infty \ln\sqrt\frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}\rho(s,t)dtds + \int_{\mathbb R} \frac{1}{\pi}\frac{y}{(x-s)^2+y^2}g(s)ds.$$
+$$\begin{align}
+u(x,y)
+ & = \int_{\mathbb R}\int_0^\infty G(x,y;,s,t)\rho(s,t)dtds + \int_{\mathbb R} P(x-s,y)g(s)ds\\
+ & = \frac{1}{2\pi}\int_{\mathbb R}\int_0^\infty \ln\sqrt\frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}\rho(s,t)dtds + \int_{\mathbb R} \frac{1}{\pi}\frac{y}{(x-s)^2+y^2}g(s)ds\\
+\end{align}$$
 
 **Example:**
 
