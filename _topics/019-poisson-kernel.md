@@ -52,9 +52,9 @@ Now by the Modified Divegence Theorem above and using the fact that $$G(\vec x;\
 $$\begin{align}
 u(x,y)
   & = g(\vec x) + \int_{\Omega} G(\vec x;\vec t)(\rho(\vec t)-\Delta g(\vec t))d\vec t\\
-  & = g(\vec x) + \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t - \int_{\Omega}g(\vec t)\Delta G(\vec x,\vec t) d\vec t + \int_{\partial\Omega} (g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS\\
-  & = g(\vec x) + \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t - \int_{\Omega}g(\vec t)\delta_{\vec x}(\vec t) d\vec t + \int_{\partial\Omega} (g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS\\
-  & = \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t + \int_{\partial\Omega} (g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS
+  & = g(\vec x) + \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t - \int_{\Omega}g(\vec t)\Delta G(\vec x,\vec t) d\vec t + \int_{\partial\Omega} g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS\\
+  & = g(\vec x) + \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t - \int_{\Omega}g(\vec t)\delta_{\vec x}(\vec t) d\vec t + \int_{\partial\Omega} g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS\\
+  & = \int_{\Omega} G(\vec x;\vec t)\rho(\vec t)d\vec t + \int_{\partial\Omega} g(\vec t)\nabla G(\vec x;\vec t)\cdot\hat n dS
 \end{align}$$
 
 This motivates th following definition.
