@@ -98,47 +98,6 @@ $$G(x,y;s,t) = \frac{1}{2\pi}\ln \frac{\sqrt{(x-s)^2+(y-t)^2}}{R} - \frac{1}{2\p
 $$G(x,y;s,t) = \frac{1}{4\pi}\ln \frac{(x-s)^2+(y-t)^2}{(x-s)^2+(y+t)^2}.$$
 
 
-## Solving boundary value problems for Poisson's equation
-
-Suppose that we want to solve Poisson's equation on a domain $$\Omega$$ with a Dirichlet boundary condition
-
-$$u_{xx} + u_{yy} = \rho(x,y), \ \ (x,y)\in\Omega,\ \ \text{with}\ \ u(x,y) = g(x,y),\ \ (x,y)\in\partial\Omega.$$
-
-We first change this to a homogeneous boundary condition by setting $$u = v + g$$.
-This leads to the differential equation
-
-$$\Delta v = \rho-\Delta g,\ \ (x,y)\in\Omega,\ \ \text{with}\ \ v(x,y) = 0,\ \ (x,y)\in\partil\Omega.$$
-
-We can then solve this with the Green's function for $$\Delta$$ on $$\Omega$$:
-
-$$v(x,y) = \iint_{\Omega} G(x,y;s,t)(\rho(s,t)-\Delta g(s,t))dsdt.$$
-
-Now by Green's Theorem
-
-$$\iint_{\Omega} f\Delta g-g\Delta f dA = \oint_{\partial\Omega} (f\nabla g - g\nabla f)\cdot\hat n dC.$$
-
-Using this, we get
-
-$$\begin{align}
-u(x,y)
-  & = g(x,y) + \iint_{\Omega} G(x,y;s,t)(\rho(s,t)-\Delta_{s,t} g(s,t))dsdt\\
-  & = \iint_{\Omega} G(x,y;s,t)\rho(s,t)dsdt - \oint_{\partial\Omega} G(x,y;s,t)\nabla_{s,t} g(s,t)\cdot\hat n - g(s,t)\nabla_{s,t} G(x,y;s,t)\cdot\hat n dC(s,t) \\
-  & = \iint_{\Omega} G(x,y;s,t)\rho(s,t)dsdt + \oint_{\partial\Omega} g(s,t)\nabla_{s,t} G(x,y;s,t)\cdot\hat n dC(s,t).
-\end{align}$$
-
-where here $$\hat n$$ is the normal unit vector pointing outward from the interior of the curve $$\partial \Omega$$.
-
-The function $$P(x,y;s,t) = \nabla_{s,t} G(x,y;s,t)\cdot \hat n$$ defined on the boundary of $$\Omega$$ is called the **Poisson kernel** of $$\Omega$$.
-
-**Example:**
-
-The Poisson kernel is
-
-$P(x,y;s,t) = \frac{1}{2\pi}\frac{s^2+t^2-(x^2+y^2)}{(x-s)^2+(y-t)^2}.$$
-
-If we parameterize the boundary as $$s = R\cos(\phi)$$ and $$t = R\sin(\phi)$$, and switch to polar coordinates $$x = r\cos\theta$$ and $$y=r\sin\theta$$, this becomes
-
-$$P(r,\theta;\phi) = \frac{1}{2\pi}\frac{R^2-r^2)}{R^2 + r^2 - 2rR\cos(\theta-\phi)}.$$
 
 
 
