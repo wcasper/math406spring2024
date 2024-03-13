@@ -143,8 +143,9 @@ is given by
 
 $$\begin{align}
 u(x,y)
- & = \int_0^{2\pi}\int_0^R\int_0^\infty G(r,\theta;,\nu,\phi)\rho(\nu,\phi)\nu\d\nu d\phi + \int_0^{2\pi} P(r,\theta; R,\phi)g(\phi) R d\phi\\
- & = \frac{1}{2\pi}\int_0^{2\pi}\int_0^R\int_0^\infty \ln \sqrt{\frac{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}}\rho(\nu,\phi) \nu d\nu d\phi + \frac{1}{2\pi}\int_0^{2\pi}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)}.
+ & = \int_0^{2\pi}\int_0^R\int_0^\infty G(r,\theta;,\nu,\phi)\rho(\nu,\phi)\nu d\nu d\phi + \int_0^{2\pi} P(r,\theta; R,\phi)g(\phi) R d\phi\\
+ & = \frac{1}{2\pi}\int_0^{2\pi}\int_0^R \ln \sqrt{\frac{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}}\rho(\nu,\phi) \nu d\nu d\phi\\
+ & + \frac{1}{2\pi}\int_0^{2\pi}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)}g(\phi)d\phi.
  \end{align}$$
 
 
