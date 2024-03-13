@@ -41,7 +41,7 @@ $$\Delta u(\vec x) = \rho, \ \ \vec x\in\Omega,\ \ \text{with}\ \ u(\vec x) = g(
 We first change this to a homogeneous boundary condition by setting $$u = v + g$$.
 This leads to the differential equation
 
-$$\Delta v(\vec x) = \rho(\vec x)-\Delta g(\vec x),\ \ \vec x\in\Omega,\ \ \text{with}\ \ v(\vec x) = 0,\ \ \vec x\in\partil\Omega.$$
+$$\Delta v(\vec x) = \rho(\vec x)-\Delta g(\vec x),\ \ \vec x\in\Omega,\ \ \text{with}\ \ v(\vec x) = 0,\ \ \vec x\in\partial\Omega.$$
 
 We can then solve this with the Green's function for $$\Delta$$ on $$\Omega$$:
 
