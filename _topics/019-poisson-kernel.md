@@ -115,7 +115,7 @@ In polar coordinates, this can be written using the Law of Cosines as
 $$\begin{align}
 G(r,\theta;\nu,\phi)
   & = \frac{1}{2\pi}\ln \sqrt{r^2+\nu^2-2r\nu\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{r^2 + R^4/\nu^2 - 2r(R^2/\nu)\cos(\theta-\phi)}\\
-  & = \frac{1}{2\pi}\ln \sqrt{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}
+  & = \frac{1}{2\pi}\ln \sqrt{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}\\
   & = \frac{1}{2\pi}\ln \sqrt{\frac{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}}
 \end{align}$$
 
