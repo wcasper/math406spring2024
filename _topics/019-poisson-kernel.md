@@ -148,4 +148,5 @@ u(x,y)
  & + \frac{1}{2\pi}\int_0^{2\pi}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)}g(\phi)d\phi.
  \end{align}$$
 
+As we see, the boundary part of this expression agrees exactly with the Poisson kernel for the circle we found before.
 
