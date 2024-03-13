@@ -78,7 +78,7 @@ $$G(x,y;s,t) = \frac{1}{2\pi}\ln \sqrt{(x-s)^2+(y-t)^2} + H(x,y;s,t)$$
 
 for any function $$H$$ which is harmonic on $$D_R(0,0)$$.
 
-Consider the point $$(s^*,t^*) = R^2(s,t)/(s^2+t^2)$$.
+Consider the point $$(s^*,t^*) = c(s,t)$$ for $$c = R^2/(s^2+t^2)$$, called the **Schwarz reflection** of $$(s,t)$$.
 Then for any $$(x,y)\in\partial D_R(0,0)$$ 
 
 $$\sqrt{(x-s^*)^2+(y-t^*)^2} = \sqrt{R^2-2c(xs+yt) + c^2(s^2+t^2)} = \frac{R}{\sqrt{s^2+t^2}}\sqrt{(s-x)^2+(y-t)^2}.$$
