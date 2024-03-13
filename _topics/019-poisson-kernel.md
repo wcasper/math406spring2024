@@ -121,7 +121,7 @@ G(r,\theta;\nu,\phi)
 
 where $$\nu\cos\phi = s$$ and $$\nu\sin\phi = t$$.
 
-The normal unit vector to the boundary of the disk at the point $$(\nu,\phi)$$ is $$\hat n = \hat nu$$, so the Poisson kernel is
+The normal unit vector to the boundary of the disk at the point $$(\nu,\phi)$$ is $$\hat n = \hat\nu$$, so the Poisson kernel is
 
 $$\begin{align}
 P(r,\theta;\nu,\phi)
