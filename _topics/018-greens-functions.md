@@ -62,7 +62,7 @@ $$G(x;t) = -\frac{1}{2}e^{-\lvert (x+t)\rvert}.$$
 To achieve the boundary condition, we can add on any solution of the homogeneous equation $$y''-y=0$$.
 To get $$G(\pm \pi;t) = 0$$, we thus obtain
 
-$$G(x;t) = -\frac{1}{2}e^{-\lvert (x+t)\rvert} - \frac{1}{2}e^{-\lvert (\pi+t)\rvert}\cos(x)+\frac{1}{2}e^{-\lvert (\pi/2+t)\rvert}\sin(x).$$
+$$G(x;t) = -\frac{1}{2}e^{-\lvert (x+t)\rvert} - \frac{1}{2}e^{-\lvert (\pi+t)\rvert}\cosh(x)+\frac{1}{2}e^{-\lvert (\pi/2+t)\rvert}\sinh(x).$$
 
 **Example:**  Consider Poisson's equation on the disk $$\Omega = D_R(0,0)$$
 
