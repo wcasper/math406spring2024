@@ -85,11 +85,11 @@ On the boundary $$t=0$$, so the expression simplifies to
 
 $$P(x,y;s,0) = \frac{1}{\pi}\frac{y}{(x-s)^2+y^2}.$$
 
-Because the parameter $$s$$ only appears with the $$x$$-term, we call define
+Because the parameter $$s$$ only appears with the $$x$$-term, we simply call
 
 $$P(x,y) := P(x,y;0,0) = \frac{1}{\pi}\frac{y}{x^2+y^2}$$
 
-to be the **Poisson kernel of the upper half plane** or the **Poisson kernel on the real line**.
+the **Poisson kernel of the upper half plane** or the **Poisson kernel on the real line**.
 
 As a consequence the solution of Poisson's equation
 
@@ -114,8 +114,9 @@ In polar coordinates, this can be written using the Law of Cosines as
 
 $$\begin{align}
 G(r,\theta;\nu,\phi)
-  & = \frac{1}{2\pi}\ln \sqrt{r^2+\nu^2-2r\nu\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{r^2 + R^4/\nu^2 - 2r(R^2/\nu)\cos(\theta-\phi)}+ \frac{1}{2\pi} \ln \frac{R}{\nu}\\
-  & = \frac{1}{2\pi}\ln \sqrt{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)} + \frac{1}{2\pi}\ln (\nu/R)
+  & = \frac{1}{2\pi}\ln \sqrt{r^2+\nu^2-2r\nu\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{r^2 + R^4/\nu^2 - 2r(R^2/\nu)\cos(\theta-\phi)}\\
+  & = \frac{1}{2\pi}\ln \sqrt{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)} - \frac{1}{2\pi}\ln \sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}
+  & = \frac{1}{2\pi}\ln \sqrt{\frac{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}\sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}}
 \end{align}$$
 
 where $$\nu\cos\phi = s$$ and $$\nu\sin\phi = t$$.
@@ -125,18 +126,25 @@ The normal unit vector to the boundary of the disk at the point $$(\nu,\phi)$$ i
 $$\begin{align}
 P(r,\theta;\nu,\phi)
 & = \nabla G \cdot \hat n = G_\nu\\
-& = \frac{1}{2\pi R}\frac{\nu/R - r/R\cos(\theta-\phi)}{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}
-& - \frac{1}{2\pi R}\frac{\nu r^2/R^3 - r/R\cos(\theta-\phi)}{r^2\nu^2/R^4+1-2r\nu/R^2\cos(\theta-\phi)} + \frac{1}{2\pi \nu}.
+& = \frac{1}{2\pi R}\frac{\nu/R - r/R\cos(\theta-\phi)}{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}  - \frac{1}{2\pi R}\frac{\nu r^2/R^3 - r/R\cos(\theta-\phi)}{r^2\nu^2/R^4+1-2r\nu/R^2\cos(\theta-\phi)}.
 \end{align}$$
 
 On the boundary $$\nu = R$$ and this simplifies to
 
-$$P(r,\theta; R,\phi)  = \frac{1}{2\pi R}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)} + \frac{1}{2\pi R}.$$
+$$P(r,\theta; R,\phi)  = \frac{1}{2\pi R}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)}.$$
 
-If we parameterize the boundary as $$s = R\cos(\phi)$$ and $$t = R\sin(\phi)$$, and switch to polar coordinates $$x = r\cos\theta$$ and $$y=r\sin\theta$$, this becomes
+This agrees with our previous expression for the Poisson kernel on the disk $$D_R(0,0)$$, up to a factor $$R$$ which vanishes upon accounting for the switch to polar coordinates in the integral.
 
-$$P(r,\theta;\phi) = \frac{1}{2\pi}\frac{R^2-r^2)}{R^2 + r^2 - 2rR\cos(\theta-\phi)}.$$
+As a consequence the solution of Poisson's equation
 
+$$\Delta u = \rho(r,\theta),\ \ 0 < r < R,\quad u(R,\theta) = g(\theta)$$
 
+is given by
+
+$$\begin{align}
+u(x,y)
+ & = \int_0^{2\pi}\int_0^R\int_0^\infty G(r,\theta;,\nu,\phi)\rho(\nu,\phi)\nu\d\nu d\phi + \int_0^{2\pi} P(r,\theta; R,\phi)g(\phi) R d\phi\\
+ & = \frac{1}{2\pi}\int_0^{2\pi}\int_0^R\int_0^\infty \ln \sqrt{\frac{r^2/R^2+\nu^2/R^2-2r\nu/R^2\cos(\theta-\phi)}\sqrt{\nu^2r^2/R^4 + 1 - 2r\nu/R^2\cos(\theta-\phi)}}\rho(\nu,\phi) \nu d\nu d\phi + \frac{1}{2\pi}\int_0^{2\pi}\frac{1 - r^2/R^2}{1+r^2/R^2-2(r/R)\cos(\theta-\phi)}.
+ \end{align}$$
 
 
