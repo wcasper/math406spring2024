@@ -50,7 +50,10 @@ To summarize, we have the following theorem.
 
 $$\Delta u= \rho(\vec x),\ \ \vec x\in\Omega,\ \ \ u(\vec x) = g(\vec x),\ \ \vec x\in\partial\Omega$$
 
-which extend to continuous functions in a neighborhood of the closure of $$\Omega$$, then $$u=v$$.
+with finite energy which extend to continuous functions in a neighborhood of the closure of $$\Omega$$, then $$u=v$$.
+
+:warning: If $$u$$ and $$v$$ don't have finite energy, there are many counter-examples.  For example $$u(x,y) = x$$ and $$v(x,y) = y$$ are both harmonic on the domain $$\mathbb R^2$$ but are clearly not equal.
+
 
 
 
