@@ -71,7 +71,7 @@ $$h_{tt} + Hu_{xt} + Hv_{yt} = 0,$$
 
 which gives us
 
-$$h_{tt} = \frac{H}{g}\left( h_{xx} + h_{yy} \right).$$
+$$h_{tt} = gH\left( h_{xx} + h_{yy} \right).$$
 
 Thus the wave equation in two dimensions gives a good approximation of the value of $$h(x,y,t)$$ for the shallow water equations with small values of $$x,y$$, and $$h$$.
 
