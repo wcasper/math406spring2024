@@ -53,7 +53,7 @@ $$u(x,t) = \int_0^{x-ct}f'(s)-\frac{1}{2c}g(s) ds + f(0) + \frac{1}{2c}\int_0^{x
 
 Finally, combining like terms, we arrive at the formula
 
-$$u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c} \int_{x+ct}^{x-ct}g(s) ds.$$
+$$u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c} \int_{x-ct}^{x+ct}g(s) ds.$$
 
 To summarize, we have the following theorem
 
@@ -66,6 +66,6 @@ on the whole real line, with the boudary conditions
 $$u(x,0) = f(x),\ \ u_t(x,0) = g(x)\ \ x\in\mathbb{R}$$
 is given by
 
-$$u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c} \int_{x+ct}^{x-ct}g(s) ds.$$
+$$u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c} \int_{x-ct}^{x+ct}g(s) ds.$$
 
 
