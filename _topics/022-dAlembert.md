@@ -99,9 +99,9 @@ For the initial condition and the boundary conditions to be compatible, we must 
 To solve this equation, we use the **reflection method**, wherein we extend $$f$$ and $$g$$ to odd functions on $$\mathbb{R}$$
 
 $$
-\widetilde f(x) = \left\begin{array}{cc}f(x) & x \geq 0\\ -f(-x) & x < 0\end{array}\right.
+\widetilde f(x) = \left\lbrace\begin{array}{cc}f(x) & x \geq 0\\ -f(-x) & x < 0\end{array}\right.
 \quad\text{and}\quad
-\widetilde g(x) = \left\begin{array}{cc}g(x) & x \geq 0\\ -g(-x) & x < 0\end{array}\right.
+\widetilde g(x) = \left\lbrace\begin{array}{cc}g(x) & x \geq 0\\ -g(-x) & x < 0\end{array}\right.
 $$
 
 Since they are odd, the solution of the wave equation $$\widetilde u(x,t)$$ with the initial condition
@@ -152,9 +152,9 @@ For the initial condition and the boundary conditions to be compatible, we must 
 To solve this equation, we extend $$f$$ and $$g$$ to be odd, periodic functions on the whole real line with period $$2L$$, in a way that should remind us exactly of our experience with sine series:
 
 $$
-\widetilde f(x) = \left\begin{array}{cc}f(x) & 0 < x < L\\ -f(-x) & -L < x < 0 \\ \text{periodically thereafter}\end{array}\right.
+\widetilde f(x) = \left\lbrace\begin{array}{cc}f(x) & 0 < x < L\\ -f(-x) & -L < x < 0 \\ \text{periodically thereafter}\end{array}\right.
 \quad\text{and}\quad
-\widetilde g(x) = \left\begin{array}{cc}g(x) & x \geq 0\\ -g(-x) & x < 0 \\ \text{periodically thereafter}\end{array}\right.
+\widetilde g(x) = \left\lbrace\begin{array}{cc}g(x) & x \geq 0\\ -g(-x) & x < 0 \\ \text{periodically thereafter}\end{array}\right.
 $$
 
 Then d'Alembert's formula inspires us to consider the equation
