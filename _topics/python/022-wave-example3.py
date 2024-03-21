@@ -14,7 +14,7 @@ nt = 100   # number of time steps
 xmin =  0  # minimum x value
 xmax =  6  # maximum x value
 tmax  =10  # maximum time
-c = 6      # speed
+c = 3      # speed
 pi = np.pi
 
 # initial condition
