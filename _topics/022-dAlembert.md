@@ -72,6 +72,14 @@ is given by
 
 $$u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c} \int_{x-ct}^{x+ct}g(s) ds.$$
 
+The solution of the wave equation on the real line with the initial condition $$u(x,0) = \max(3-\lvert x\rvert,0)$$ and $$u_t(x,0) = 0$$ is given below.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/022-wave-example1.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code](022-wave-example1.py)
 
 ## 1-D wave equation on a half-line
 
@@ -119,6 +127,52 @@ is given by
 
 $$u(x,t) = \frac{f(x-ct)+f(\lvert x+ct \rvert)}{2} + \frac{1}{2c} \int_{\lvert x-ct \rvert }^{x+ct}g(s) ds.$$
 
+The solution of the wave equation on the half-line with the initial condition $$u(x,0) = \max(3-\lvert x\rvert,0)$$ and $$u_t(x,0) = 0$$ is given below.
 
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/022-wave-example2.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code](022-wave-example2.py)
+
+## 1-D wave equation on a finite interval
+
+We can also solve the wave equation on a finite interval using d'Alembert's formula.
+
+Our problem is to solve the one-dimensional wave equation 
+
+$$u_{tt} = c^2u_{xx},\ \ \ t > 0,\ x > 0$$
+
+on an interval $$(0,L)$$, with the boundary condition $$u(0,t) = 0$$ and $$u(L,t) = 0$$, and with the initial conditions
+
+$$u(x,0) = f(x),\ \ u_t(x,0) = g(x)\ \ x > 0.$$
+
+For the initial condition and the boundary conditions to be compatible, we must also require $$f$$ and $$g$$ to go to zero at $$x=0$$ and $$x=L$$.
+To solve this equation, we extend $$f$$ and $$g$$ to be odd, periodic functions on the whole real line with period $$2L$$, in a way that should remind us exactly of our experience with sine series:
+
+$$
+\widetilde f(x) = \left\begin{array}{cc}f(x) & 0 < x < L\\ -f(-x) & -L < x < 0 \\ \text{periodically thereafter}\end{array}\right.
+\quad\text{and}\quad
+\widetilde g(x) = \left\begin{array}{cc}g(x) & x \geq 0\\ -g(-x) & x < 0 \\ \text{periodically thereafter}\end{array}\right.
+$$
+
+Then d'Alembert's formula inspires us to consider the equation
+
+$$\widetilde u(x,t) = \frac{\widetilde f(x-ct)+\widetilde f(\lvert x+ct \rvert)}{2} + \frac{1}{2c} \int_{\lvert x-ct \rvert }^{x+ct}\widetilde g(s) ds.$$
+
+The restriction of this function to $$0 < x < L$$ solves our original problem.
+Note, that since the integral of an odd, periodic function over a whole period is necessarily zero, this solution is periodic in time, and in particular satisfies
+
+$$\widetilde u(x,t+2L/c) = \widetilde u(x,t).$$ 
+
+The solution of the wave equation on the interval $$(0,6)$$ with the initial condition $$u(x,0) = \max(3-\lvert x\rvert,0)$$ and $$u_t(x,0) = 0$$ is given below.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/022-wave-example3.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code](022-wave-example3.py)
 
 
