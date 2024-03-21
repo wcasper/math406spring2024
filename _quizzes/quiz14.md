@@ -21,7 +21,7 @@ $$\Omega = \{(x,y): y+x\geq 0.\}$$
 
 The Green's function for $$\Omega$$ is given by
 
-$$G(x,y;s,t) = \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y-t)^2} - \frac{1}{2\pi}\ln\sqrt{(x+s)^2+(y+t)^2}.$$
+$$G(x,y;s,t) = \frac{1}{2\pi}\ln\sqrt{(x-s)^2+(y-t)^2} - \frac{1}{2\pi}\ln\sqrt{(x+t)^2+(y+s)^2}.$$
 
 **Question 3:**  True or false.
 
