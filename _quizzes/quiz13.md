@@ -26,7 +26,7 @@ $$u(x,y) = \int_{\mathbb{R}}\int_{\mathbb{R}}\Phi(x-s,y-t)\rho(s,t)dtds.$$
 
 For $$n > 2$$, the fundamental solution of Poisson's equation in $$\mathbb{R}^n$$ is
 
-$$\Phi(\vec x) = \frac{1}{\omega_n \lvert \vec x\rvert^{n-2}},$$
+$$\Phi(\vec x) = \frac{-1}{\omega_n \lvert \vec x\rvert^{n-2}},$$
 
 where here $$\omega_n$$ is the surface area of the unit sphere in $$\mathbb{R}^n$$.
 
