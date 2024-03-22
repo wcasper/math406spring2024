@@ -28,7 +28,7 @@ in spherical coordinates.
 
 # Problem 2
 
-Find the Green's function for the Laplacian and the Poisson kernel for a sphere of radius $$R$$ centered at the origin.
+Find the Green's function for the Laplacian and the Poisson kernel for the ball $$B_R(0,0,0) = \{(x,y,z): x^2+y^2+z^2 < R^2\}$$  of radius $$R$$ centered at the origin.
 
 # Problem 3
 
