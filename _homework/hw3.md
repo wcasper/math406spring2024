@@ -38,7 +38,7 @@ Solve Laplace's equation
 
 $$u_{xx} + u_{yy} = 0$$
 
-ono the disk $$x^2 + y^2\leq R$$ with the Dirichlet boundary condition 
+ono the disk $$x^2 + y^2\leq R^2$$ with the Dirichlet boundary condition 
 
 $$u = 1 + 3\sin\theta - 5\cos(2\theta)$$
 
