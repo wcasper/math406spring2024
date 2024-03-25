@@ -34,7 +34,7 @@ $$\int_{\mathbb{R}} \lvert f(x)\rvert^2 dx = \int_{\mathbb{R}} \lvert \hat f(k)\
 
 Hint: start by writing
 
-$$\lvert \hat f(x)\rvert^2 = \int_{\mathbb{R}}\int_{\mathbb{R}} f(x)f(y)e^{-2\pi ikx}e^{2\pi iky}dxdy.$$
+$$\lvert \hat f(k)\rvert^2 = \int_{\mathbb{R}}\int_{\mathbb{R}} f(x)f(y)e^{-2\pi ikx}e^{2\pi iky}dxdy.$$
 
 # Problem 3
 
