@@ -52,7 +52,7 @@ Solve Laplace's equation
 
 $$u_{xx} + u_{yy} = 0$$
 
-ono the disk $$x^2 + y^2\leq R$$ with the Dirichlet boundary condition 
+ono the disk $$x^2 + y^2\leq R^2$$ with the Dirichlet boundary condition 
 
 $$u = \left\lbrace\begin{array}{cc}1 & 0\leq\theta\leq\pi\\0 & \pi <\theta<2\pi\end{array}\right.$$
 
