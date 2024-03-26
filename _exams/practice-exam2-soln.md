@@ -137,8 +137,10 @@ The combined potential field is
 
 $$\begin{align}
 G(x,y,z;x',y',z')
-  & = \frac{1}{4\pi \sqrt{(x-x')^2+(y-y')^2+(z-z')^2}} -\frac{1}{4\pi \sqrt{(x+x')^2+(y-y')^2+(z-z')^2}} - \frac{1}{4\pi \sqrt{(x-x')^2+(y+y')^2+(z-z')^2}} - \frac{1}{4\pi \sqrt{(x-x')^2+(y-y')^2+(z+z')^2}}\\
-  & = +\frac{1}{4\pi \sqrt{(x+x')^2+(y+y')^2+(z-z')^2}} + \frac{1}{4\pi \sqrt{(x+x')^2+(y-y')^2+(z+z')^2}} + \frac{1}{4\pi \sqrt{(x-x')^2+(y+y')^2+(z+z')^2}} - \frac{1}{4\pi \sqrt{(x+x')^2+(y+y')^2+(z+z')^2}}\\
+  & = \frac{1}{4\pi \sqrt{(x-x')^2+(y-y')^2+(z-z')^2}} -\frac{1}{4\pi \sqrt{(x+x')^2+(y-y')^2+(z-z')^2}}\\
+  & - \frac{1}{4\pi \sqrt{(x-x')^2+(y+y')^2+(z-z')^2}} - \frac{1}{4\pi \sqrt{(x-x')^2+(y-y')^2+(z+z')^2}}\\
+  & +\frac{1}{4\pi \sqrt{(x+x')^2+(y+y')^2+(z-z')^2}} + \frac{1}{4\pi \sqrt{(x+x')^2+(y-y')^2+(z+z')^2}}\\
+  & + \frac{1}{4\pi \sqrt{(x-x')^2+(y+y')^2+(z+z')^2}} - \frac{1}{4\pi \sqrt{(x+x')^2+(y+y')^2+(z+z')^2}}.
 \end{align}$$
 
 We see explicitly that
