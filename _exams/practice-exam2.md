@@ -9,7 +9,7 @@ Solve the following problems and type up your solutions.
 In the actual exam, you will be allowed scratch paper and a pencil, but no calculator or note sheet.
 
 
-**Problem 1:** Find the general solution of the partial differential equation
+**Problem 1:**
 
 * (A) Show that if $$u(x,y)$$ is harmonic everywhere in $$\mathbb{R}^2$$ and bounded below, then $$u$$ is constant.
 * (B) Show that the statement is false when we allow $$u(x,y)$$ to be unbounded.
