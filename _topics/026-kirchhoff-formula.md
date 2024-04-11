@@ -14,7 +14,7 @@ $$\overline u_{tt} = c^2(\overline u_{rr} + \frac{2}{r}\overline u_r).$$
 In other words, the spherical means behave like radially symmetric spherical waves.
 In particular $$r\overline u$$ satisfies the one-dimensional wave equation on the half-line $$0 < r < \infty$$, and its solution must be given by
 
-$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;\lvert r-ct\rvert)) + \frac{1}{2rc}\int_{\lvert r-ct\rvert}^{r+ct}s\overline g(x,y,z;s)ds.$$
+$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + \lvert r-ct\rvert\overline f(x,y,z;\lvert r-ct\rvert)) + \frac{1}{2rc}\int_{\lvert r-ct\rvert}^{r+ct}s\overline g(x,y,z;s)ds.$$
 
 The solution of the wave equation is given by taking the limit as $$r\rightarrow 0+$$.
 In taking this limit, without loss of generality, we may assume $$0 < r < ct$$, so that $$\lvert r-ct\rvert = -r+ct$$.
