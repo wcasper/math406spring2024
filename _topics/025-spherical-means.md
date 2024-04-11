@@ -28,9 +28,10 @@ Substituting this in, th equation becomes
 
 $$v_{tt} = c^2v_{\rho\rho}, v(\rho,0) = \rho f(\rho),\ v_t(\rho,0) = \rho g(\rho)$$
 
-so that $$v(\rho,t)$$ is a solution of the wave equation in one dimension!  Using d'Alembert's formula, we find
+so that $$v(\rho,t)$$ is a solution of the wave equation on the half-line $$(0,\infty)$$!
+Using d'Alembert's formula and the reflection method, we find the solution to be
 
-$$v(\rho,t) = \frac{1}{2}((\rho+ct)f(\rho+ct) + (\rho-ct)f(\rho-ct)) + \frac{1}{2c}\int_{\rho-ct}^{\rho+ct} sg(s)ds.$$
+$$v(\rho,t) = \frac{1}{2}((\rho+ct)f(\rho+ct) + (\rho-ct)f(\lvert \rho-ct \rvert)) + \frac{1}{2c}\int_{\lvert \rho-ct \rvert}^{\rho+ct} sg(s)ds.$$
 
 Thus a spherically symmetric wave will look like
 
@@ -148,15 +149,71 @@ we obtain the following amazing result, which says that the spherical average of
 
 $$\overline u_{tt} = c^2(\overline u_{rr} + \frac{2}{r}\overline u_r).$$
 
-Consequently
+Consequently, the spherical means are given by the equation
 
-$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;r-ct)) + \frac{1}{2rc}\int_{x-ct}^{x+ct}\overline sg(x,y,z;s)ds,$$
+$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;\lvert r-ct\rvert)) + \frac{1}{2rc}\int_{\lvert r-ct\rvert}^{r+ct}s\overline g(x,y,z;s)ds.$$
 
-and the solution of the wave equation is given by taking the limit
+The solution of the wave equation is given by taking the limit as $$r\rightarrow 0+$$.
+In taking this limit, without loss of generality, we may assume $$0 < r < ct$$, so that $$\lvert r-ct\rvert = -r+ct$$.
 
-$$u(x,y,z) = \lim_{r\rightarrow 0}\overline u(x,y,z,t;r).$$
+By the definition of the derivative
+
+$$\lim_{r\rightarrow 0+} \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;-r+ct)) = \overline f_r(x,y,z; ct).$$
+
+Also, by the Fundamental Theorem of Calculus
+
+$$\lim_{r\rightarrow 0+} \frac{1}{2rc}\int_{-r+ct}^{r+ct}s\overline g(x,y,z;s)ds = t \overline g(x,y,z;ct).$$
+
+This leads to a stunningly beautiful formula for the solution of the wave equation in three dimensions, called Kirchhoff's formula.
+
+**Theorem (Kirchhoff's Formula):**  The solution of the wave equation on $$\mathbb R^3$$ with the initial condition
+
+$$u(x,y,z,0) = f(x,y,z),\ \ \text{and}\ \ u_t(x,y,z,0) = g(x,y,z)$$
+
+is given by
+
+$$u(x,y,z,t) = \overline f_r(x,y,z; ct) + t\overline g(x,y,z; ct).$$
+
+**Example:** Solve the wave equation on $$\mathbb R^3$$ with the initial condition
+
+$$u(x,y,z,0) = x^3+y^2z,\ \ u_t(x,y,z,0) = 0.$$
+
+**Solution:**
+
+We calculate 
+
+$$\overline f(x,y,z,r)  = \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi [(x + r\sin\phi\cos\theta)^3 + (y + r\sin\phi\sin\theta)^2(z + r\cos\phi)]  \sin\phi d\phi d\theta.$$
+
+It make sense to break this up into two parts.
+
+$$\begin{align}
+\frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi (x + r\sin\phi\cos\theta)^3\sin\phi
+  & = \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi x^3\sin\phi + 3x^2r\sin^2\phi\cos\theta + 3xr^2\sin^3\phi\cos^2\theta + r^3\sin^4\phi\cos^3\theta d\phi d\theta\\
+  & = \frac{1}{4\pi}\int_0^{2\pi} 2x^3  + \frac{3\pi}{2}x^2r\cos\theta + 4xr^2\cos^2\theta + \frac{3\pi}{8} r^3 \cos^3\theta d\theta\\
+  & = \frac{1}{4\pi} (4\pix^3  + 0 + 4\pi xr^2 + 0) = x^3 + xr^2.
+\end{align}$$
+
+$$\begin{align}
+\frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi (y + r\sin\phi\sin\theta)^2(z + r\cos\phi)\sin\phi\\
+  & = \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi y^2z\sin\phi + 2yrz\sin^2\phi\sin\theta + r^2z\sin^3\phi\sin^2\theta d\phi d\theta\\
+  & + \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi y^2r\sin\phi\cos\phi + 2yr^2\sin^2\phi\cos\phi\sin\theta + r^3\sin^3\phi\cos\phi\sin^2\theta d\phi d\theta\\
+  & = \frac{1}{4\pi}\int_0^{2\pi} 2y^2z + \pi yrz\sin\theta + \frac{4}{3}r^2z\sin^2\theta d\theta\\
+  & = \frac{1}{4\pi}( 4\pi y^2z + 0 + \frac{4\pi}{3}r^2z) = y^2z + \frac{1}{3}r^2z.
+\end{align}$$
+
+Thus
+
+$$\overline f(x,y,z,r) = x^3 + y^2z + (x + z/3)r^2,$$
+
+and
+
+$$\overline f_r(x,y,z,r) = x^3 + y^2z + 2(x + z/3)r,$$
+
+and by Kirchhoff's Formula
+
+$$u(x,y,z,t) = x^3 + y^2z + 2(x + z/3)ct.$$
 
 
-**Example:** Solve the 
+
 
 
