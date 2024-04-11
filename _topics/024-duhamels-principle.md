@@ -36,7 +36,7 @@ $$u_{tt} = c^2\Delta u + \phi(\vec x, t),\ \ \vec x\in \Omega,\ \ u(\vec x, 0) =
 with the iterated process where we find approximate solutions in the interval $$[0,\Delta t]$$, the interval $$[\Delta t,2\Delta t]$$, and so on.
 This means solving the unforced  wave equation
 
-$$u^k_{tt} &= c^2\Delta u^k$$
+$$u^k_{tt} = c^2\Delta u^k$$
 
 with the initial condition
 
