@@ -150,7 +150,7 @@ $$\overline u_{tt} = c^2(\overline u_{rr} + \frac{2}{r}\overline u_r).$$
 
 Consequently
 
-$$\overline u(x,y,z,t;r) = \frac{1}{2} (\overline f(x,y,z;r+ct) + \overline f(x,y,z;r-ct)) + \frac{1}{2c}\int_{x-ct}^{x+ct}\overline g(x,y,z;s)ds,$$
+$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;r-ct)) + \frac{1}{2rc}\int_{x-ct}^{x+ct}\overline sg(x,y,z;s)ds,$$
 
 and the solution of the wave equation is given by taking the limit
 
