@@ -190,7 +190,7 @@ $$\begin{align}
 \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi (x + r\sin\phi\cos\theta)^3\sin\phi
   & = \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi x^3\sin\phi + 3x^2r\sin^2\phi\cos\theta + 3xr^2\sin^3\phi\cos^2\theta + r^3\sin^4\phi\cos^3\theta d\phi d\theta\\
   & = \frac{1}{4\pi}\int_0^{2\pi} 2x^3  + \frac{3\pi}{2}x^2r\cos\theta + 4xr^2\cos^2\theta + \frac{3\pi}{8} r^3 \cos^3\theta d\theta\\
-  & = \frac{1}{4\pi} (4\pix^3  + 0 + 4\pi xr^2 + 0) = x^3 + xr^2.
+  & = \frac{1}{4\pi} (4\pi x^3  + 0 + 4\pi xr^2 + 0) = x^3 + xr^2.
 \end{align}$$
 
 $$\begin{align}
