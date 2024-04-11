@@ -82,7 +82,7 @@ u(x,y,z,t)
   & = \overline f(x,y,z,ct) + ct\overline f_r(x,y,z,ct) = (x^3 + y^2z + 2(x + z/3)ct\\
   & = x^3 + y^2z + (x + z/3)c^2t^2 + ct(2(x + z/3)ct)\\
   & = x^3 + y^2z + (3x + z)c^2t^2
-\end{overline}
+\end{align}$$
 
 One can now double-check $$u_{tt} = 2c^2(3x+z)$$ and $$\Delta u = 6x + 2z$$, so that $$u_{tt} = c^2u_{xx}$$.
 
