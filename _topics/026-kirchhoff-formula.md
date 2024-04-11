@@ -75,7 +75,7 @@ $$\overline f(x,y,z,r) = x^3 + y^2z + (x + z/3)r^2,$$
 
 and
 
-$$\overline f_r(x,y,z,r) = x^3 + y^2z + 2(x + z/3)r,$$
+$$\overline f_r(x,y,z,r) = 2(x + z/3)r,$$
 
 and by Kirchhoff's Formula
 
