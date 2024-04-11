@@ -158,13 +158,13 @@ In taking this limit, without loss of generality, we may assume $$0 < r < ct$$, 
 
 By the definition of the derivative
 
-$$\lim_{r\rightarrow 0+} \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;-r+ct)) = \overline f_r(x,y,z; ct).$$
+$$\lim_{r\rightarrow 0+} \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;-r+ct)) = \overline f(x,y,z; ct) + ct\overline f_r(x,y,z; ct).$$
 
 Also, by the Fundamental Theorem of Calculus
 
 $$\lim_{r\rightarrow 0+} \frac{1}{2rc}\int_{-r+ct}^{r+ct}s\overline g(x,y,z;s)ds = t \overline g(x,y,z;ct).$$
 
-This leads to a stunningly beautiful formula for the solution of the wave equation in three dimensions, called Kirchhoff's formula.
+This leads to a strikingly beautiful formula for the solution of the wave equation in three dimensions, called Kirchhoff's formula.
 
 **Theorem (Kirchhoff's Formula):**  The solution of the wave equation on $$\mathbb R^3$$ with the initial condition
 
@@ -172,7 +172,7 @@ $$u(x,y,z,0) = f(x,y,z),\ \ \text{and}\ \ u_t(x,y,z,0) = g(x,y,z)$$
 
 is given by
 
-$$u(x,y,z,t) = \overline f_r(x,y,z; ct) + t\overline g(x,y,z; ct).$$
+$$u(x,y,z,t) = \overline f(x,y,z; ct) + ct\overline f_r(x,y,z; ct) + t\overline g(x,y,z; ct).$$
 
 **Example:** Solve the wave equation on $$\mathbb R^3$$ with the initial condition
 
@@ -211,8 +211,14 @@ $$\overline f_r(x,y,z,r) = x^3 + y^2z + 2(x + z/3)r,$$
 
 and by Kirchhoff's Formula
 
-$$u(x,y,z,t) = x^3 + y^2z + 2(x + z/3)ct.$$
+$$\begin{align}
+u(x,y,z,t)
+  & = \overline f(x,y,z,ct) + ct\overline f_r(x,y,z,ct) = (x^3 + y^2z + 2(x + z/3)ct\\
+  & = x^3 + y^2z + (x + z/3)c^2t^2 + ct(2(x + z/3)ct)\\
+  & = x^3 + y^2z + (3x + z)c^2t^2
+\end{overline}
 
+One can now double-check $$u_{tt} = 2c^2(3x+z)$$ and $$\Delta u = 6x + 2z$$, so that $$u_{tt} = c^2u_{xx}$$.
 
 
 
