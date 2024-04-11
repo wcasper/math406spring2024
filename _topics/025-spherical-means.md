@@ -31,11 +31,11 @@ $$v_{tt} = c^2v_{\rho\rho}, v(\rho,0) = \rho f(\rho),\ v_t(\rho,0) = \rho g(\rho
 so that $$v(\rho,t)$$ is a solution of the wave equation on the half-line $$(0,\infty)$$!
 Using d'Alembert's formula and the reflection method, we find the solution to be
 
-$$v(\rho,t) = \frac{1}{2}((\rho+ct)f(\rho+ct) + \lvert \rho-ct \rvert f(\lvert \rho-ct \rvert)) + \frac{1}{2c}\int_{\lvert \rho-ct \rvert}^{\rho+ct} sg(s)ds.$$
+$$v(\rho,t) = \frac{1}{2}((\rho+ct)f(\rho+ct) + (\rho-ct) f(\lvert \rho-ct \rvert)) + \frac{1}{2c}\int_{\lvert \rho-ct \rvert}^{\rho+ct} sg(s)ds.$$
 
 Thus a spherically symmetric wave will look like
 
-$$u(\rho,t) = \frac{1}{2\rho}((\rho+ct)f(\rho+ct) + \lvert \rho-ct \rvert f(\lvert \rho-ct \rvert)) + \frac{1}{2\rho c}\int_{\rho-ct}^{\rho+ct} sg(s)ds.$$
+$$u(\rho,t) = \frac{1}{2\rho}((\rho+ct)f(\rho+ct) + ( \rho-ct) f(\lvert \rho-ct \rvert)) + \frac{1}{2\rho c}\int_{\rho-ct}^{\rho+ct} sg(s)ds.$$
 
 
 ## Method of spherical means
@@ -151,7 +151,7 @@ $$\overline u_{tt} = c^2(\overline u_{rr} + \frac{2}{r}\overline u_r).$$
 
 Consequently, the spherical means are given by the equation
 
-$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + \lvert r-ct\rvert \overline f(x,y,z;\lvert r-ct\rvert)) + \frac{1}{2rc}\int_{\lvert r-ct\rvert}^{r+ct}s\overline g(x,y,z;s)ds.$$
+$$\overline u(x,y,z,t;r) = \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + ( r-ct) \overline f(x,y,z;\lvert r-ct\rvert)) + \frac{1}{2rc}\int_{\lvert r-ct\rvert}^{r+ct}s\overline g(x,y,z;s)ds.$$
 
 
 
