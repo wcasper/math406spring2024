@@ -26,15 +26,15 @@ In particular, the solution will actually be a function of only the variables $$
 Now to solve this, we define $$v(\rho,t) = \rho u(\rho,t)$$.
 Substituting this in, th equation becomes
 
-$$v_{tt} = c^2v_{\rho\rho},$$
+$$v_{tt} = c^2v_{\rho\rho}, v(\rho,0) = \rho f(\rho),\ v_t(\rho,0) = \rho g(\rho)$$
 
 so that $$v(\rho,t)$$ is a solution of the wave equation in one dimension!  Using d'Alembert's formula, we find
 
-$$v(\rho,t) = \frac{1}{2}(f(\rho+ct) + f(\rho-ct)) + \frac{1}{2c}\int_{\rho-ct}^{\rho+ct} g(s)ds.$$
+$$v(\rho,t) = \frac{1}{2}((\rho+ct)f(\rho+ct) + (\rho-ct)f(\rho-ct)) + \frac{1}{2c}\int_{\rho-ct}^{\rho+ct} sg(s)ds.$$
 
 Thus a spherically symmetric wave will look like
 
-$$u(\rho,t) = \frac{1}{2\rho}(f(\rho+ct) + f(\rho-ct)) + \frac{1}{2\rho c}\int_{\rho-ct}^{\rho+ct} g(s)ds.$$
+$$u(\rho,t) = \frac{1}{2\rho}((\rho+ct)f(\rho+ct) + (\rho-ct)f(\rho-ct)) + \frac{1}{2\rho c}\int_{\rho-ct}^{\rho+ct} sg(s)ds.$$
 
 
 ## Method of spherical means
@@ -63,7 +63,7 @@ Therefore the value of a function $$f(x,y,z)$$ can be recovered from its spheric
 
 We first establish an important lemma about spherical means.
 
-**Lemma:**  Suppose that $$f$$ is a twice continuously differentiabl function in a domain containing the closure of the ball $$B_r(x,y,z)$$.  Then
+**Lemma:**  Suppose that $$f$$ is a twice continuously differentiable function in a domain containing the closure of the ball $$B_r(x,y,z)$$.  Then
 
 $$\frac{\partial}{\partial r} \overline f(x,y,z;r) = \frac{1}{4\pi r^2}\int_{B_r(x,y,z)} \Delta f dV.$$
 
@@ -157,5 +157,6 @@ and the solution of the wave equation is given by taking the limit
 $$u(x,y,z) = \lim_{r\rightarrow 0}\overline u(x,y,z,t;r).$$
 
 
+**Example:** Solve the 
 
 
