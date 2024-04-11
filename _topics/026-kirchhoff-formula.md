@@ -21,7 +21,7 @@ In taking this limit, without loss of generality, we may assume $$0 < r < ct$$, 
 
 By the definition of the derivative
 
-$$\lim_{r\rightarrow 0+} \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (r-ct)\overline f(x,y,z;-r+ct)) = \overline f(x,y,z; ct) + ct\overline f_r(x,y,z; ct).$$
+$$\lim_{r\rightarrow 0+} \frac{1}{2r} ((r+ct)\overline f(x,y,z;r+ct) + (-r+ct)\overline f(x,y,z;-r+ct)) = \overline f(x,y,z; ct) + ct\overline f_r(x,y,z; ct).$$
 
 Also, by the Fundamental Theorem of Calculus
 
@@ -40,7 +40,7 @@ $$u(x,y,z,t) = \overline f(x,y,z; ct) + ct\overline f_r(x,y,z; ct) + t\overline 
 
 ## Example application
 
-As an exampl, we will solve the wave equation on $$\mathbb R^3$$ with the initial condition
+As an example, we will solve the wave equation on $$\mathbb R^3$$ with the initial condition
 
 $$u(x,y,z,0) = x^3+y^2z,\ \ u_t(x,y,z,0) = 0.$$
 
