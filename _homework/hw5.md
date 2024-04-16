@@ -25,7 +25,7 @@ $$u_{tt} = c^2 (u_{xx} + u_{yy} + u_{zz})$$
 
 with the initial condition
 
-$$u(x,y,z,0) = z^3 + 4xyz + 2yx^2.$$
+$$u(x,y,z,0) = z^3 + 4xyz + 2yx^2,\ \ u_t(x,y,z,0) = 0.$$
 
 # Problem 2
 
@@ -39,9 +39,16 @@ $$u(x,y,0) = f(x,y),\ \ u_t(x,y,0) = g(x,y).$$
 
 Hint: consider the function of *three* varibles $$v(x,y,z,t) = e^{az/c}u(x,y,t)$$.  Show that $$v$$ satisfies the wave equation in three dimensions.
 
-# Problem 3
 
-Find the Green's function for the Laplacian and the Poisson kernel for the ball $$B_R(0,0,0) = \{(x,y,z): x^2+y^2+z^2 < R^2\}$$  of radius $$R$$ centered at the origin.
+# Problem 3
+Find a solution $$u(x,y,t)$$ of the PDE 
+
+$$u_{tt} = c^2(u_{xx} + u_{yy})$$
+
+with the initial conditions
+
+$$u(x,y,0) = x^3 + y^3,\ \ u_t(x,y,0) = 0.$$
+
 
 # Problem 4
 
