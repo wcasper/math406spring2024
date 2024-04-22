@@ -208,5 +208,14 @@ and our solution is given by
 
 $$u(r,\theta,t) = \sum_{k=1}^n A_{0k}\cos(ct s^0_k/R)J_0(s^0_k r/R).$$
 
+This solution is animated below, in the special case $$R=1$$ and $$c=1$$.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/024-wave-on-disk.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code](024-wave-on-disk.py)
+
 
 
