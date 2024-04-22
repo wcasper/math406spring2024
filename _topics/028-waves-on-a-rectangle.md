@@ -39,7 +39,7 @@ $$u(x,y,0) = f(x,y),\quad u_t(x,y,0) = g(x,y).$$
 ## Waves on a rectangle
 
 Consider a drum head in the shape of a rectangle of length $$L$$ and width $$M$$, described by the Cartesian product $$[0,L]\times [0,M]$$.
-The eigenvalues of the Laplacian on $$\Omega$$ are the values of $$\lamdba$$, which are solutions of
+The eigenvalues of the Laplacian on $$\Omega$$ are the values of $$\lambda$$, which are solutions of
 
 $$\psi_{xx} + \psi_{yy} = -\lambda^2 \psi,$$
 
