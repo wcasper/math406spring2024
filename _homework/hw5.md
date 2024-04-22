@@ -58,7 +58,7 @@ $$u_{tt} = c^2(u_{xx} + u_{yy}),\ \ 0 < x < \pi,\ 0 < y < \pi$$
 
 with homogeneous Dirichlet boundary conditions, for each of the following initial conditions
 
-* (a) $$u(x,y,0) = \pi (\pi -x)y(\pi -y),\ \ u_t(x,y,0) = 0$$
+* (a) $$u(x,y,0) = x (\pi -x)y(\pi -y),\ \ u_t(x,y,0) = 0$$
 * (b) $$u(x,y,0) = x (\pi -x)y,\ \ u_t(x,y,0) = 0$$
 
 # Problem 5
@@ -70,5 +70,8 @@ $$u_{tt} = c^2\Delta u,\ \ 0 < r < 1,\ \ 0 \leq \theta < 2\pi$$
 with a Dirichlet boundary condition and the initial condition
 
 $$u(r,\theta,0) = 1-r^2,\ \ u_t(r,\theta,0) = 1.$$
+
+
+
 
 
