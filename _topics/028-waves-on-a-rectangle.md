@@ -93,7 +93,7 @@ $$u(x,y,0) = f(x,y),\ \ u_t(x,y) = g(x,y)$$
 we use a linear combination of the solutions of the form that we derived above, ie.
 
 $$\begin{align}
-u(r,\theta,t)
+u(x,y,t)
   & = \sum_{m=1}^\infty \sum_{n=1}^\infty \widetilde A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
   & + \sum_{m=1}^\infty \sum_{n=1}^\infty\widetilde B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
 \end{align}$$
@@ -121,9 +121,9 @@ $$A_m(y) = \sum_{n=1}^\infty A_{mn} \sin(n\pi y/M),\ \ \ B_m(y) = \sum_{n=1}^\in
 
 This allows us to write
 
-$$f(r,\theta) = \sum_{m=1}^\infty \sum_{n=1}^\infty A_{mn} \sin(m\pi x/L)\sin(n\pi y/M),$$
+$$f(x,y) = \sum_{m=1}^\infty \sum_{n=1}^\infty A_{mn} \sin(m\pi x/L)\sin(n\pi y/M),$$
 
-$$g(r,\theta) = \sum_{m=1}^\infty \sum_{n=1}^\infty B_{mn} \sin(m\pi x/L)\sin(n\pi y/M).$$
+$$g(x,y) = \sum_{m=1}^\infty \sum_{n=1}^\infty B_{mn} \sin(m\pi x/L)\sin(n\pi y/M).$$
 
 $$A_{mn} = \frac{4}{LM}\int_0^L\int_0^M f(x,y)\sin(m\pi x/L)\sin(n\pi y/M) dydx.$$
 
@@ -132,13 +132,38 @@ A similar expression is true for $$B_{mn}$$.
 Finally, by taking $$\widetilde A_{mn} = A_{mn}$$ and $$\widetilde B_{mn} = \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn}$$ we obtain our solution
 
 $$\begin{align}
-u(r,\theta,t)
+u(x,y,t)
   & = \sum_{m=1}^\infty \sum_{n=1}^\infty  A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
   & + \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
 \end{align}$$
 
 
+**Example:**  Consider the wave equation
 
+$$u_{tt} = c^2(u_{xx} + u_{yy}),\ \ 0 \leq x \leq L,\ \ 0 \leq y \leq M$$
+
+on the rectangle $$[0,L]\times [0,M]$$ with Dirichlet boundary conditions and the initial condition
+
+$$u(x,y,0) = xy(L-x)(M-y), \ \ u_t(x,y,0) = 0.$$
+
+We calculate
+
+$$A_{mn} = \frac{4}{LM}\int_0^L\int_0^M \sin(m\pi x/L)\sin(n\pi x/M) xy(L-x)(M-y) dydx = \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3},$$
+
+so that our solution is 
+
+$$
+u(x,y,t)
+ = \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct).$$
+
+This solution is animated below, in the special case $$L=1$$, $$M=2$$, and $$c=1$$.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/024-wave-on-rectangle.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code](024-wave-on-rectangle.py)
 
 
 
