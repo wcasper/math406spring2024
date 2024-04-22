@@ -94,7 +94,8 @@ we use a linear combination of the solutions of the form that we derived above, 
 
 $$\begin{align}
 u(r,\theta,t)
-  & = \sum_{m=1}^\infty \sum_{n=1}^\infty \widetilde A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct) + \widetilde B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
+  & = \sum_{m=1}^\infty \sum_{n=1}^\infty \widetilde A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
+  & + \sum_{m=1}^\infty \sum_{n=1}^\infty\widetilde B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
 \end{align}$$
 
 for some constants $$\widetilde A_{nk}$$ and $$\widetilde B_{nk}$$.
@@ -129,7 +130,7 @@ Finally, by taking $$\widetilde A_{mn} = A_{mn}$$ and $$\widetilde B_{mn} = \fra
 $$\begin{align}
 u(r,\theta,t)
   & = \sum_{m=1}^\infty \sum_{n=1}^\infty  A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
-  & + \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
+  & + \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
 \end{align}$$
 
 
