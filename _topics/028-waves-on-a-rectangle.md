@@ -77,7 +77,7 @@ $$\lambda^2 = \frac{\pi^2m^2}{L^2} + \frac{\pi^2n^2}{M^2},\ \ m, n \geq 1$$
 
 and an associated eigenfuction is
 
-$$\psi(x,y) = \sin\left(\frac{m\pi x}{L} \right)\sin\left(\pi \sqrt{\frac{n\pi y}{M}\right).$$
+$$\psi(x,y) = \sin\left(\frac{m\pi x}{L} \right)\sin\left(\frac{n\pi y}{M}\right).$$
 
 
 ### Solving the wave quation on a rectangle
