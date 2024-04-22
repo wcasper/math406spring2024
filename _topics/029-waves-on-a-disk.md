@@ -39,7 +39,7 @@ $$u(x,y,0) = f(x,y),\quad u_t(x,y,0) = g(x,y).$$
 ## Circular drums
 
 Consider a drum head in the shape of a circle of radius $$R$$, described by the region $$\Omega = \{(x,y): x^2+y^2 < R^2\}$$.
-The eigenvalues of the Laplacian on $$\Omega$$ are the values of $$\lamdba$$, which are solutions of
+The eigenvalues of the Laplacian on $$\Omega$$ are the values of $$\lambda$$, which are solutions of
 
 $$\psi_{rr} + \frac{1}{r}\psi_r + \frac{1}{r^2}\psi_{\theta\theta} = -\lambda^2 \psi,$$
 
