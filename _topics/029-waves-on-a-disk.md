@@ -204,7 +204,7 @@ Thus we need only take the Fourier-Bessel series of $$A_0(r)$$, which we did in 
 
 $$A_{0k} = \frac{8}{R^2(s^0_k/R)^{6}J_1(s^0_k/R)^2} \left((s^0_k)^4J_2(s^0_k) - 2((s^0_k)^{3}J_3(s^0_k))\right)J_0(s^0_k r/R)$$
 
-and our solutioini is given by
+and our solution is given by
 
 $$u(r,\theta,t) = \sum_{k=1}^n A_{0k}\cos(ct s_0^k/R)J_0(s^0_k r/R).$$
 
