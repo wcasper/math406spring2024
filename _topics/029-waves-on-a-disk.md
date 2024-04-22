@@ -202,7 +202,7 @@ $$u(r,\theta,0) = R^4-R^4,\ \ \ u_t(r,\theta,0) = 0.$$
 In this case $$B_n(r) = 0$$, $$C_n(r) = 0$$, and $$D_n(r) =0$$ for all $$n$$ and $$A_n(r) = 0$$ for $$n > 0$$.
 Thus we need only take the Fourier-Bessel series of $$A_0(r)$$, which we did in the previous example.  Specifically, we get
 
-$$A_{0k} = \frac{8}{R^2(s^0_k/R)^{6}J_1(s^0_k/R)^2} \left((s^0_k)^4J_2(s^0_k) - 2((s^0_k)^{3}J_3(s^0_k))\right)J_0(s^0_k r/R)$$
+$$A_{0k} = \frac{8}{R^2(s^0_k/R)^{6}J_1(s^0_k)^2} \left((s^0_k)^4J_2(s^0_k) - 2((s^0_k)^{3}J_3(s^0_k))\right)J_0(s^0_k r/R)$$
 
 and our solution is given by
 
