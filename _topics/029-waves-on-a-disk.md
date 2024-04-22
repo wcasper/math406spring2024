@@ -214,8 +214,15 @@ This solution is animated below, in the special case $$R=1$$ and $$c=1$$.
 <source src="python/025-wave-on-disk.mp4" type="video/mp4">
 </video>
 
-The source code for this video can be found here
-* [python source code](025-wave-on-disk.py)
+Since this solution is radially symmetric, we can also see a nice view using a plot of the radial profile.
+
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/025-wave-on-disk-radial.mp4" type="video/mp4">
+</video>
+
+The source code for these videos can be found here
+* [python source code for surface plot](025-wave-on-disk.py)
+* [python source code for curve plot](025-wave-on-disk-radial.py)
 
 
 
