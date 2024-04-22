@@ -94,16 +94,20 @@ we use a linear combination of the solutions of the form that we derived above, 
 
 $$\begin{align}
 u(x,y,t)
-  & = \sum_{m=1}^\infty \sum_{n=1}^\infty \widetilde A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
-  & + \sum_{m=1}^\infty \sum_{n=1}^\infty\widetilde B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
+  & = \sum_{m=1}^\infty \sum_{n=1}^\infty \widetilde A_{mn} \sin(mx/L)\sin(ny/M)\cos(\omega_{m,n}ct)\\
+  & + \sum_{m=1}^\infty \sum_{n=1}^\infty\widetilde B_{mn} \sin(mx/L)\sin(ny/M)\sin(\omega_{m,n} ct)
 \end{align}$$
+
+where here
+
+$$\omega_{m,n} = \pi \sqrt{(m/L)^2+(n/M)^2}
 
 for some constants $$\widetilde A_{nk}$$ and $$\widetilde B_{nk}$$.
 The initial condition would then imply
 
 $$f(x,y) = \sum_{m=0}^\infty\sum_{n=0}^\infty \widetilde A_{nk} \sin(mx/L)\sin(ny/M).$$
 
-$$g(x,y) = \sum_{m=0}^\infty\sum_{n=0}^\infty \widetilde B_{nk} c\pi\sqrt{(m/L)^2+(n/M)^2}\sin(mx/L)\sin(ny/M).$$
+$$g(x,y) = \sum_{m=0}^\infty\sum_{n=0}^\infty \widetilde B_{nk} c\omega_{m,n}\sin(mx/L)\sin(ny/M).$$
 
 To find these coefficients, we first take the sine series of the initial conditions with respect to the variable $$x$$ on $$[0,L]$$, writing
 
@@ -129,12 +133,12 @@ $$A_{mn} = \frac{4}{LM}\int_0^L\int_0^M f(x,y)\sin(m\pi x/L)\sin(n\pi y/M) dydx.
 
 A similar expression is true for $$B_{mn}$$.
 
-Finally, by taking $$\widetilde A_{mn} = A_{mn}$$ and $$\widetilde B_{mn} = \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn}$$ we obtain our solution
+Finally, by taking $$\widetilde A_{mn} = A_{mn}$$ and $$\widetilde B_{mn} = \frac{1}{\omega_{m,n}c} B_{mn}$$ we obtain our solution
 
 $$\begin{align}
 u(x,y,t)
-  & = \sum_{m=1}^\infty \sum_{n=1}^\infty  A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
-  & + \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
+  & = \sum_{m=1}^\infty \sum_{n=1}^\infty  A_{mn} \sin(mx/L)\sin(ny/M)\cos(\omega_{m,n} ct)\\
+  & + \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{c\omega_{m,n}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\omega_{m,n} ct)
 \end{align}$$
 
 
@@ -154,7 +158,7 @@ so that our solution is
 
 $$
 u(x,y,t)
- = \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct).$$
+ = \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3} \sin(mx/L)\sin(ny/M)\cos(\omega_{m,n} ct).$$
 
 This solution is animated below, in the special case $$L=1$$, $$M=2$$, and $$c=1$$.
 
