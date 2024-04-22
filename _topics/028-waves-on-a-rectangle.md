@@ -162,6 +162,8 @@ This solution is animated below, in the special case $$L=1$$, $$M=2$$, and $$c=1
 <source src="python/024-wave-on-rectangle.mp4" type="video/mp4">
 </video>
 
+This solution is animated below, in the special case $$L=1$$, $$M=2$$, and $$c=1$$.
+
 The source code for this video can be found here
 * [python source code](024-wave-on-rectangle.py)
 
