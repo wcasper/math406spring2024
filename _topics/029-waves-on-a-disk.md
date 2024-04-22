@@ -206,7 +206,7 @@ $$A_{0k} = \frac{8}{R^2(s^0_k/R)^{6}J_1(s^0_k)^2} \left((s^0_k)^4J_2(s^0_k) - 2(
 
 and our solution is given by
 
-$$u(r,\theta,t) = \sum_{k=1}^n A_{0k}\cos(ct s_0^k/R)J_0(s^0_k r/R).$$
+$$u(r,\theta,t) = \sum_{k=1}^n A_{0k}\cos(ct s^0_k/R)J_0(s^0_k r/R).$$
 
 
 
