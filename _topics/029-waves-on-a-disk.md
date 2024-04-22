@@ -86,7 +86,9 @@ The boundary condition $$F(R) = 0$$ implies that $$\lambda R$$ is a root of $$J_
 
 The results is four two-parameter families of solutions
 
-$$\cos(cts^n_k/R)\cos(n \theta)J_n(rs^n_k/R),\ \ \cos(cts^n_k/R)\sin(n \theta)J_n(rs^n_k/R),\ \ \sin(cts^n_k/R)\cos(n \theta)J_n(rs^n_k/R),\ \ \sin(cts^n_k/R)\sin(n \theta)J_n(rs^n_k/R).$$
+$$\cos(cts^n_k/R)\cos(n \theta)J_n(rs^n_k/R),\ \ \cos(cts^n_k/R)\sin(n \theta)J_n(rs^n_k/R),$$
+
+$$\sin(cts^n_k/R)\cos(n \theta)J_n(rs^n_k/R),\ \ \sin(cts^n_k/R)\sin(n \theta)J_n(rs^n_k/R).$$
 
 ### Fourier-Bessel series
 
