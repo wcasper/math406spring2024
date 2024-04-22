@@ -121,13 +121,13 @@ Using this, we can write
 
 $$\begin{align}
 \int_0^R J_0( s^0_k r/R) (R^4-r^4)rdr
-& = (\frac{1}{(s^0_k/R)^{6}}\int_0^{s^0_k} J_0(x)(s^0_k^4-x^4)xdx\\
-& = (\frac{1}{(s^0_k/R)^{6}}\int_0^{s^0_k} (xJ_1(x))'(s^0_k^4-x^4)dx\\
-& = (\frac{4}{(s^0_k/R)^{6}}\int_0^{s^0_k} J_1(x)x^4dx\\
-& = (\frac{4}{(s^0_k/R)^{6}}\int_0^{s^0_k} (x^2J_2(x))'x^{2}dx\\
-& = (\frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2\int_0^{s^0_k} J_2(x)x^{3}dx\right)\\
-& = (\frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2\int_0^{s^0_k} (x^{3}J_3(x))'dx\right)\\
-& = (\frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2((s^0_k)^{3}J_3(s^0_k))\right)
+& = \frac{1}{(s^0_k/R)^{6}}\int_0^{s^0_k} J_0(x)((s^0_k)^4-x^4)xdx\\
+& = \frac{1}{(s^0_k/R)^{6}}\int_0^{s^0_k} (xJ_1(x))'((s^0_k)^4-x^4)dx\\
+& = \frac{4}{(s^0_k/R)^{6}}\int_0^{s^0_k} J_1(x)x^4dx\\
+& = \frac{4}{(s^0_k/R)^{6}}\int_0^{s^0_k} (x^2J_2(x))'x^{2}dx\\
+& = \frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2\int_0^{s^0_k} J_2(x)x^{3}dx\right)\\
+& = \frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2\int_0^{s^0_k} (x^{3}J_3(x))'dx\right)\\
+& = \frac{4}{(s^0_k/R)^{6}} \left((s^0_k)^4J_2(s^0_k) - 2((s^0_k)^{3}J_3(s^0_k))\right)
 \end{align}$$
 
 Therefore
