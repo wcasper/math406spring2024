@@ -107,11 +107,11 @@ $$g(x,y) = \sum_{m=0}^\infty\sum_{n=0}^\infty \widetilde B_{nk} c\pi\sqrt{(m/L)^
 
 To find these coefficients, we first take the sine series of the initial conditions with respect to the variable $$x$$ on $$[0,L]$$, writing
 
-$$f(x,y) = \sum_{m=1}^\infty A_m(y)\cos(m \pi x/L),$$
+$$f(x,y) = \sum_{m=1}^\infty A_m(y)\sin(m \pi x/L),$$
 
 and also
 
-$$g(x,y) = \sum_{m=1}^\infty B_m(y)\cos(m \pi x/L),$$
+$$g(x,y) = \sum_{m=1}^\infty B_m(y)\sin(m \pi x/L),$$
 
 for some functions $$A_m(y)$$ and $$B_m(y)$$.
 
@@ -125,6 +125,10 @@ $$f(r,\theta) = \sum_{m=1}^\infty \sum_{n=1}^\infty A_{mn} \sin(m\pi x/L)\sin(n\
 
 $$g(r,\theta) = \sum_{m=1}^\infty \sum_{n=1}^\infty B_{mn} \sin(m\pi x/L)\sin(n\pi y/M).$$
 
+$$A_{mn} = \frac{4}{LM}\int_0^L\int_0^M f(x,y)\sin(m\pi x/L)\sin(n\pi y/M) dydx.$$
+
+A similar expression is true for $$B_{mn}$$.
+
 Finally, by taking $$\widetilde A_{mn} = A_{mn}$$ and $$\widetilde B_{mn} = \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn}$$ we obtain our solution
 
 $$\begin{align}
@@ -132,7 +136,6 @@ u(r,\theta,t)
   & = \sum_{m=1}^\infty \sum_{n=1}^\infty  A_{mn} \sin(mx/L)\sin(ny/M)\cos(\pi\sqrt{(m/L)^2+(n/M)^2} ct)\\
   & + \sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{c\pi\sqrt{(m/L)^2+(n/M)^2}} B_{mn} \sin(mx/L)\sin(ny/M)\sin(\pi\sqrt{(m/L)^2+(n/M)^2} ct)
 \end{align}$$
-
 
 
 
