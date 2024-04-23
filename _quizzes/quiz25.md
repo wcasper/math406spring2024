@@ -11,7 +11,7 @@ To solve the wave equation
 
 $$u_{tt} = c^2(u_{xx} + u_{yy}),\ \ 0 < x < L,\ 0 < y < M,$$
 
-on a rectangle $$[0,L]\times [0,M]$$ with the initial condition
+on a rectangle $$[0,L]\times [0,M]$$ with Dirichlet boundary conditions and the initial condition
 
 $$u(x,y,0) = f(x,y),\ \ u_t(x,y) = 0$$
 
