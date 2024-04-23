@@ -152,7 +152,11 @@ $$u(x,y,0) = xy(L-x)(M-y), \ \ u_t(x,y,0) = 0.$$
 
 We calculate
 
-$$A_{mn} = \frac{4}{LM}\int_0^L\int_0^M \sin(m\pi x/L)\sin(n\pi x/M) xy(L-x)(M-y) dydx = \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3},$$
+$$\begin{align}
+A_{mn}
+  & = \frac{4}{LM}\int_0^L\int_0^M \sin(m\pi x/L)\sin(n\pi x/M) xy(L-x)(M-y) dydx\\
+  & = \frac{16L^2M^2(1-(-1)^m)(1-(-1)^n)}{\pi^6 m^3n^3},
+\end{align}$$
 
 so that our solution is 
 
