@@ -41,6 +41,7 @@ where the constants $$A_k$$ are defined by
 
 $$A_k = \frac{2}{R^2 J_{n+1}(s_k^n)^2}\int_0^R f(r)J_n(s_k^nr/R) rdr.$$
 
+[Note: the answer to this question is true.  Make sure to make a note of this important equation.]
 
 
 
