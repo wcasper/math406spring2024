@@ -104,7 +104,7 @@ $$R^4-r^4 = \frac{2}{R^2} \sum_{k=1}^\infty \frac{4}{(s^0_k/R)^{6}J_1(s^0_k/R)^2
 
 
 
-### Solving the wave quation on a circular drum
+### Solving the wave equation on a circular drum
 
 Now to solve the wave equation on a circular drum of radius $$R$$
 
