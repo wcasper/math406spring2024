@@ -3,41 +3,6 @@ layout: page
 title: Waves on a disk
 ---
 
-Imagine we make a drum whose head has the shape described by domain $$\Omega\subseteq\mathbb{R}^2$$.
-The height $$u(x,y,t)$$ of the drum head at position $$(x,y)\in\Omega$$ and time $$t$$ will satisfy the wave equation 
-
-$$u_{tt} = c^2 (u_{xx} + u_{yy})$$
-
-and typically is tightened on the rim so that it satisfies the boundary condition $$u = 0$$ on $$\partial\Omega$$.
-The wave velocity $$c$$ itself is determined by factors like the tightness and material composition of the drum head.
-
-To solve the wave equation, we use separation of variables to write
-
-$$u(x,y,t) = \psi(x,y)\phi(t),$$
-
-so that the equation reduces to two separate equations
-
-$$\psi_{xx} + \psi_{yy} = -\lambda^2 \psi,$$
-
-and
-
-$$\phi_{tt} = -\lambda^2 c^2 \phi.$$
-
-In particular, this shows that $$\psi(x,y)$$ will be an eigenfunction of the Laplacian on $$\Omega$$.
-
-**Definition:** An **eigenfunction of the Laplacian** on a domain $$\Omega\subseteq\mathbb{R}^n$$ is a function $$\psi$$ which limits to zero on the boundary of $$\Omega$$ and which satisfies $$\Delta \psi = -\lambda^2 \psi$$ for inside $$\Omega$$ for some real number $$\lambda^2$$, which we call the **eigenvalue** of the Laplacian.
-
-Thus if $$\psi$$ is an eigenfunction of the Laplacian with eigenvalue $$\lambda$$, then
-
-$$u(x,y,t) = (A\cos(\lambda ct) + B\sin(\lambda ct))\psi(x,y)$$
-
-is a solution of the wave equaation on the drum head with Dirichlet boundary conditions.
-By taking a linear combination of these solutions, we can obtain a solutiion satisfying a desired initial condition
-
-$$u(x,y,0) = f(x,y),\quad u_t(x,y,0) = g(x,y).$$
-
-## Circular drums
-
 Consider a drum head in the shape of a circle of radius $$R$$, described by the region $$\Omega = \{(x,y): x^2+y^2 < R^2\}$$.
 The eigenvalues of the Laplacian on $$\Omega$$ are the values of $$\lambda$$, which are solutions of
 
