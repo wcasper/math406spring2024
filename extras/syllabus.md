@@ -18,7 +18,7 @@ permalink: /extras/syllabus
 ## Course meeting information
 * Section: 01
 * Course ID: 10067
-* Time: MW 1:00PM-2:50PM
+* Time: MW 2:00PM-3:50PM
 * Meeting Dates: 01/22/2024-05/15/2024
 * Location: MH 047
 
