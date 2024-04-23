@@ -80,7 +80,7 @@ and an associated eigenfuction is
 $$\psi(x,y) = \sin\left(\frac{m\pi x}{L} \right)\sin\left(\frac{n\pi y}{M}\right).$$
 
 
-### Solving the wave quation on a rectangle
+### Solving the wave equation on a rectangle
 
 Now to solve the wave equation on the rectangle $$[0,L]\times [0,M]$$
 
