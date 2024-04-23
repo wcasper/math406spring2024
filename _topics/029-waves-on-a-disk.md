@@ -65,9 +65,32 @@ $$f(r) = \sum_{k=1}^\infty C_k J_n(s^n_k r/R)$$
 for some constants $$C_1,C_2,\dots$$.
 We call this expansion the $$n$$'th **Fourier-Bessel series expansion** of $$f(r)$$ in the interval $$(0,R)$$.
 
-The value of the coefficients $$C_1, C_2, C_3,\dots$$ can be obtained from the orthogonality relation
+The value of the coefficients $$C_1, C_2, C_3,\dots$$ can be obtained from the following orthogonality relation.
+
+**Theorem (Bessel Orthogonality):**  For any integers $$n\geq 0$$ and $$j,k\geq 1$$
 
 $$\int_0^R J_n(s^n_j r/R)J_n(s^n_k r/R) rdr = \left\lbrace\begin{array}{cc} \frac{1}{2}R^2 (J_{n+1}(s^n_k))^2, & j=k\\ 0, & j\neq k\end{array}\right.$$
+
+**Proof:**
+We will prove the orthogonality, leaving the value of the expression when $$j=k$$ as an exercise.
+Let $$f_j(r) = J_n(s^n_j r/R)$$ and $$\lambda_j = c^n_j/R$$ so that
+
+$$r^2f_j''(r) + rf_j'(r) + (\lambda_j^2 r^2 + n^2)f_j(r) = 0,$$
+
+which we write in Sturm-Liouville form
+
+$$(rf_j'(r))' + (\lambda_j^2 r + n^2/r)f_j(r) = 0.$$
+
+Then it follows that
+
+$$(rf_j'(r))'f_k(r) - f_j(r)(rf_k'(r))' = (\lambda_k^2-\lambda_j^2)rf_j(r)f_k(r).$$
+
+Thus
+
+$$(\lambda_k^2-\lambda_j^2)\int_0^R f_j(r)f_k(r) rdr = \int_0^R (rf_j'(r))'f_k(r) - f_j(r)(rf_k'(r))' dr = 0,$$
+
+and for $$j\neq k$$, this gives us our orthogonality.
+:black_square_button:
 
 Using this orthogonality, we get
 
