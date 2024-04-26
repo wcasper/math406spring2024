@@ -211,8 +211,8 @@ Since this solution is radially symmetric, we can also see a nice view using a p
 </video>
 
 The source code for these videos can be found here
-* [python source code for surface plot](025-wave-on-disk.py)
-* [python source code for curve plot](025-wave-on-disk-radial.py)
+* [python source code for surface plot](python/025-wave-on-disk.py)
+* [python source code for curve plot](python/025-wave-on-disk-radial.py)
 
 
 
