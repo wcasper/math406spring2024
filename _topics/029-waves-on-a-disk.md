@@ -73,7 +73,7 @@ $$\int_0^R J_n(s^n_j r/R)J_n(s^n_k r/R) rdr = \left\lbrace\begin{array}{cc} \fra
 
 **Proof:**
 We will prove the orthogonality, leaving the value of the expression when $$j=k$$ as an exercise.
-Let $$f_j(r) = J_n(s^n_j r/R)$$ and $$\lambda_j = c^n_j/R$$ so that
+Let $$f_j(r) = J_n(s^n_j r/R)$$ and $$\lambda_j = s^n_j/R$$ so that
 
 $$r^2f_j''(r) + rf_j'(r) + (\lambda_j^2 r^2 + n^2)f_j(r) = 0,$$
 
