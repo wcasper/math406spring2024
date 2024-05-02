@@ -40,7 +40,7 @@ $$(J_a(r)/r^a)' = -J_{a+1}(r)/r^a.$$
 
 Consider the problem of finding eigenfunctions of the Laplacian for the unit ball in $$\mathbb{R}^3$$
 
-* (a) Show that if $$u(r,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ is an eigenfunction (in spherical coordinates) with eigenvalue $$\lambda^2$$, ie. 
+* (a) Show that if $$u(\rho,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ is an eigenfunction (in spherical coordinates) with eigenvalue $$\lambda^2$$, ie. 
 
 $$\Delta u + \lambda^2 u = 0$$
 
@@ -56,20 +56,37 @@ Hint: use separation of variables for the Laplacian in spherical coordinates
 
 $$\Delta u = u_{\rho\rho} + \frac{2}{\rho}u_{\rho} + \frac{1}{\rho^2\sin^2\phi}u_{\theta\theta} + \frac{1}{\rho^2} u_{\phi\phi} + \frac{1}{\rho^2\tan\phi} u_\phi,$$
 
-* (b)  Explain why $$\nu = n^2$$ must be an integer
+* (b)  Explain why $$\nu = m^2$$ for some integer $$m$$a
 
-* (c)  Show that if we substitute $$s = \cos(\phi)$$, then $$\Phi$$ satisfies the differential equation
+* (c)  Show that if we substitute $$s = \cos(\phi)$$, then $$\Phi$$ satisfies the **Legendre differential equation**
 
-$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{\nu}{1-s^2})\Phi(s) = 0.$$
+$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{m^2}{1-s^2})P(s) = 0.$$
 
-Solutions of this equation are called **Legendre functions**.  
+Solutions of this equation are called **Legendre functions**.
 
 # Problem 3
 
+In order for $$u(\rho,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ to be an eigenfunction of the Laplacian on the unit ball, we need it to be continuous on the closed unit ball.
+One particular consequence of this is that the Legendre function $$P(s)$$ from the previous problem must be continuous on $$[-1,1]$$
 
+* (a)  Prove that if $$\mu = \ell(\ell+1)$$, then the Legendre differential equation has a solution which is a polynomial of degree $$\ell$$.  The polynomial solution is called a **generalized Legendre polynomial**.
+* (b)  Prove the converse of (a) is also true: that if $$P(s)$$ is a polynomial of degree $$\ell$$, then $$\mu = \ell(\ell+1)$$.
 
+**Remark:** It turns out that the *only* Legendre functions which are continuous on $$[-1,1]$$ are the Legendre polynomials, so $$\mu = \ell(\ell+1)$$ for some integer $$\ell$$.  The corresponding eigenfunctions of the Laplacian are referred to as **spherical harmonics**.
 
 # Problem 4
+
+If we perform a change of variables $$t = \lambda\rho$$, then $$R(\rho) = j_\ell(t)$$ for $$j_\ell(t)$$ a **spherical Bessel function of the first kind**, ie. a continuous funcion on $$[0,\infty)$$ which solves the differential equation
+
+$$t^2j_\ell''(t) + 2tj_\ell'(t) + (t^2 - \ell(\ell+1))j_\ell(t) = 0.$$
+
+* (a) Solve the differential equation in the case $$\ell=0$$ and determine the value of $$j_0(t)$$, up to a constant multiple.
+* (b) Repeat your calculation in (a), but now with $$\ell=1$$
+* (c) Explain why the eigenvalues of the unit ball are given by the roots of the spherical Bessel functions
+
+:warning: The Bessel functions $$J_n$$ and the spherical bessel $$j_n$$ are related, but are not the same functions.
+
+# Problem 5
 
 Classify the type of each of the following second-order PDEs as parabolic, elliptic, hyperbolic, or ultrahyperbolic.
 
