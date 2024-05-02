@@ -48,19 +48,19 @@ then there exist constants $$\mu$$ and $$\nu$$ with
 
 $$\begin{align}
 \rho^2R''(\rho) + 2\rho R'(\rho) + (\lambda^2\rho^2 - \mu)R(\rho) &= 0,\\
-\Theta''(\theta) + \nu^2\Theta(\theta) &= 0,\\
-\sin^2(\phi)\Phi''(\phi) + \sin(\phi)\cos(\phi) \Phi'(\phi) + (\sin^2(\phi)\mu-\nu^2)\Phi(\phi) &= 0.
+\Theta''(\theta) + \nu\Theta(\theta) &= 0,\\
+\sin^2(\phi)\Phi''(\phi) + \sin(\phi)\cos(\phi) \Phi'(\phi) + (\sin^2(\phi)\mu-\nu)\Phi(\phi) &= 0.
 \end{align}$$
 
 Hint: use separation of variables for the Laplacian in spherical coordinates
 
 $$\Delta u = u_{\rho\rho} + \frac{2}{\rho}u_{\rho} + \frac{1}{\rho^2\sin^2\phi}u_{\theta\theta} + \frac{1}{\rho^2} u_{\phi\phi} + \frac{1}{\rho^2\tan\phi} u_\phi,$$
 
-* (b)  Explain why $$\nu = n^2$$ for some integer $$n$$
+* (b)  Explain why $$\nu = n^2$$ must be an integer
 
 * (c)  Show that if we substitute $$s = \cos(\phi)$$, then $$\Phi$$ satisfies the differential equation
 
-$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{\nu^2}{1-s^2})\Phi(s) = 0.$$
+$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{\nu}{1-s^2})\Phi(s) = 0.$$
 
 Solutions of this equation are called **Legendre functions**.  
 
