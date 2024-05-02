@@ -23,7 +23,7 @@ Let $$a > 1$$.
 
 * (a) Prove that for any real numbers $$s\neq t$$
 
-$$\int_0^R J_a(rs/R)J_a(rt/R)rdr = \frac{R^2}{s^2-t^2}\left(sJ_a'(s)J_(t)-tJ_a(s)J_a'(t)\right).$$
+$$\int_0^R J_a(rs/R)J_a(rt/R)rdr = \frac{R^2}{s^2-t^2}\left(sJ_a'(s)J_a(t)-tJ_a(s)J_a'(t)\right).$$
 
 Hint: copy the proof of the Bessel orthogonality theorem in class.
 
@@ -38,7 +38,7 @@ $$(J_a(r)/r^a)' = -J_{a+1}(r)/r^a.$$
 
 # Problem 2
 
-Consider the problem of finding eigenfunctions of the Laplacian for the unit ball $$\Omega = \{(x,y,z)\in\mathbb{R}^3: x^2+y^2+z^2 < 1\}$$.
+Consider the problem of finding eigenfunctions of the Laplacian for the unit ball in $$\mathbb{R}^3$$
 
 * (a) Show that if $$u(r,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ is an eigenfunction (in spherical coordinates) with eigenvalue $$\lambda^2$$, ie. 
 
@@ -49,7 +49,7 @@ then there exist constants $$\mu$$ and $$\nu$$ with
 $$\begin{align}
 \rho^2R''(\rho) + 2\rho R'(\rho) + (\lambda^2\rho^2 - \mu)R(\rho) &= 0,\\
 \Theta''(\theta) + \nu^2\Theta(\theta) &= 0,\\
-\sin^2(\phi)\Phi''(\phi) + \sin(\phi)\cos(\phi) \Phi'(\phi) + (\nu^2-\mu)\Phi(\phi) &= 0.
+\sin^2(\phi)\Phi''(\phi) + \sin(\phi)\cos(\phi) \Phi'(\phi) + (\nu^2-\sin^2(\phi)\mu)\Phi(\phi) &= 0.
 \end{align}$$
 
 Hint: use separation of variables for the Laplacian in spherical coordinates
@@ -60,11 +60,12 @@ $$\Delta u = u_{\rho\rho} + \frac{2}{\rho}u_{\rho} + \frac{1}{\rho^2\sin^2\phi}u
 
 * (c)  Show that if we substitute $$s = \cos(\phi)$$, then $$\Phi$$ satisfies the differential equation
 
-$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{\nu^2}{1-s^2})\Phi(s) = 0$$.
+$$(1-s^2)P''(s) - 2s P'(s) + (\mu-\frac{\nu^2}{1-s^2})\Phi(s) = 0.$$
 
 Solutions of this equation are called **Legendre functions**.  
 
 # Problem 3
+
 
 
 
