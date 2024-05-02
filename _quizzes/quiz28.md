@@ -28,7 +28,7 @@ If the eigenvalues of the matrix $$A$$ are $$-3,0,-1,-2$$, then the matrix is ca
 * (C) hyperbolic
 * (D) ultrahyperbolic
 
-**Question 3:**  Multiple choice.
+**Question 4:**  Multiple choice.
 
 The PDE
 
