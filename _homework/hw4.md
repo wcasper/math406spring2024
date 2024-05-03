@@ -58,7 +58,7 @@ $$u(x,y,t) = 0,\ \ (x,y)\in \partial\Omega.$$
 
 Find all the three dimensional plane waves, ie. all solutions of
 
-$$u_{tt} = c(u_{xx}+u_{yy} + u_{zz})$$
+$$u_{tt} = c^2(u_{xx}+u_{yy} + u_{zz})$$
 
 in $$\mathbb{R}^3$$ which are of the form
 
