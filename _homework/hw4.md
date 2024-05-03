@@ -62,7 +62,7 @@ $$u_{tt} = c^2(u_{xx}+u_{yy} + u_{zz})$$
 
 in $$\mathbb{R}^3$$ which are of the form
 
-$$u(x,t) = f(ax+by+cz - ct)$$
+$$u(x,y,z,t) = f(ax+by+cz - ct)$$
 
 for some single-variable function.
 
