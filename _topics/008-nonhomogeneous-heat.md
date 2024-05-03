@@ -116,7 +116,7 @@ $$\phi(x,t) = \sum_{n=0}^\infty \phi_n(t)\cos\left(\frac{n\pi x}{L}\right).$$
 
 3. Calculate $$A_n(t)$$ for each $$n$$ using the following formula
 
-$$A_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t e^{-\frac{n^2\pi^2}{L^2}ks}ds + a_n\right)$$
+$$A_n(t) = e^{-\frac{n^2\pi^2}{L^2}kt}\left(\int_0^t e^{\frac{n^2\pi^2}{L^2}ks}ds + a_n\right)$$
 
 Then the solution of the BVP is
 
