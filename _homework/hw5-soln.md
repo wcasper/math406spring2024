@@ -50,7 +50,7 @@ $$\begin{align}
 \overline{2yx^2}
   & = \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi 2(y+r\sin\phi\sin\theta)(x+r\sin\phi\cos\theta)^2 \sin\phi d\phi d\theta\\
   & = \frac{1}{2\pi}\int_0^{2\pi}\int_0^\pi x^2y\sin\phi + 2xyr\sin^2\phi\cos\theta + yr^2\sin^3\phi\cos^2\theta\\
-  & + \frac{1}{2\pi}\int_0^{2\pi}\int_0^\pi x^2r\sin^2\phi\sin\theta + 2xr^2\sin^3\phi\cos\theta\sin\theta + r^3\sin^4\phi\cos^2\theta\sin\theta
+  & + \frac{1}{2\pi}\int_0^{2\pi}\int_0^\pi x^2r\sin^2\phi\sin\theta + 2xr^2\sin^3\phi\cos\theta\sin\theta + r^3\sin^4\phi\cos^2\theta\sin\theta\\
   & = \frac{1}{2\pi}\int_0^{2\pi}\int_0^\pi x^2y\sin\phi + yr^2\sin^3\phi\cos^2\theta\\
   & = \int_0^\pi x^2y\sin\phi + \frac{1}{2}yr^2\sin^3\phi\\
   & = 2x^2y + \frac{2}{3}yr^2
@@ -102,7 +102,7 @@ $$v(x,y,z,0) = f(x,y)e^{az/c},\quad\quad v_t(x,y,z,0) = g(x,y)e^{az/c}.$$
 This means that if $$\overline f$$ and $$\overline g(
 
 $$\begin{align}
-\overline f(x,y,z;r) &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi f(x + r\sin\phi\cos\theta,y + r\sin\phi\sin\theta)e^{a(z + r\cos\phi)/c}\sin\phi d\phi d\theta
+\overline f(x,y,z;r) &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi f(x + r\sin\phi\cos\theta,y + r\sin\phi\sin\theta)e^{a(z + r\cos\phi)/c}\sin\phi d\phi d\theta\\
 \overline g(x,y,z;r) &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi g(x + r\sin\phi\cos\theta,y + r\sin\phi\sin\theta)e^{a(z + r\cos\phi)/c}\sin\phi d\phi d\theta
 \end{align}$$
 
