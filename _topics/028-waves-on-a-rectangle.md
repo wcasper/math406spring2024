@@ -100,7 +100,7 @@ u(x,y,t)
 
 where here
 
-$$\omega_{m,n} = \pi \sqrt{(m/L)^2+(n/M)^2}
+$$\omega_{m,n} = \pi \sqrt{(m/L)^2+(n/M)^2}$$
 
 for some constants $$\widetilde A_{nk}$$ and $$\widetilde B_{nk}$$.
 The initial condition would then imply
