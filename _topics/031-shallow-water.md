@@ -32,7 +32,7 @@ $$
 We imagine a solution $$u(x,t)$$ and $$h(x,t)$$, which is defined implicitly by a system of equations of the form
 
 $$\begin{align}
-\vec\psi = \vec C,\quad\text{or equiv.}\quad \binom{\psi_1}{\psi_2} = \binom{C_1}{C_2}.
+\vec\psi = \vec 0,\quad\text{or equiv.}\quad \binom{\psi_1}{\psi_2} = \binom{0}{0}.
 \end{align}$$
 
 Then performing implicit partial differenttition, treating $$h$$ and $$u$$ as functions of $$x$$ and $$t$$, we obtain the relations
@@ -74,14 +74,26 @@ $$
 then the one-dimensional shallow water equations become
 
 $$\begin{align}
-\frac{1}{2}(H+h+g+\sqrt{(H+h+g)^2+4u^2})\psi_{1x} + \psi_{1t} &= 0,\\
-\frac{1}{2}(H+h+g-\sqrt{(H+h+g)^2+4u^2})\psi_{2x} + \psi_{2t} &= 0.
+\frac{1}{2}\left(H+h+g+\sqrt{(H+h+g)^2+4u^2}\right)\psi_{1x} + \psi_{1t} &= 0,\\
+\frac{1}{2}\left(H+h+g-\sqrt{(H+h+g)^2+4u^2}\right)\psi_{2x} + \psi_{2t} &= 0.
 \end{align}$$
 
-The eigenvalues of this matrix are
+These can be solved individually using the method of characteristics, giving
+
+$$\begin{align}
+\psi_1 &= f_1(x-(H+h+g+\sqrt{(H+h+g)^2+4u^2})t/2),\\
+\psi_2 &= f_2(x-(H+h+g-\sqrt{(H+h+g)^2+4u^2})t/2).
+\end{align}$$
 
 
+This means that solutions to the one-dimensional shallow water equations on the real line are given by
 
+$$\begin{align}
+f_1(x-(H+h+g+\sqrt{(H+h+g)^2+4u^2})t/2) = 0,\\
+f_2(x-(H+h+g-\sqrt{(H+h+g)^2+4u^2})t/2) = 0.
+\end{align}$$
+
+for some functions $$f_1$$ and $$f_2$$.
 
 
 
