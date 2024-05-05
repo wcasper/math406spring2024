@@ -66,8 +66,8 @@ If we diagonalize by taking
 
 $$Q^{-1} =
 \left[\begin{array}{cc}
-H+h-g + \sqrt{(H+h+g)^2+4u^2 & 2u\\
-2u & g-H-h - \sqrt{(H+h+g)^2+4u^2
+H+h-g + \sqrt{(H+h+g)^2+4u^2} & 2u\\
+2u & g-H-h - \sqrt{(H+h+g)^2+4u^2}
 \end{array}\right],
 $$
 
