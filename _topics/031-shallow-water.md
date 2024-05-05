@@ -64,7 +64,7 @@ $$
 
 If we diagonalize by taking
 
-$$Q =
+$$Q^{-1} =
 \left[\begin{array}{cc}
 H+h-g + \sqrt{(H+h+g)^2+4u^2 & 2u\\
 2u & g-H-h - \sqrt{(H+h+g)^2+4u^2
@@ -73,10 +73,10 @@ $$
 
 then the one-dimensional shallow water equations become
 
-$$
+$$\begin{align}
 \frac{1}{2}(H+h+g+\sqrt{(H+h+g)^2+4u^2})\psi_{1x} + \psi_{1t} &= 0,\\
 \frac{1}{2}(H+h+g-\sqrt{(H+h+g)^2+4u^2})\psi_{2x} + \psi_{2t} &= 0.
-$$
+\end{align}$$
 
 The eigenvalues of this matrix are
 
