@@ -58,19 +58,27 @@ Q\left[\begin{array}{cc}
 H+h & u\\
 u   & g
 \end{array}\right]Q^{-1}\vec\psi_x + 
-\vec \psi_t =
- = \binom{0}{0}.
+\vec \psi_t
+= \binom{0}{0}.
+$$
+
+If we diagonalize by taking
+
+$$Q =
+\left[\begin{array}{cc}
+H+h-g + \sqrt{(H+h+g)^2+4u^2 & 2u\\
+2u & g-H-h - \sqrt{(H+h+g)^2+4u^2
+\end{array}\right],
+$$
+
+then the one-dimensional shallow water equations become
+
+$$
+\frac{1}{2}(H+h+g+\sqrt{(H+h+g)^2+4u^2})\psi_{1x} + \psi_{1t} &= 0,\\
+\frac{1}{2}(H+h+g-\sqrt{(H+h+g)^2+4u^2})\psi_{2x} + \psi_{2t} &= 0.
 $$
 
 The eigenvalues of this matrix are
-
-$$\frac{1}{2}(H+h+g) \pm \frac{1}{2}\sqrt{(H+h+g)^2+4u^2}$$
-
-and the associated eigenvectors are
-
-$$\binom{H+h-g \pm \sqrt{(H+h+g)^2+4u^2}}{2u}.$$
-
-If we take $$Q^{-1}$$ to be the matrix with these two columns as eigenvectors, then
 
 
 
