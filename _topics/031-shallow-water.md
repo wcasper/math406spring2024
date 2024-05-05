@@ -29,21 +29,29 @@ u   & g
  = \binom{0}{0}.
 $$
 
-We imagine a solution of this system of the form
+We imagine a solution $$u(x,t)$$ and $$h(x,t)$$, which is defined implicitly by a system of equations of the form
 
 $$\begin{align}
 \vec\psi = \vec C,\quad\text{or equiv.}\quad \binom{\psi_1}{\psi_2} = \binom{C_1}{C_2}.
 \end{align}$$
 
-
-Then
+Then performing implicit partial differenttition, treating $$h$$ and $$u$$ as functions of $$x$$ and $$t$$, we obtain the relations
 
 $$\begin{align}
-\vec\psi_x + \vec\psi_u u_x + \vec\psi_h h_x & = 0\\
-\vec\psi_t + \vec\psi_u u_t + \vec\psi_h h_t & = 0\\
+\vec\psi_x + \vec\psi_u u_x + \vec\psi_h h_x & = 0,\\
+\vec\psi_t + \vec\psi_u u_t + \vec\psi_h h_t & = 0.
 \end{align}$$
 
-so if $$Q$$ is the $$2\times 2$$ matrix whose columns are $$\vec\psi_u$$ and $$\vec \psi_h$$, then
+Therefore if we let 
+
+$$Q = [\vec\psi_u\ \ \vec \psi_h]$$
+
+be the $$2\times 2$$ matrix whose columns are $$\vec\psi_u$$ and $$\vec \psi_h$$, then
+the above equations can be expressed as
+
+$$\vec\psi_x + Q\binom{u_x}{h_x}=0,\quad\vec\psi_t + Q\binom{u_t}{h_t}=0.$$
+
+Using this, the one-dimensional shallow water equations can be reexpressed as
 
 $$
 Q\left[\begin{array}{cc}
