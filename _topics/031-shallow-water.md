@@ -60,7 +60,7 @@ $$\frac{1}{2}(H+h+g) \pm \frac{1}{2}\sqrt{(H+h+g)^2+4u^2}$$
 
 and the associated eigenvectors are
 
-$$\binom{g-H-h \mp \sqrt{(H+h+g)^2+4u^2}}{2u}.$$
+$$\binom{H+h-g \pm \sqrt{(H+h+g)^2+4u^2}}{2u}.$$
 
 If we take $$Q^{-1}$$ to be the matrix with these two columns as eigenvectors, then
 
