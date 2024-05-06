@@ -8,92 +8,69 @@ So far, the linear theory of second-order partial differential equations, in par
 
 
 
-The **one dimensional shallow water equations** are given by
+The **shallow water equations** are given by
 
 $$\begin{align}
-h_t + ((H+h)u)_x &= 0,\\
-u_t + uu_x &= -gh_x, 
+\eta_t + ((h+\eta)u)_x + ((h+\eta)v)_y &= 0,\\
+u_t + uu_x + vu_y - fv + g\eta_x &= 0, 
+v_t + uv_x + vv_y + fu + g\eta_y &= 0, 
 \end{align}$$
 
-which we can rewrite as
+where here
+* $$u$$ and $$v$$ are the velocity of the fluid in the $$x$$ and $$y$$ directions, respectively
+* $$f$$ is the Coriolis parameter, for fluids in a rotating reference frame
+* $$g$$ is the gravitational acceleration
+* $$h$$ is the height of the ground at position $$(x,y)$$
+* $$\eta$$ is the height of the water above the ground level
 
-$$
-\left[\begin{array}{cc}
-H+h & u\\
-u   & g
-\end{array}\right]\binom{u_x}{h_x} + 
-\left[\begin{array}{cc}
-1 & 0\\
-0 & 1
-\end{array}\right]\binom{u_t}{h_t}
- = \binom{0}{0}.
-$$
+### The one-dimensional setting
 
-We imagine a solution $$u(x,t)$$ and $$h(x,t)$$, which is defined implicitly by a system of equations of the form
+Let's consider the specific case of a non-rotating reference frame, so that $$f=0$$.
+In situations where the flow is unidirectional, we can assume without loss of generality that $$v = 0$$ and that all the unknown functions take on values which are independent of $$y$$.
+In this case the shallow water equations reduce to the **one-dimensional shallow water equations**.
 
 $$\begin{align}
-\vec\psi = \vec 0,\quad\text{or equiv.}\quad \binom{\psi_1}{\psi_2} = \binom{0}{0}.
+\eta_t + (h+\eta)u_x + u(h+\eta)_x &= 0,\\
+u_t + uu_x + g(h+\eta)_x &= 0.
 \end{align}$$
 
-Then performing implicit partial differenttition, treating $$h$$ and $$u$$ as functions of $$x$$ and $$t$$, we obtain the relations
+At this point, it's helpful to introduce a new variable $$c$$, defined by
+
+$$c^2 = g(h+\eta).$$
+
+As we will soon see, this value has something to do with the actual velocity of the fluid $$u(x,t)$$ at each position in space.
+With this new variable in mind, the equations can be rewritten as
 
 $$\begin{align}
-\vec\psi_x + \vec\psi_u u_x + \vec\psi_h h_x & = 0,\\
-\vec\psi_t + \vec\psi_u u_t + \vec\psi_h h_t & = 0.
+2c_t + cu_x + 2uc_x &= 0,\\
+u_t + uu_x + 2cc_x &= g h_x.
 \end{align}$$
 
-Therefore if we let 
+By adding both equations together, we get
 
-$$Q = [\vec\psi_u\ \ \vec \psi_h]$$
+$$\begin{align}
+(u+2c)_t + (u+c)(u+2c)_x &= gh_x.
+\end{align}$$
 
-be the $$2\times 2$$ matrix whose columns are $$\vec\psi_u$$ and $$\vec \psi_h$$, then
-the above equations can be expressed as
 
-$$\vec\psi_x + Q\binom{u_x}{h_x}=0,\quad\vec\psi_t + Q\binom{u_t}{h_t}=0.$$
+Thus if we consider the family of curves in the $$x,t$$-plane defined by $$x'(t) = u(x,t)+c(x,t)$$, then along each curve
 
-Using this, the one-dimensional shallow water equations can be reexpressed as
-
-$$
-Q\left[\begin{array}{cc}
-H+h & u\\
-u   & g
-\end{array}\right]Q^{-1}\vec\psi_x + 
-\vec \psi_t
-= \binom{0}{0}.
-$$
-
-If we diagonalize by taking
-
-$$Q^{-1} =
-\left[\begin{array}{cc}
-H+h-g + \sqrt{(H+h+g)^2+4u^2} & 2u\\
-2u & g-H-h - \sqrt{(H+h+g)^2+4u^2}
-\end{array}\right],
+$$\begin{align}
+\frac{d}{dt}(u+2c)
+& = (u+2c)_x x'(t) + (u+2c)_t\\
+& = (u+2c)_x(u+c) + (u+2c)_t\\
+& = gh_x
 $$
 
-then the one-dimensional shallow water equations become
+Thus
 
-$$\begin{align}
-\frac{1}{2}\left(H+h+g+\sqrt{(H+h+g)^2+4u^2}\right)\psi_{1x} + \psi_{1t} &= 0,\\
-\frac{1}{2}\left(H+h+g-\sqrt{(H+h+g)^2+4u^2}\right)\psi_{2x} + \psi_{2t} &= 0.
-\end{align}$$
+$$\frac{d}{dt}(u+2c) = gh_x\quad\text{along}\quad x'(t) = u+c.$$
 
-These can be solved individually using the method of characteristics, giving
+Likewise, if we subtract both of the previous equations, we obtain
 
-$$\begin{align}
-\psi_1 &= f_1(x-(H+h+g+\sqrt{(H+h+g)^2+4u^2})t/2),\\
-\psi_2 &= f_2(x-(H+h+g-\sqrt{(H+h+g)^2+4u^2})t/2).
-\end{align}$$
+$$\frac{d}{dt}(u-2c) = gh_x\quad\text{along}\quad x'(t) = u-c.$$
 
 
-This means that solutions to the one-dimensional shallow water equations on the real line are given by
-
-$$\begin{align}
-f_1(x-(H+h+g+\sqrt{(H+h+g)^2+4u^2})t/2) = 0,\\
-f_2(x-(H+h+g-\sqrt{(H+h+g)^2+4u^2})t/2) = 0.
-\end{align}$$
-
-for some functions $$f_1$$ and $$f_2$$.
 
 
 
