@@ -69,7 +69,7 @@ Solutions of this equation are called **Legendre functions**.
 In order for $$u(\rho,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ to be an eigenfunction of the Laplacian on the unit ball, we need it to be continuous on the closed unit ball.
 One particular consequence of this is that the Legendre function $$P(s)$$ from the previous problem must be continuous on $$[-1,1]$$
 
-* (a)  Prove that if $$\mu = \ell(\ell+1)$$, then the Legendre differential equation has a solution which is a polynomial of degree $$\ell$$.  The polynomial solution is called a **generalized Legendre polynomial**.
+* (a)  Prove that if $$m\geq 0$$ is even, $$\ell\geq m$$, and $$\mu = \ell(\ell+1)$$, then the Legendre differential equation has a solution which is a polynomial of degree $$\ell$$.  The polynomial solution is called a **generalized Legendre polynomial**.
 * (b)  Prove the converse of (a) is also true: that if $$P(s)$$ is a polynomial of degree $$\ell$$, then $$\mu = \ell(\ell+1)$$.
 
 **Remark:** It turns out that the *only* Legendre functions which are continuous on $$[-1,1]$$ are the Legendre polynomials, so $$\mu = \ell(\ell+1)$$ for some integer $$\ell$$.  The corresponding eigenfunctions of the Laplacian are referred to as **spherical harmonics**.
