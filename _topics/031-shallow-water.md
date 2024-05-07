@@ -158,6 +158,12 @@ $$\eta(x,t) = \left\lbrace\begin{array}{cc}
 Note in particular when $$x > 2c_0t$$, nothing is defined.
 This just comes from the fact that water hasn't made it to that position at that time.
 
+<video controls="" width="700" height="500" muted="" loop="" autoplay="">
+<source src="python/031-dam-break.mp4" type="video/mp4">
+</video>
+
+The source code for this video can be found here
+* [python source code for curve plot](python/031-dam-break.py)
 
 
 
