@@ -70,6 +70,13 @@ In order for $$u(\rho,\theta,\phi) = R(\rho)\Theta(\theta)\Phi(\phi)$$ to be an 
 One particular consequence of this is that the Legendre function $$P(s)$$ from the previous problem must be continuous on $$[-1,1]$$
 
 * (a)  Prove that if $$m\geq 0$$ is even, $$\ell\geq m$$, and $$\mu = \ell(\ell+1)$$, then the Legendre differential equation has a solution which is a polynomial of degree $$\ell$$.  The polynomial solution is called a **generalized Legendre polynomial**.
+
+Hint: show that the polynomial
+
+$$P(s) = (1-s^2)^{m/2}\frac{d^{\ell+m}}{dx^{\ell+m}}(x^2-1)^\ell$$
+
+is a solution of the differential equation.
+
 * (b)  Prove the converse of (a) is also true: that if $$P(s)$$ is a polynomial of degree $$\ell$$, then $$\mu = \ell(\ell+1)$$.
 
 **Remark:** It turns out that the *only* Legendre functions which are continuous on $$[-1,1]$$ are the Legendre polynomials, so $$\mu = \ell(\ell+1)$$ for some integer $$\ell$$.  The corresponding eigenfunctions of the Laplacian are referred to as **spherical harmonics**.
