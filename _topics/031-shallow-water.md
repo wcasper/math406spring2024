@@ -12,7 +12,7 @@ The **shallow water equations** are given by
 
 $$\begin{align}
 \eta_t + ((h+\eta)u)_x + ((h+\eta)v)_y &= 0,\\
-u_t + uu_x + vu_y - fv + g\eta_x &= 0, 
+u_t + uu_x + vu_y - fv + g\eta_x &= 0,\\
 v_t + uv_x + vv_y + fu + g\eta_y &= 0, 
 \end{align}$$
 
