@@ -56,7 +56,7 @@ Hint: use separation of variables for the Laplacian in spherical coordinates
 
 $$\Delta u = u_{\rho\rho} + \frac{2}{\rho}u_{\rho} + \frac{1}{\rho^2\sin^2\phi}u_{\theta\theta} + \frac{1}{\rho^2} u_{\phi\phi} + \frac{1}{\rho^2\tan\phi} u_\phi,$$
 
-* (b)  Explain why $$\nu = m^2$$ for some integer $$m$$a
+* (b)  Explain why $$\nu = m^2$$ for some integer $$m$$
 
 * (c)  Show that if we substitute $$s = \cos(\phi)$$, then $$\Phi$$ satisfies the **Legendre differential equation**
 
