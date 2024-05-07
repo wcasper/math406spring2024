@@ -73,7 +73,7 @@ One particular consequence of this is that the Legendre function $$P(s)$$ from t
 
 Hint: show that the polynomial
 
-$$P(s) = (1-s^2)^{m/2}\frac{d^{\ell+m}}{dx^{\ell+m}}(x^2-1)^\ell$$
+$$P(s) = (1-s^2)^{m/2}\frac{d^{\ell+m}}{ds^{\ell+m}}(s^2-1)^\ell$$
 
 is a solution of the differential equation.
 
