@@ -60,7 +60,7 @@ $$\begin{align}
 & = (u+2c)_x x'(t) + (u+2c)_t\\
 & = (u+2c)_x(u+c) + (u+2c)_t\\
 & = gh_x
-$$
+\end{align}$$
 
 Thus
 
