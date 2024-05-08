@@ -152,7 +152,7 @@ In particular, this gives the following result for the height of the liquid
 
 $$\eta(x,t) = \left\lbrace\begin{array}{cc}
 \eta_0 & x < -c_0t\\
-\frac{\eta_0}{9}(2-x/c_0t)^2 & -c_0t < x < 2c_0t
+\frac{\eta_0}{9g}(2-x/c_0t)^2 & -c_0t < x < 2c_0t
 \end{array}\right.$$
 
 Note in particular when $$x > 2c_0t$$, nothing is defined.
