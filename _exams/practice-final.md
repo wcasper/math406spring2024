@@ -17,7 +17,7 @@ $$u_t = ku_{xx}$$
 
 * (A) on the real line  satisfying the initial condition
 
-$$u(x,0) = e^{-5x^2}.$$
+$$u(x,0) = \frac{1}{\sqrt{4\pi k}}e^{-(x-1)^2/4k}.$$
 
 * (B) on the interval $$(0,L)$$ with Neumann boundary conditions and the initial condition
 
@@ -26,22 +26,20 @@ $$u(x,0) = 3\cos(5x/L) + 4\cos(7x/L).$$
 
 **Problem 2:**
 
-Determine the Fourier transform of each of the following functions.
+Calculate each of the following
 
-* (A) $$x^2e^{-x^2}$$
-* (B) $$e^{-\lvert x \rvert}$$
-* (C) $$5 + \cos(3x)$$
-* (D) $$x^2e^{-(x-3)^2}$$
-
+* (A) The Fourier transform of $$e^{-\lvert x \rvert}$$
+* (B) The Fourier transform of  $$xe^{-x^2}$$
+* (C) The sine series of $$x$$ on $$(0,\pi)$$
 
 **Problem 3:**
 
 Find a solution of Laplace's equation on the unit square $$(0,1)\times (0,1)$$
 with the Neumann boundary conditions
 
-$$u_y(0,y) = 0,\ \ \ u_y(\pi,y) = 0,\quad 0 < y < \pi,$$
+$$u_x(0,y) = 0,\ \ \ u_x(\pi,y) = 0,\quad 0 < y < \pi,$$
 
-$$u_x(x,0) = \cos(\pi x),\ \ \ u_x(x,\pi) = 0,\quad 0 < x < \pi.$$
+$$u_y(x,0) = 0,\ \ \ u_y(x,\pi) = \cos(x),\quad 0 < x < \pi.$$
 
 **Problem 4:**
 
@@ -76,7 +74,7 @@ $$u_{xx} + 2u_{xy} + 4u_{yy} = 0$$
 
 $$u_{xx} + u_{yy} + u_x + u_y = 0$$
 
-on the interval $$[0,L]$$ with Dirichlet boundary conditions.
+on the interval $$[0,L]\times [0,M]$$ with Dirichlet boundary conditions, which are zero on each side of the boundary except the side where $$x=L$$.
 
 
 **Problem 7:**
