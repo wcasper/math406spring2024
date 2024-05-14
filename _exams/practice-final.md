@@ -68,7 +68,7 @@ $$u(x,0) = \left\lbrace\begin{array}{cc}
 
 * (A) Classify the type of the differential equation 
 
-$$u_{xx} + 2u_{xy} + 4u_{yy} = 0$$
+$$u_{xx} + 2u_{xy} + 5u_{yy} = 0$$
 
 * (B) Use separation of variables to determine a fundamental set of solutions of
 

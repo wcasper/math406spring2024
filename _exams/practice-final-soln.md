@@ -159,7 +159,7 @@ u(x,y)
 
 * (A) Classify the type of the differential equation 
 
-$$u_{xx} + 2u_{xy} + 4u_{yy} = 0$$
+$$u_{xx} + 2u_{xy} + 5u_{yy} = 0$$
 
 * (B) Use separation of variables to determine a fundamental set of solutions of
 
@@ -170,7 +170,11 @@ on the interval $$[0,L]\times [0,M]$$ with Dirichlet boundary conditions, which 
 
 **Solution:**
 
-* (A) the eigenvalues are both positive, so it is elliptic.
+The eigenvalues of the associated matrix are given by the roots of the polynomial
+
+$$(1-\lambda)(5-\lambda)-4 = \lambda^2-6\lambda + 1$$
+
+which are $$3\pm 2\sqrt{2}$$ and both positive.  Therefore it is elliptic.
 
 * (B) We write $$u(x,y) = F(x)G(y)$$ and then calculate
 
@@ -185,8 +189,15 @@ $$G'' + G' + \lambda G = 0.$$
 
 This gives us the solutions
 
-$$F''(x) = -e^
+$$F(x) =  Ae^{-x/2}\cosh(\sqrt{\lambda+1/4} x) + Be^{-x/2}\sinh(\sqrt{\lambda+1/4} x)$$
 
+$$G(y) =  Ce^{-y/2}\cos(\sqrt{\lambda-1/4} y) + De^{-y/2}\sin(\sqrt{\lambda-1/4} y)$$
+
+
+Then initial conditions impliy that $$C=0$$, $$A=0$$, and $$\sqrt{\lambda-1/4} = n\pi$$ for some integer $$n$$.  This means $$\lambda = n^2\pi^2+1/4$$
+Then without loss of generality, we can take $$B=D=1$$.  This gives us the fundamental family of solutions
+
+$$u_n(x,y) = e^{-(x+y)/2}\sinh(\sqrt{n^2\pi^2 + 1/2}x)\sin(n\pi y).$$
 
 
 **Problem 7:**
@@ -197,6 +208,21 @@ $$F''(x) = -e^
 
 $$f(x,y,z) = x^4 + xyz.$$
 
+**Solution:**
+
+* (A) $$u(x,y,z,t) = \overline f(x,y,z,ct) + ct\overline f_r(x,y,z,ct) + t\ovrline g(x,y,z,ct).$$
+
+* (B) Since $$xyz$$ is harmonic, it is its own spherical mean.  Moreover
+
+$$\begin{align}
+\overline{x^4}
+  &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi (x + r\sin\phi\cos\theta)^4 \sin\phi d\phi d\theta\\
+  &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi x^4\sin\phi + 4x^3r\sin^2\phi\cos\theta + 6x^2r^2\sin^3\phi\cos^2\theta + 4xr^3\sin^4\phi\cos^3\theta + r^4\sin^5\phi\cos^4\theta d\phi d\theta\\
+  &= \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi x^4\sin\phi + 6x^2r^2\sin^3\phi\cos^2\theta + r^4\sin^5\phi\cos^4\theta d\phi d\theta\\
+  &= \frac{1}{4\pi}\int_0^\pi 2\pi x^4\sin\phi + \pi 6x^2r^2\sin^3\phi + (3\pi/4)r^4\sin^5\phi d\phi d\theta\\
+  &= x^4 + 2x^2r^2 + r^4/5
+\end{align}$$
+
 **Problem 8:**
 
 * (A) Write down the Green's function for the Laplacian on the unit disk 
@@ -205,5 +231,18 @@ $$f(x,y,z) = x^4 + xyz.$$
 
 $$\Omega = \{(r,\theta): 0 < r < 1,\ \ 0 < \theta < \pi\}.$$
 
+**Solution:**
+
+* (A) A Green's function for the unit disk is
+
+$$G(r,\theta; r',\theta')
+= (\frac{1}{2\pi}\ln \left[r^2 + (r')^2 - 2rr'\cos(\theta-\theta')\right]
+- (\frac{1}{2\pi}\ln \left[r^2 + (1/r')^2 - 2r(1/r')\cos(\theta-\theta')\right]
+$$
+
+* (B) Using the Green's function of the previous paragraph, we can make a gren's function for the upper half disk by combining the Green's function for the point $$(r',\theta')$$ and the virtual point $$(r',-\theta')$$ reflected across the $$y$$-axis.
+Therefore a Green's function is given by
+
+$$G(r,\theta; r',\theta') - G(r,\theta; r',-\theta').$$
 
 
