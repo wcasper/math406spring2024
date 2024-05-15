@@ -47,7 +47,7 @@ $$u(x,1,t+1) = \frac{1}{\sqrt{4\pi k(t+1)}}e^{-(x-1)^2/(4k(t+1))}$$
 
 We have a Neumann boundary condition, so we expect a linear combination of solutions of the form
 
-$$u_n(x,t) = e^{\frac{-n^2\pi^2 kt/L^2}}\cos(n\pi x/L)$$
+$$u_n(x,t) = e^{-n^2\pi^2 kt/L^2}\cos(n\pi x/L)$$
 
 From the initial condition, we find
 
