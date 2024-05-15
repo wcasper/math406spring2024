@@ -210,7 +210,7 @@ $$f(x,y,z) = x^4 + xyz.$$
 
 **Solution:**
 
-* (A) $$u(x,y,z,t) = \overline f(x,y,z,ct) + ct\overline f_r(x,y,z,ct) + t\ovrline g(x,y,z,ct).$$
+* (A) $$u(x,y,z,t) = \overline f(x,y,z,ct) + ct\overline f_r(x,y,z,ct) + t\overline g(x,y,z,ct).$$
 
 * (B) Since $$xyz$$ is harmonic, it is its own spherical mean.  Moreover
 
