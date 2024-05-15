@@ -51,7 +51,7 @@ $$u_n(x,t) = e^{-n^2\pi^2 kt/L^2}\cos(n\pi x/L)$$
 
 From the initial condition, we find
 
-$$u(x,t) = 3u_5(x,t) + 4u_7(x,t) = 3e^{\frac{-25\pi^2 kt/L^2}}\cos(5\pi x/L) + 4e^{\frac{-49\pi^2 kt/L^2}}\cos(7\pi x/L).$$
+$$u(x,t) = 3u_5(x,t) + 4u_7(x,t) = 3e^{-25\pi^2 kt/L^2}\cos(5\pi x/L) + 4e^{-49\pi^2 kt/L^2}\cos(7\pi x/L).$$
 
 
 **Problem 2:**
