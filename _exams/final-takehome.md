@@ -39,6 +39,7 @@ $$u(r,0) = 0, \ \ u(r,\pi) = 0,\ \ u(R,\theta) = (\theta/\pi)(1-\theta/\pi)$$
 
 on the boundary of $$\Omega$$.
 
+Hint: use separation of variables on the Laplacian expressed in polar coordinates.
 
 **Problem 3:**
 
