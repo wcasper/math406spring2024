@@ -25,7 +25,7 @@ and the initial condition
 
 $$u(r,\theta,0) = 0,\quad 0 \leq r < R,\ \ 0 \leq \theta < 2\pi.$$
 
-Hint: your answer will use the eigenfunctions of the Laplacian on the unit disk.
+Hint: your answer will use the eigenfunctions of the Laplacian on the unit disk.  Also, don't forget to move inhomogeneity from the boundary to the interior!
 
 **Problem 2:**
 
