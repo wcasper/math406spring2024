@@ -53,7 +53,7 @@ on the whole real line with the initial condition
 
 $$u(x,0) = f(x),\ \ \ u_t(x,0) = g(x).$$
 
-:warning: Important note: by d'Alembrt-style, we mean an equation of the form
+:warning: Important note: by **d'Alembrt-style**, we mean an equation of the form
 
 $$u(x,t) = \int_{\mathbb{R}} \Phi(x-x',t)f(x')dx' + \int_{\mathbb{R}} \Psi(x-x',t)g(x')dx',$$
 
