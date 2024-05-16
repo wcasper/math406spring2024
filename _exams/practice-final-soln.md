@@ -122,7 +122,7 @@ $$u(x,t) = \frac{1}{2}(f(x+ct)+f(x-ct)) + \frac{1}{2c}\int_{x-ct}^{x+ct} g(s)ds.
 
 Therefore 
 
-$$u(x,t) = \frac{1}{2}e^{-(x+ct)^2} + \frac{1}{2}e^{-(x-ct)^2} + \ln(1 + (x+ct)^2) - \ln(1 + (x-ct)^2).$$
+$$u(x,t) = \frac{1}{2}e^{-(x+ct)^2} + \frac{1}{2}e^{-(x-ct)^2} + \frac{1}{c}\left( \tan^{-1}(x+ct) - \tan^{-1}(x-ct)\right).$$
 
 
 **Problem 5:**
