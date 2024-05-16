@@ -99,7 +99,7 @@ $$u_x(x,\pi) = n \cos(n x)\sinh(n\pi).$$
 
 So
 
-$$u(x,y) = \frac{1}{\sinh(\pi)}u_1(x,y) = \frac{1}{\sinh(\pi)}\coos(x)\cosh(y)$$
+$$u(x,y) = \frac{1}{\sinh(\pi)}u_1(x,y) = \frac{1}{\sinh(\pi)}\cos(x)\cosh(y)$$
 
 solves the problem.
 
