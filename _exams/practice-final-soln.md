@@ -75,7 +75,7 @@ $$\frac{1}{-2\pi i}\frac{d}{d\xi}\sqrt{\pi}e^{-\pi^2\xi^2} = -i(\pi)^{3/2}\xi e^
 
 * (C) 
 
-$$x = \sum_{n=1}^\infty \frac{2(-1)^{n+1)}{n}\sin(n x),\quad 0 < x < \pi$$
+$$x = \sum_{n=1}^\infty \frac{2(-1)^{n+1}}{n}\sin(n x),\quad 0 < x < \pi$$
 
 
 **Problem 3:**
