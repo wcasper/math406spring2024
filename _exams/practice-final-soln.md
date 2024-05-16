@@ -238,7 +238,7 @@ $$\Omega = \{(r,\theta): 0 < r < 1,\ \ 0 < \theta < \pi\}.$$
 $$G(r,\theta; r',\theta')
 = \frac{1}{2\pi}\ln \left[\sqrt{r^2 + (r')^2 - 2rr'\cos(\theta-\theta')}\right]
 - \frac{1}{2\pi}\ln \left[\sqrt{r^2 + (1/r')^2 - 2r(1/r')\cos(\theta-\theta')}\right]
-+ \frac{1}{2\pi}\ln r'
+- \frac{1}{2\pi}\ln r'
 $$
 
 * (B) Using the Green's function of the previous paragraph, we can make a gren's function for the upper half disk by combining the Green's function for the point $$(r',\theta')$$ and the virtual point $$(r',-\theta')$$ reflected across the $$y$$-axis.
