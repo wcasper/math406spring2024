@@ -39,7 +39,7 @@ $$u(x,t) := K(x,1,t+1) = \frac{1}{\sqrt{4\pi k(t+1)}}e^{-(x-1)^2/(4k(t+1))}$$
 
 is also a solution.  It satisfies the initial condition
 
-$$u(x,0) = \frac{1}{\sqrt{4\pi k}}e^{-(x-1)^2/4k}
+$$u(x,0) = \frac{1}{\sqrt{4\pi k}}e^{-(x-1)^2/4k}$$
 
 $$u(x,1,t+1) = \frac{1}{\sqrt{4\pi k(t+1)}}e^{-(x-1)^2/(4k(t+1))}$$
 
