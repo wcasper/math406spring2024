@@ -72,7 +72,7 @@ Then take the inverse Fourier transform back again to obtain an equation for $$u
 
 You can use (without proof) the fact that
 
-$$\int_{\mathbb{R}}\frac{1}{\sqrt{4\pi^2c^2\xi^2-\frac{\gamma^2}{4}}}\sin(t\sqrt{4\pi^2c^2\xi^2-\frac{\gamma^2}{4}})e^{2\pi i\xi x}d\xi = \frac{1}{4\pi c}J_0\left(i\frac{\gamma}{2}\sqrt{t^2-\frac{x^2}{c^2}}\right)$$
+$$\int_{\mathbb{R}}\frac{1}{\sqrt{4\pi^2c^2\xi^2-\frac{\gamma^2}{4}}}\sin\left(t\sqrt{4\pi^2c^2\xi^2-\frac{\gamma^2}{4}}\right)e^{2\pi i\xi x}d\xi = \frac{1}{4\pi c}J_0\left(i\frac{\gamma}{2}\sqrt{t^2-\frac{x^2}{c^2}}\right)$$
 
 
 
