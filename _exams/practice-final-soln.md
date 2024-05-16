@@ -118,7 +118,7 @@ $$u(x,0) = e^{-x^2},\ \ u_t(x,0) = \frac{2}{1+x^2}.$$
 
 From d'Alembert's formula, we have that the solution is given by
 
-$$u(x,t) = \frac{1}{2}(f(x+ct)+f(x-ct)) + \frac{1}{2c}\int_{x-ct}^{x+ct} sg(s)ds.$$
+$$u(x,t) = \frac{1}{2}(f(x+ct)+f(x-ct)) + \frac{1}{2c}\int_{x-ct}^{x+ct} g(s)ds.$$
 
 Therefore 
 
