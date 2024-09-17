@@ -8,11 +8,11 @@ To do so, its worth introducing one of the most powerful tools of mathematics fo
 
 **Definition:** Let $$f(x)$$ be an integrable function $$\mathbb R$$.  The **Fourier transform** of $$f(x)$$, is the function $$\widehat{f}(k)$$ on $$\mathbb{R}$$ defined by
 
-$$\hat{f}(\xi) = \int_{\mathbb{R}} e^{-2\pi i \xix}f(x)dx.$$
+$$\hat{f}(\xi) = \int_{\mathbb{R}} e^{-2\pi i \xi x}f(x)dx.$$
 
 Similarly, if $$g(\xi)$$ is an integrable function on $$\mathbb{R}$$, the **inverse Fourier transform** is defined to be
 
-$$\chec\xi{f}(\xi) = \int_{\mathbb{R}} e^{2\pi i \xix}f(x)dx.$$
+$$\check\xi{f}(\xi) = \int_{\mathbb{R}} e^{2\pi i \xi x}f(x)dx.$$
 
 Physically speaking, we can think about the Fourier transform and its inverse as describing the same quantity in two different ways.
 * in **physical space** we are saying what the value of the function is at any particular position
@@ -47,7 +47,7 @@ Assume that $$f(x)$$ is integrable on $$\mathbb{R}$$.
 
 **Fourier Transforms of Translations:** Let $$a\in\mathbb{R}$$.  If $$g(x) = f(x+a)$$ then
 
-$$\hat g(\xi) = e^{2\pi i \xia}\hat f(\xi).$$
+$$\hat g(\xi) = e^{2\pi i \xi a}\hat f(\xi).$$
 
 **Fourier Transforms of Rescalings:**  Let $$r\neq 0$$.  If $$g(x) = f(ra)$$ then
 
